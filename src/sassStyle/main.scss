@@ -1,0 +1,13 @@
+@import 'abstrcts/mixins';
+@import 'abstrcts/variables';
+
+@import 'components/navbar';
+@import 'components/footer';
+
+@import 'base/base';
+@import 'base/utilities';
+
+@import 'pages/team';
+@import 'pages/contact';
+
+@import 'layout/grid';

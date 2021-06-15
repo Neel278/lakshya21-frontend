@@ -1,0 +1,149 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.nav {
+  height: 6.4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  background-color: $color-off-white;
+  z-index: 1000;
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo {
+    margin-right: auto;
+    transform: translateY(5px);
+  }
+
+  &-menu {
+    list-style: none;
+    display: flex;
+  }
+
+  &-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 4rem;
+    color: $color-blue;
+  }
+
+  &-icon {
+    margin-left: 4rem;
+    cursor: pointer;
+  }
+}
+
+// .nav {
+//   background-color: $color-white;
+//   height: 8rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   position: sticky;
+//   top: 0;
+//   z-index: 20;
+
+//   &-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100%;
+//     max-width: 150rem;
+//   }
+
+//   &-logo {
+//     color: #000;
+//     align-items: center;
+//     margin-left: 2rem;
+//     text-decoration: none;
+//     font-size: 3rem;
+//     flex-grow: 1;
+
+//     @include respond(phone) {
+//       font-size: 2rem;
+//     }
+//   }
+
+//   &-menu {
+//     display: flex;
+//     list-style: none;
+//     text-align: center;
+//     margin-right: 2rem;
+
+//     @include respond(tab-port) {
+//       display: flex;
+//       flex-direction: column;
+//       width: 100%;
+//       position: absolute;
+//       top: 8rem;
+//       left: -110%;
+//       opacity: 1;
+//     }
+
+//     &.active {
+//       @include respond(tab-port) {
+//         background-color: $color-white;
+//         left: 0px;
+//         opacity: 1;
+//         transition: all 0.6s ease-in-out;
+//         z-index: 1;
+//       }
+//     }
+//   }
+
+//   &-link {
+//     color: #000;
+//     text-decoration: none;
+//     text-align: center;
+//     padding: 0.5rem 1rem;
+//     height: 100%;
+//     border-bottom: 3px solid transparent;
+//     font-size: 2rem;
+//     font-weight: 500;
+//     font-size: 1.8rem !important;
+//     line-height: 2.2rem;
+//     color: $color-blue;
+//   }
+
+//   &-item {
+//     line-height: 4rem;
+//     margin-right: 1rem;
+
+//     &::after {
+//       content: '';
+//       display: block;
+//       height: 3px;
+//       width: 0;
+//       background: transparent;
+//       transition: width 0.7s ease, background-color 0.5s ease;
+//     }
+
+//     &:hover::after {
+//       width: 100%;
+//     }
+
+//     .active {
+//     }
+//   }
+
+//   &-icon {
+//     display: none;
+//     margin-right: 2rem;
+//     font-size: 3rem;
+
+//     @include respond(tab-port) {
+//       display: block;
+//     }
+
+//     @include respond(phone) {
+//       font-size: 2rem;
+//     }
+//   }
+// }
