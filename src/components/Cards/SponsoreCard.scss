@@ -22,6 +22,10 @@
         width: 10.7rem;
         height: 3.1rem;
         margin-top: 0;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
@@ -34,15 +38,7 @@
     }
 
     @include respond(phone) {
-      margin-left: 25rem;
-    }
-
-    @include respond(midPhone) {
-      margin-left: 13.5rem;
-    }
-
-    @include respond(smallPhone){
-      margin-left:11rem;
+      margin-left: 0;
     }
   }
 
@@ -57,8 +53,8 @@
       margin-left: 8rem;
     }
 
-    @include respond(midPhone) {
-      margin-left: 5.5rem;
+    @include respond(phone){
+      margin-left:0;
     }
 
     &--headline {
@@ -77,12 +73,7 @@
         font-size: 1.8rem;
         text-align: center;
         width: 100%;
-        margin-left: -4rem;
         margin-top: 3.3rem;
-      }
-
-      @include respond(midPhone) {
-        margin-left: -2.2rem;
       }
     }
 
@@ -103,13 +94,11 @@
       @include respond(phone) {
         margin-bottom: 6.5rem;
         font-size: 1.6rem;
-
         width: 90%;
-      }
 
-      @include respond(midPhone) {
-        margin-bottom: 10.5rem;
-        width: 88%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }
