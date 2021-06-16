@@ -1,0 +1,24 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.contact-page {
+  padding: 3rem 0;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+
+  &__title {
+    width: 19rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid $color-gold;
+  }
+
+  &__body {
+    display: flex;
+
+    align-items: center;
+  }
+
+  &__right {
+    margin-left: auto;
+  }
+}

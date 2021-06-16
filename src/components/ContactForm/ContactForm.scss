@@ -1,0 +1,103 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.contact-form {
+  width: 75.6rem;
+  height: 60rem;
+  padding: 5rem;
+  background: linear-gradient(
+    122.21deg,
+    rgba(143, 147, 248, 0.09) 83.58%,
+    rgba(143, 147, 248, 0) 179.73%
+  );
+  backdrop-filter: blur(22px);
+  border-radius: 16px;
+  &__title {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 5.1rem;
+    margin-bottom: 4.2rem;
+  }
+
+  &__body {
+  }
+
+  &__row {
+  }
+
+  &__name,
+  &__mail {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 4.6rem;
+    padding: 1.5rem 1.9rem;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #2f2f2f;
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #2f2f2f;
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  &__name {
+    width: 30rem;
+    height: 6rem;
+    margin-right: 5.4rem;
+  }
+
+  &__mail {
+    width: 30rem;
+    height: 6rem;
+  }
+
+  &__message {
+    border-radius: 5px;
+    width: 65.4rem;
+    height: 19rem;
+    padding: 1.5rem 1.9rem;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #2f2f2f;
+    outline: none;
+    border: none;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #2f2f2f;
+    }
+  }
+
+  &__submit {
+    display: inline-block;
+    margin-top: 4.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $color-gold;
+    padding: 1.5rem 3.3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    text-align: center;
+    color: $color-white;
+    border-radius: 10rem;
+  }
+}
