@@ -7,13 +7,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @include respond(tab-land) {
+    top: 65%;
+  }
+
   @include respond(tab-port) {
-    top: 55%;
+    top: 48%;
     transform: translate(-50%, -50%);
   }
 
-  @include respond(phone){
-    top: 45%;
+  @include respond(phone) {
+    top: 50%;
   }
 
   animation-name: fadeIn;

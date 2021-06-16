@@ -3,6 +3,7 @@
 .bg-video {
   width: 100%;
   height: auto;
+
   margin: 0 auto;
   position: absolute;
   top: 50%;
@@ -16,7 +17,7 @@
 
   @include respond(tab-port) {
     height: auto;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -70%);
   }
 
   @include respond(phone) {
@@ -29,6 +30,7 @@
   // }
 
   .bg-video__content {
+    margin-top: 4rem;
     height: 100%;
     width: 100%;
     object-fit: cover;
