@@ -1,0 +1,76 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+@import './../../sassStyle/abstracts/_animation.scss';
+
+.hero-box {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include respond(tab-port) {
+    top: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include respond(phone){
+    top: 45%;
+  }
+
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 10s;
+
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
+
+  &__button {
+    width: 15.9rem;
+    height: 3.5rem;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding: 0.6rem 3rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+
+    @include respond(phone) {
+      display: block;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    &--1 {
+      background-color: $color-off-white;
+      color: $color-blue;
+      margin-right: 3.5rem;
+      @include respond(phone) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &--2 {
+      background-color: transparent;
+      border: 1px solid $color-off-white;
+      color: $color-off-white;
+      transition: all 0.2s;
+
+      &:hover,
+      &:active {
+        border: 1px solid $color-off-white;
+        background-color: $color-off-white;
+        color: $color-blue;
+      }
+    }
+  }
+}

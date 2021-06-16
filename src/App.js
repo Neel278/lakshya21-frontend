@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import ContactPage from './pages/ContactPage/ContactPage';
+import HomePage from './pages/HomePage/HomePage';
 // import Team from './pages/Team';
 
 function App() {
@@ -33,9 +34,9 @@ function App() {
         {/* </Route> */}
 
         {/* Homepage */}
-        {/* <Route exact path="/">
-          <h1>homepage</h1>
-        </Route> */}
+        <Route exact path="/">
+          <HomePage></HomePage>
+        </Route>
       </Switch>
       <Footer />
     </Router>

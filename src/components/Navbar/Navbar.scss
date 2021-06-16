@@ -1,7 +1,6 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .nav {
-  height: 6.4rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -11,18 +10,34 @@
   z-index: 1000;
 
   &-container {
+    height: 6.4rem;
     display: flex;
     align-items: center;
   }
 
   &-logo {
-    margin-right: auto;
-    transform: translateY(5px);
+    &-box {
+      margin-right: auto;
+      transform: translateY(5px);
+    }
+
+    @include respond(tab-port) {
+      transform: translateY(-5px);
+      height: 2rem;
+      width: auto;
+    }
   }
 
   &-menu {
     list-style: none;
     display: flex;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &-item {
   }
 
   &-link {
@@ -30,11 +45,25 @@
     text-decoration: none;
     margin-left: 4rem;
     color: $color-blue;
+    padding-bottom: 5px;
+    &:hover,
+    &:active {
+      border-bottom: 1px solid $color-blue;
+    }
   }
 
   &-icon {
-    margin-left: 4rem;
-    cursor: pointer;
+    width: 100%;
+    height: auto;
+
+    &-box {
+      margin-left: 4rem;
+      cursor: pointer;
+
+      @include respond(tab-port) {
+        width: 4rem;
+      }
+    }
   }
 }
 

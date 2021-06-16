@@ -1,0 +1,36 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.bg-video {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  @include respond(tab-land) {
+    height: 100%;
+  }
+
+  @include respond(tab-port) {
+    height: auto;
+    transform: translate(-50%, -60%);
+  }
+
+  @include respond(phone) {
+    transform: translate(-50%, -80%);
+    height: 43%;
+  }
+
+  // @include respond(tab-land) {
+  //   height: auto;
+  // }
+
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
