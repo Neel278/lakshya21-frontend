@@ -1,0 +1,116 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.sponsoreCard {
+  margin-top: 2.8rem;
+  display: flex;
+  flex-direction: row;
+
+  @include respond(phone) {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  &__left {
+    margin-left: 30.5rem;
+
+    &--img {
+      margin-top: 6.5rem;
+      width: 18.5rem;
+      height: 5.3rem;
+
+      @include respond(phone) {
+        width: 10.7rem;
+        height: 3.1rem;
+        margin-top: 0;
+      }
+    }
+
+    @include respond(tab-land) {
+      margin-left: 20rem;
+    }
+
+    @include respond(tab-port) {
+      margin-left: 10rem;
+    }
+
+    @include respond(phone) {
+      margin-left: 25rem;
+    }
+
+    @include respond(midPhone) {
+      margin-left: 13.5rem;
+    }
+
+    @include respond(smallPhone){
+      margin-left:11rem;
+    }
+  }
+
+  &__right {
+    margin-left: 29.9rem;
+
+    @include respond(tab-land) {
+      margin-left: 25rem;
+    }
+
+    @include respond(tab-port) {
+      margin-left: 8rem;
+    }
+
+    @include respond(midPhone) {
+      margin-left: 5.5rem;
+    }
+
+    &--headline {
+      width: 23.1rem;
+      height: 2.8rem;
+      font-family: Roboto;
+      font-size: 2.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.8rem;
+      letter-spacing: 0em;
+      text-align: left;
+      text-transform: uppercase;
+
+      @include respond(phone) {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+        margin-left: -4rem;
+        margin-top: 3.3rem;
+      }
+
+      @include respond(midPhone) {
+        margin-left: -2.2rem;
+      }
+    }
+
+    &--text {
+      margin-top: 2.5rem;
+      margin-bottom: 10.4rem;
+      width: 52.2rem;
+      height: 11.2rem;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 2.8rem;
+      hyphens: auto;
+      color: #ffffff;
+
+      @include respond(phone) {
+        margin-bottom: 6.5rem;
+        font-size: 1.6rem;
+
+        width: 90%;
+      }
+
+      @include respond(midPhone) {
+        margin-bottom: 10.5rem;
+        width: 88%;
+      }
+    }
+  }
+}

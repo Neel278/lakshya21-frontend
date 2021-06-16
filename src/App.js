@@ -1,24 +1,25 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import NavBar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+// import NavBar from './components/Navbar/Navbar';
+// import Footer from './components/Footer/Footer';
 import ContactPage from './pages/ContactPage/ContactPage';
-// import Team from './pages/Team';
+import Sponsore from './pages/SponsorePage/Sponsore';
 
 function App() {
   return (
     <Router>
-      <NavBar />
+      {/* <NavBar /> */}
       <Switch>
-        {/* loginPage */}
-        {/* <Route path="/login">
-          <h1>Login Page</h1>
-        </Route> */}
-
         {/* contect */}
         <Route path="/contact">
           <div className="container">
             <ContactPage />
+          </div>
+        </Route>
+
+        <Route path="/sponsore">
+          <div>
+            <Sponsore />
           </div>
         </Route>
 
@@ -37,7 +38,7 @@ function App() {
           <h1>homepage</h1>
         </Route> */}
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

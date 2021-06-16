@@ -30,9 +30,9 @@ function Footer() {
             ad minim veniam.
           </div>
           <div className="footer__privacy-box">
-            <a href="#" className="footer__privacy">
+            <Link to="#" className="footer__privacy">
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
         <div className="footer__links">
