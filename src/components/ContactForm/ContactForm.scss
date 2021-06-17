@@ -38,22 +38,43 @@
     @include respond(tab-port) {
       display: block;
     }
+
+    &--2 {
+      display: block;
+    }
+  }
+
+  &__message {
+    &--error {
+      font-size: 1.6rem;
+      color: $color-gold;
+      padding-left: 1.3rem;
+    }
+  }
+
+  &__name-box {
+    margin-right: 5.4rem;
   }
 
   &__name,
   &__mail {
     height: 6rem;
 
-    flex-basis: 50%;
     outline: none;
     border: none;
     border-radius: 5px;
-    margin-bottom: 4.6rem;
+
     padding: 1.5rem 1.9rem;
     font-weight: normal;
     font-size: 1.4rem;
     line-height: 2rem;
     color: #2f2f2f;
+
+    &-box {
+      margin-bottom: 4.6rem;
+
+      flex-basis: 50%;
+    }
 
     @include respond(tab-port) {
       display: block;
@@ -76,10 +97,11 @@
   }
 
   &__name {
-    margin-right: 5.4rem;
+    width: 100%;
   }
 
   &__mail {
+    width: 100%;
   }
 
   &__message {
