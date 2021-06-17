@@ -1,6 +1,7 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .footer {
+  margin-top: 3rem;
   padding: 5rem 0;
   font-weight: normal;
   font-size: 1.5rem;
@@ -11,10 +12,19 @@
   &-container {
     display: flex;
     justify-content: space-between;
+
+    @include respond(phone) {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__main {
     flex-basis: 26.2rem;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__logo-box {
@@ -31,6 +41,10 @@
   }
 
   &__links {
+    @include respond(tab-port) {
+      display: none;
+    }
+
     &--title {
       font-weight: bold;
       margin-bottom: 1.5rem;
@@ -38,10 +52,14 @@
 
     &--item {
       margin-bottom: 1.5rem;
+      cursor: pointer;
     }
   }
 
   &__about {
+    @include respond(tab-port) {
+      display: none;
+    }
     &--title {
       font-weight: bold;
       margin-bottom: 1.5rem;
@@ -49,10 +67,19 @@
 
     &--item {
       margin-bottom: 1.5rem;
+      cursor: pointer;
     }
   }
 
   &__contact {
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+
     &--title {
       font-weight: bold;
       margin-bottom: 1.5rem;
@@ -82,9 +109,15 @@
       border: none;
       border-bottom: 1px solid $color-blue;
       margin-right: 1rem;
+      padding-bottom: 5px;
       &-box {
         display: flex;
         align-items: flex-end;
+
+        @include respond(phone) {
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
 
@@ -97,14 +130,36 @@
       vertical-align: middle;
       font-size: 1rem;
       line-height: 1.2rem;
+      outline: none;
+      border: 1px solid $color-blue;
+      border-radius: 3px;
     }
 
     &--social {
       margin-right: 2.2rem;
+      cursor: pointer;
+
+      @include respond(phone) {
+        margin-right: 0;
+        margin: 0 1.1rem;
+      }
+
+      &--icon-box {
+        @include respond(phone) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
       &-box {
         margin-top: 4.5rem;
+        @include respond(phone) {
+          display: block;
+        }
       }
       &--title {
+        @include respond(phone) {
+        }
         margin-bottom: 1.5rem;
       }
     }

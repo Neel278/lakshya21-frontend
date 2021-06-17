@@ -3,22 +3,28 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import ContactPage from './pages/ContactPage/ContactPage';
+// <<<<<<< HEAD
+import Sponsore from './pages/SponsorePage/Sponsore';
+// =======
+import HomePage from './pages/HomePage/HomePage';
 // import Team from './pages/Team';
+// >>>>>>> 56519cf2b1c3a1e7e39dbcd17d300c93d63d75cb
 
 function App() {
   return (
     <Router>
       <NavBar />
       <Switch>
-        {/* loginPage */}
-        {/* <Route path="/login">
-          <h1>Login Page</h1>
-        </Route> */}
-
         {/* contect */}
         <Route path="/contact">
           <div className="container">
             <ContactPage />
+          </div>
+        </Route>
+
+        <Route path="/sponsore">
+          <div>
+            <Sponsore />
           </div>
         </Route>
 
@@ -33,9 +39,9 @@ function App() {
         {/* </Route> */}
 
         {/* Homepage */}
-        {/* <Route exact path="/">
-          <h1>homepage</h1>
-        </Route> */}
+        <Route exact path="/">
+          <HomePage></HomePage>
+        </Route>
       </Switch>
       <Footer />
     </Router>

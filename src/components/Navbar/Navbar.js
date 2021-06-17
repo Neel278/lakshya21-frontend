@@ -12,8 +12,8 @@ function NavBar() {
     <>
       <nav className="nav">
         <div className="nav-container container">
-          <NavLink exact to="/" className="nav-logo">
-            <svg
+          <NavLink exact to="/" className="nav-logo-box">
+            <svg className="nav-logo"
               width="135"
               height="20"
               viewBox="0 0 135 20"
@@ -50,6 +50,22 @@ function NavBar() {
                 About
               </NavLink>
             </li>
+
+
+            {/* sponsore */}
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/sponsore"
+                activeClassName="active"
+                className="nav-link"
+                onClick={handleClick}
+              >
+                Sponsores
+              </NavLink>
+            </li>
+
+            {/* contact */}
             <li className="nav-item">
               <NavLink
                 exact
@@ -72,10 +88,12 @@ function NavBar() {
                 Team
               </NavLink>
             </li>
+            
+
           </ul>
 
-          <div className="nav-icon" onClick={handleClick}>
-            <svg
+          <div className="nav-icon-box" onClick={handleClick}>
+            <svg className="nav-icon"
               width="50"
               height="50"
               viewBox="0 0 50 50"
