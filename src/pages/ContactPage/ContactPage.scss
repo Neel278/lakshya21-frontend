@@ -10,15 +10,47 @@
     width: 19rem;
     padding-bottom: 1rem;
     border-bottom: 3px solid $color-gold;
+
+    @include respond(phone) {
+      margin: 0 auto;
+      margin-bottom: 7rem;
+    }
   }
 
   &__body {
     display: flex;
 
     align-items: center;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__left {
+    width: 33%;
+
+    @include respond(phone) {
+      width: 100%;
+      margin-bottom: 8rem;
+    }
   }
 
   &__right {
+    width: 67%;
+
+    @include respond(tab-land) {
+      width: 60%;
+    }
+
+    @include respond(tab-port) {
+      width: 55%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
     margin-left: auto;
   }
 }
