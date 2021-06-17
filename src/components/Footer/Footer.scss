@@ -1,10 +1,7 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .footer {
-<<<<<<< HEAD
   margin-top: 3rem;
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   padding: 5rem 0;
   font-weight: normal;
   font-size: 1.5rem;
@@ -15,25 +12,19 @@
   &-container {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
 
     @include respond(phone) {
       display: block;
       text-align: center;
     }
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   }
 
   &__main {
     flex-basis: 26.2rem;
-<<<<<<< HEAD
 
     @include respond(phone) {
       margin-bottom: 2rem;
     }
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   }
 
   &__logo-box {
@@ -50,13 +41,10 @@
   }
 
   &__links {
-<<<<<<< HEAD
     @include respond(tab-port) {
       display: none;
     }
 
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     &--title {
       font-weight: bold;
       margin-bottom: 1.5rem;
@@ -64,20 +52,14 @@
 
     &--item {
       margin-bottom: 1.5rem;
-<<<<<<< HEAD
       cursor: pointer;
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     }
   }
 
   &__about {
-<<<<<<< HEAD
     @include respond(tab-port) {
       display: none;
     }
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     &--title {
       font-weight: bold;
       margin-bottom: 1.5rem;
@@ -85,15 +67,11 @@
 
     &--item {
       margin-bottom: 1.5rem;
-<<<<<<< HEAD
       cursor: pointer;
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     }
   }
 
   &__contact {
-<<<<<<< HEAD
     @include respond(tab-port) {
       padding: 0 2rem;
     }
@@ -102,8 +80,6 @@
       display: none;
     }
 
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     &--title {
       font-weight: bold;
       margin-bottom: 1.5rem;
@@ -133,7 +109,6 @@
       border: none;
       border-bottom: 1px solid $color-blue;
       margin-right: 1rem;
-<<<<<<< HEAD
       padding-bottom: 5px;
       &-box {
         display: flex;
@@ -143,11 +118,6 @@
           display: block;
           margin: 0 auto;
         }
-=======
-      &-box {
-        display: flex;
-        align-items: flex-end;
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
       }
     }
 
@@ -160,17 +130,13 @@
       vertical-align: middle;
       font-size: 1rem;
       line-height: 1.2rem;
-<<<<<<< HEAD
       outline: none;
       border: 1px solid $color-blue;
       border-radius: 3px;
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     }
 
     &--social {
       margin-right: 2.2rem;
-<<<<<<< HEAD
       cursor: pointer;
 
       @include respond(phone) {
@@ -194,12 +160,6 @@
       &--title {
         @include respond(phone) {
         }
-=======
-      &-box {
-        margin-top: 4.5rem;
-      }
-      &--title {
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
         margin-bottom: 1.5rem;
       }
     }

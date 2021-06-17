@@ -1,53 +1,24 @@
 @mixin respond($breakpoint) {
-<<<<<<< HEAD
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
-=======
-  @if $breakpoint == smallPhone {
-    @media (max-width: 20rem) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == midPhone {
-    @media (max-width: 23.4375rem) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == phone {
-    @media (max-width: 37.5rem) {
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
       @content;
     }
   }
 
   @if $breakpoint == tab-port {
-<<<<<<< HEAD
     @media (max-width: 56.25em) {
-=======
-    @media (max-width: 56.25rem) {
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
       @content;
     }
   }
 
   @if $breakpoint == tab-land {
-<<<<<<< HEAD
     @media (max-width: 75em) {
-=======
-    @media (max-width: 75rem) {
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
       @content;
     }
   }
 
   @if $breakpoint == big-desktop {
-<<<<<<< HEAD
     @media (min-width: 112.5em) {
-=======
-    @media (min-width: 112.5rem) {
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
       @content;
     }
   }
@@ -59,10 +30,6 @@ $color-black: #000;
 $color-off-white: #f0f4f8;
 $color-blue: #0b0d47;
 $color-gold: #f9a602;
-<<<<<<< HEAD
-
-=======
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
 //grid
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
@@ -70,10 +37,6 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 .container {
-<<<<<<< HEAD
   width: 90%;
-=======
-  width: 80%;
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   margin: 0 auto;
 }
