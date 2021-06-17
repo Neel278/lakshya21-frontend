@@ -50,6 +50,22 @@ function NavBar() {
                 About
               </NavLink>
             </li>
+
+
+            {/* sponsore */}
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/sponsore"
+                activeClassName="active"
+                className="nav-link"
+                onClick={handleClick}
+              >
+                Sponsores
+              </NavLink>
+            </li>
+
+            {/* contact */}
             <li className="nav-item">
               <NavLink
                 exact
@@ -72,6 +88,8 @@ function NavBar() {
                 Team
               </NavLink>
             </li>
+            
+
           </ul>
 
           <div className="nav-icon-box" onClick={handleClick}>
