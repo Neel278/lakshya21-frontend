@@ -1,6 +1,10 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .nav {
+<<<<<<< HEAD
+=======
+  height: 6.4rem;
+>>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   position: sticky;
   top: 0;
   left: 0;
@@ -10,12 +14,16 @@
   z-index: 1000;
 
   &-container {
+<<<<<<< HEAD
     height: 6.4rem;
+=======
+>>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     display: flex;
     align-items: center;
   }
 
   &-logo {
+<<<<<<< HEAD
     &-box {
       margin-right: auto;
       transform: translateY(5px);
@@ -26,11 +34,16 @@
       height: 2rem;
       width: auto;
     }
+=======
+    margin-right: auto;
+    transform: translateY(5px);
+>>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   }
 
   &-menu {
     list-style: none;
     display: flex;
+<<<<<<< HEAD
 
     @include respond(tab-port) {
       display: none;
@@ -38,6 +51,8 @@
   }
 
   &-item {
+=======
+>>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   }
 
   &-link {
@@ -45,6 +60,7 @@
     text-decoration: none;
     margin-left: 4rem;
     color: $color-blue;
+<<<<<<< HEAD
     padding-bottom: 5px;
     &:hover,
     &:active {
@@ -64,6 +80,13 @@
         width: 4rem;
       }
     }
+=======
+  }
+
+  &-icon {
+    margin-left: 4rem;
+    cursor: pointer;
+>>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   }
 }
 

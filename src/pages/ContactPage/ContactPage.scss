@@ -10,17 +10,21 @@
     width: 19rem;
     padding-bottom: 1rem;
     border-bottom: 3px solid $color-gold;
+<<<<<<< HEAD
 
     @include respond(phone) {
       margin: 0 auto;
       margin-bottom: 7rem;
     }
+=======
+>>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
   }
 
   &__body {
     display: flex;
 
     align-items: center;
+<<<<<<< HEAD
 
     @include respond(phone) {
       display: block;
@@ -51,6 +55,11 @@
       width: 100%;
     }
 
+=======
+  }
+
+  &__right {
+>>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     margin-left: auto;
   }
 }
