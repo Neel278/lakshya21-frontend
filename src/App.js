@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import ContactPage from './pages/ContactPage/ContactPage';
 // <<<<<<< HEAD
 import Sponsore from './pages/SponsorePage/Sponsore';
+import OurTeam from './pages/OurTeam/OurTeam';
 // =======
 import HomePage from './pages/HomePage/HomePage';
 // import Team from './pages/Team';
@@ -34,9 +35,9 @@ function App() {
         </Route> */}
 
         {/* about */}
-        {/* <Route path="/team"> */}
-        {/* <Team /> */}
-        {/* </Route> */}
+        <Route path="/team">
+          <OurTeam />
+        </Route>
 
         {/* Homepage */}
         <Route exact path="/">
