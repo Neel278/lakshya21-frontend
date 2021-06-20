@@ -5,6 +5,7 @@ import NavBar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Loading from './components/Loading-Animation/Loading';
 import ContactPage from './pages/ContactPage/ContactPage';
+import EventsPage from './pages/EventsPage/EventsPage';
 // <<<<<<< HEAD
 import Sponsore from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
@@ -47,6 +48,10 @@ function App() {
             {/* about */}
             <Route path="/team">
               <OurTeam />
+            </Route>
+
+            <Route path="/events">
+              <EventsPage />
             </Route>
 
             {/* Homepage */}
