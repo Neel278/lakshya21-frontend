@@ -1,0 +1,77 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.event-contact {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+
+  &-box {
+    flex: 1;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3.3rem;
+    color: $color-off-white;
+    padding: 3rem 10rem;
+
+    @include respond(tab-land) {
+      padding: 3rem 7rem;
+    }
+
+    border: 2.54px solid;
+
+    border-image-source: radial-gradient(
+        69.43% 69.43% at 191.57% 41.53%,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(
+        238.49deg,
+        rgba(143, 147, 248, 0.72) -0.74%,
+        rgba(255, 255, 255, 0) 47.05%,
+        rgba(143, 147, 248, 0.72) 99.43%
+      );
+
+    background: linear-gradient(
+      122.21deg,
+      rgba(143, 147, 248, 0.09) 83.58%,
+      rgba(143, 147, 248, 0) 179.73%
+    );
+    -webkit-backdrop-filter: blur(13.9683px);
+    backdrop-filter: blur(13.9683px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 1rem;
+  }
+
+  &__left {
+    margin-right: 6.5rem;
+
+    @include respond(tab-land) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  &__right {
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid $color-blue-light;
+    display: inline-block;
+    padding-bottom: 1rem;
+  }
+
+  &_name {
+  }
+
+  &__phone {
+    opacity: 0.7;
+  }
+
+  &__mail {
+    opacity: 0.7;
+  }
+}

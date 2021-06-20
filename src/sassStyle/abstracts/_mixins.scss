@@ -13,11 +13,7 @@
     transform: translate(-50%,-50%);
 }
 
-<<<<<<< HEAD
-@mixin respond($breakpoint) {0rem
-=======
 @mixin respond($breakpoint) {
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
     @if $breakpoint == smallPhone{
         @media (max-width : 20em) { @content };
     }

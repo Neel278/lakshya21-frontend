@@ -1,0 +1,80 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.event-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  @include respond(phone){
+    margin-bottom: 1rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-box {
+    flex: 1;
+    margin-right: 10rem;
+    padding: 3rem 10rem;
+
+    @include respond(tab-land) {
+      padding: 3rem 7rem;
+      margin-right: 6rem;
+    }
+
+    @include respond(tab-port) {
+      margin-right: 0rem;
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+
+    background: linear-gradient(
+      122.21deg,
+      rgba(143, 147, 248, 0.09) 83.58%,
+      rgba(143, 147, 248, 0) 179.73%
+    );
+
+    -webkit-backdrop-filter: blur(13.9683px);
+
+    backdrop-filter: blur(13.9683px);
+
+    border-radius: 1rem;
+    border: 2.54px solid;
+    border-image-source: radial-gradient(
+        69.43% 69.43% at 191.57% 41.53%,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(
+        238.49deg,
+        rgba(143, 147, 248, 0.72) -0.74%,
+        rgba(255, 255, 255, 0) 47.05%,
+        rgba(143, 147, 248, 0.72) 99.43%
+      );
+  }
+
+  &__icon {
+    @include respond(phone) {
+      width: 100%;
+    }
+    &-box {
+      margin-right: 1.8rem;
+
+      @include respond(tab-port) {
+        margin-right: 3.8rem;
+      }
+
+      @include respond(phone) {
+        width: 3rem;
+      }
+    }
+  }
+
+  &__tag {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: $color-off-white;
+  }
+}

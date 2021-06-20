@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import Sponsore from './pages/SponsorePage/Sponsore';
 // =======
 import HomePage from './pages/HomePage/HomePage';
+import EventMainPage from './pages/EventMainPage/EventMainPage';
 // import Team from './pages/Team';
 // >>>>>>> 56519cf2b1c3a1e7e39dbcd17d300c93d63d75cb
 
@@ -41,6 +42,10 @@ function App() {
         {/* Homepage */}
         <Route exact path="/">
           <HomePage></HomePage>
+        </Route>
+
+        <Route exact path="/event-main">
+          <EventMainPage></EventMainPage>
         </Route>
       </Switch>
       <Footer />
