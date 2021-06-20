@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# lakshya21-frontend
-=======
 # Lakshya21-frontend
 
 Lakshya21-frontend is the repo for managing frontend part of Lakshya 2021 event.
@@ -20,4 +17,3 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 [MIT](https://github.com/Neel278/lakshya21-frontend/blob/main/LICENSE)
->>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b

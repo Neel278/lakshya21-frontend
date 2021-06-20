@@ -23,7 +23,7 @@ function App() {
           </div>
         </Route>
 
-        <Route path="/sponsore">
+        <Route path="/sponsor">
           <div>
             <Sponsore />
           </div>
