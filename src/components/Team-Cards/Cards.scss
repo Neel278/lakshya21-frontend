@@ -1,0 +1,97 @@
+@import '../../sassStyle/base/_base.scss';
+
+.card {
+  padding: 1rem;
+  background-clip: padding-box;
+  background: linear-gradient(
+    152.97deg,
+    rgba(255, 255, 255, 0.039) 0%,
+    rgba(160, 180, 199, 0.13) 100%
+  );
+  border: 2.5px solid transparent;
+  box-sizing: border-box;
+
+  border-image-slice: 1;
+  border-radius: 5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  @include respond(desktop) {
+    width: 25rem;
+    height: 40rem;
+  }
+  @include respond(big-desktop) {
+    width: 25rem;
+    height: 40rem;
+  }
+  @include respond(phone) {
+    width: 25rem;
+    height: 30rem;
+  }
+}
+
+.card-wrapper {
+  margin-top: 5rem;
+}
+
+.card::before {
+  border-radius: inherit;
+  margin: -1rem;
+  z-index: -1;
+  background: linear-gradient(
+    118.47deg,
+    #102a43 0%,
+    #486581 33.65%,
+    #9fb3c8 63.33%,
+    #102a43 100%
+  );
+}
+
+img {
+  @include respond(desktop) {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+  @include respond(big-desktop) {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+  }
+  @include respond(phone) {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Helvetica';
+}
+
+.card-text h6 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.card-text p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.social-media {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 1rem;
+}
