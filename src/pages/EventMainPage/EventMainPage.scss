@@ -1,0 +1,116 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.event-main {
+  @include respond(phone) {
+   
+  }
+
+  &__head {
+    position: relative;
+  }
+
+  &__body {
+  }
+
+  &__box-container {
+    display: flex;
+    margin-bottom: 7rem;
+
+    @include respond(tab-port){
+        display: block;
+    }
+
+    &--detail {
+    }
+
+    &--contact {
+      flex: 1;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+
+    @include respond(tab-port) {
+      height: 40rem;
+    }
+
+    @include respond(phone) {
+      height: 30rem;
+    }
+
+    &-box {
+      width: 100%;
+      height: auto;
+
+      position: relative;
+      margin-bottom: 4.4rem;
+    }
+  }
+
+  &__hero-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+  }
+
+  &__title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 6.4rem;
+    line-height: 7.8rem;
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+
+    @include respond(phone) {
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 3.4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__btn {
+    padding: 1.8rem 2.7rem;
+    border-radius: 10rem;
+    outline: none;
+    border: none;
+    background-color: $color-gold;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: $color-white;
+    /* identical to box height */
+
+    @include respond(phone) {
+      padding: 1rem 1.5rem;
+      font-weight: bold;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+    }
+
+    text-align: center;
+    &-box {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 42, 67, 0.4);
+  z-index: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

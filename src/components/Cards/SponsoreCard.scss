@@ -88,7 +88,9 @@
       font-weight: normal;
       font-size: 2rem;
       line-height: 2.8rem;
-      hyphens: auto;
+      -webkit-hyphens: auto;
+          -ms-hyphens: auto;
+              hyphens: auto;
       color: #ffffff;
 
       @include respond(phone) {

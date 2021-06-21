@@ -17,6 +17,10 @@
   @if $breakpoint == smallPhone {
     @media (max-width: 20em) {
       @content;
+
+//     @if $breakpoint == smallPhone{
+//         @media (max-width : 20em) { @content };
+
     }
   }
 
