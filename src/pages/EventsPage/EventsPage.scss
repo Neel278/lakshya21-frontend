@@ -1,12 +1,43 @@
 @import '../../sassStyle/base/_base.scss';
+@import '../../sassStyle/abstracts/_mixins.scss';
 
 .event-page .page-wrapper {
   width: 100%;
-  height: 100vh;
-  @include respond(phone) {
+  height: 200%;
+
+  @include respond(big-desktop) {
+    height: 90vh;
+  }
+
+  @include respond(desktop) {
     width: 100%;
     height: 200%;
   }
+
+  @include respond(tab-land) {
+    width: 100%;
+    height: 140vh;
+  }
+
+  @include respond(tab-port-min) {
+    width: 100%;
+    height: 200%;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    height: 150vh;
+  }
+
+  @include respond(midPhone) {
+    width: 100%;
+    height: 200%;
+  }
+  // @include respond(tab-port) {
+  //   widows: 100%;
+  //   height: 100vh;
+  // }
+
   //   max-height: 150vh;
   //   display: flex;
   //   flex-direction: column;
@@ -20,6 +51,8 @@
   flex-flow: wrap;
   //   margin-top:;
   padding-top: 10rem;
+  margin-left: 5rem;
+  margin-top: 10rem;
 }
 
 .page-heading-wrapper {
