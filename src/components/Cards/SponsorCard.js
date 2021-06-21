@@ -1,5 +1,5 @@
 import React from 'react';
-import './SponsoreCard.scss';
+import './SponsorCard.scss';
 
 
 function SponsoreCard({ img, headline, text }) {

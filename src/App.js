@@ -45,7 +45,7 @@ function App() {
         </Route>
 
         {/* Events Page */}
-        <Route path="/events">
+        <Route path="/event">
           <Events />
         </Route>
       </Switch>

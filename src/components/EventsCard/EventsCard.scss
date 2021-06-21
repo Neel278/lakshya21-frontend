@@ -16,18 +16,20 @@
   margin-right: 4rem;
 
   @include respond(tab-port) {
-    width: 50%;
-    height: 100%;
+    width: 80%;
+    height: 95%;
     margin: 0 auto;
   }
 
   @include respond(phone) {
-    width: 100%;
+    width: 90%;
     height: 95%;
     margin-bottom: 0;
   }
 
   &__img {
+    border-radius: 0% !important;
+
     @include respond(tab-land) {
       width: 100%;
     }
@@ -70,7 +72,9 @@
     }
 
     @include respond(phone) {
-      margin-bottom: 4rem;
+      width: 100%;
+
+      margin-bottom: 5rem;
     }
   }
 
@@ -94,6 +98,13 @@
 
     & > img {
       margin-right: 1.5rem;
+
+      border-radius: 0 !important;
+
+      @include respond(phone) {
+        width: 13% !important;
+        height: 69% !important;
+      }
     }
   }
 
@@ -106,11 +117,10 @@
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
     font-size: 1.5rem;
-    transition: all .2s;
+    transition: all 0.2s;
 
-    &:hover{
-      transform:translateY(-.2rem);
-      
+    &:hover {
+      transform: translateY(-0.2rem);
     }
   }
 }
