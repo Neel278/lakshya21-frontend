@@ -1,6 +1,7 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -45,7 +46,10 @@
     text-decoration: none;
     margin-left: 4rem;
     color: $color-blue;
-    padding-bottom: 5px;
+    padding: 5px 0;
+
+    border-bottom: 1px solid transparent;
+
     &:hover,
     &:active {
       border-bottom: 1px solid $color-blue;
@@ -57,6 +61,8 @@
     height: auto;
 
     &-box {
+      width: 4rem;
+      height: auto;
       margin-left: 4rem;
       cursor: pointer;
 

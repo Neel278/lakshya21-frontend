@@ -14,16 +14,26 @@
   @include respond(tab-port) {
     top: 48%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
   }
 
   @include respond(phone) {
     top: 50%;
   }
 
+  -webkit-animation-name: fadeIn;
+
   animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
   animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
+  -webkit-animation-delay: 10s;
   animation-delay: 10s;
 
   @include respond(phone) {
