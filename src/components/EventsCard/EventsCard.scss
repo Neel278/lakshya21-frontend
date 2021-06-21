@@ -1,0 +1,116 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.eventsCard {
+  background: linear-gradient(
+    122.21deg,
+    rgba(143, 147, 248, 0.09) 83.58%,
+    rgba(143, 147, 248, 0) 179.73%
+  );
+  backdrop-filter: blur(2.2rem);
+  border-radius: 1.6rem;
+
+  overflow: hidden;
+  padding-bottom: 2rem;
+
+  backface-visibility: hidden;
+  margin-right: 4rem;
+
+  @include respond(tab-port) {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    height: 95%;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    @include respond(tab-land) {
+      width: 100%;
+    }
+  }
+
+  &__cont {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    margin-top: 1.5rem;
+    font-family: Gilroy;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.7rem;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 3.1rem;
+    width: 22rem;
+    margin-bottom: 3.6rem;
+  }
+
+  &__detail {
+    font-family: Gilroy;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 8.5rem;
+    width: 44.3rem;
+    margin-bottom: 6rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__date {
+    font-family: Gilroy;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.1rem;
+    letter-spacing: 0em;
+    text-align: left;
+
+    & > img {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__join {
+    width: 6.948rem;
+    height: 2.6rem;
+    background: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+    transition: all .2s;
+
+    &:hover{
+      transform:translateY(-.2rem);
+      
+    }
+  }
+}

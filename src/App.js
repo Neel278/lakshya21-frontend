@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import ContactPage from './pages/ContactPage/ContactPage';
-// <<<<<<< HEAD
 import Sponsore from './pages/SponsorePage/Sponsore';
-// =======
 import HomePage from './pages/HomePage/HomePage';
+// <<<<<<< HEAD
+import Events from './pages/Events/Events';
+// =======
+// >>>>>>> fd6afce907bc2a88dcedb32ade4eec4ced3258b8
 // import Team from './pages/Team';
-// >>>>>>> 56519cf2b1c3a1e7e39dbcd17d300c93d63d75cb
 
 function App() {
   return (
@@ -41,6 +42,11 @@ function App() {
         {/* Homepage */}
         <Route exact path="/">
           <HomePage></HomePage>
+        </Route>
+
+        {/* Events Page */}
+        <Route path="/events">
+          <Events />
         </Route>
       </Switch>
       <Footer />
