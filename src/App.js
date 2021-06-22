@@ -13,7 +13,7 @@ import HomePage from './pages/HomePage/HomePage';
 import Events from './pages/Events/Events';
 import Sponsore from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
-import HomePage from './pages/HomePage/HomePage';
+// import HomePage from './pages/HomePage/HomePage';
 import EventMainPage from './pages/EventMainPage/EventMainPage';
 // >>>>>>> main
 
@@ -55,15 +55,14 @@ function App() {
             <Route path="/events-main">
               <EventMainPage />
             </Route>
-//             <Route path="/events-main">
-//               <Events />
-//             </Route>
+            {/* <Route path="/events-main">
+               <Events />
+             </Route> */}
 
-
-        {/* Events Page */}
-        <Route path="/event">
-          <Events />
-        </Route>
+            {/* Events Page */}
+            <Route path="/events">
+              <Events />
+            </Route>
 
             {/* Homepage */}
             <Route exact path="/">
@@ -76,7 +75,7 @@ function App() {
         <Loading />
       )}
     </>
-// >>>>>>> main
+    // >>>>>>> main
   );
 }
 
