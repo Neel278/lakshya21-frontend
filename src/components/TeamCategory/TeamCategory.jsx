@@ -6,57 +6,13 @@ import Cards from '../../components/Team-Cards/Cards';
 import './TeamCategory.scss';
 import TabPanel from '../Tab-Panel/TabPanel';
 import useStyles from './styles';
+import Data from '../../SiteData/TeamData';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 550, itemsToShow: 2, itemsToScroll: 2 },
   { width: 768, itemsToShow: 3, itemsToScroll: 3 },
   { width: 1200, itemsToShow: 3, itemsToScroll: 3 },
-];
-
-const Data = [
-  {
-    name: 'Deep Makadiya',
-    roles: 'Front-end',
-    url: 'https://picsum.photos/500',
-    team: 'convener',
-  },
-  {
-    name: 'Om Raval',
-    roles: 'UI/UX',
-    url: 'https://picsum.photos/500',
-    team: 'convener',
-  },
-  {
-    name: 'Parth Thakkar',
-    roles: 'Back-end',
-    url: 'https://picsum.photos/500',
-    team: 'convener',
-  },
-  {
-    name: 'Vansh Prajapati',
-    roles: 'Back-end',
-    url: 'https://picsum.photos/500',
-    team: 'heads',
-  },
-  {
-    name: 'Jainam Shah',
-    roles: 'Management',
-    url: 'https://picsum.photos/500',
-    team: 'heads',
-  },
-  {
-    name: 'Ridham Diyora',
-    roles: 'Back-end',
-    url: 'https://picsum.photos/500',
-    team: 'heads',
-  },
-  {
-    name: 'Darshan Shah',
-    roles: 'Back-end',
-    url: 'https://picsum.photos/500',
-    team: 'heads',
-  },
 ];
 
 function TeamCategory() {

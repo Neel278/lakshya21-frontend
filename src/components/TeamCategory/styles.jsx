@@ -4,6 +4,6 @@ export default makeStyles((theme) => ({
   tabLabel: {
     fontSize: '1.4rem',
     fontFamily: 'Helvetica',
-    fontWeight: '500',
+    fontWeight: '700',
   },
 }));

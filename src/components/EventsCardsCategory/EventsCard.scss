@@ -1,4 +1,5 @@
 @import '../../sassStyle/base/_base.scss';
+@import '../../sassStyle/abstracts/_mixins.scss';
 
 .event-card {
   background: white;
@@ -6,9 +7,18 @@
   height: 50rem;
   border-radius: 5%;
   margin-bottom: 3rem;
+  margin-top: 2rem;
+  // margin-right: 5rem;
+
   @include respond(phone) {
-    width: 25rem;
+    width: 30rem;
     height: 40rem;
+    // margin-top: 0rem;
+    // margin-right: 1rem;
+  }
+
+  @include respond(desktop) {
+    margin-right: 5rem;
   }
 }
 
