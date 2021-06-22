@@ -50,6 +50,10 @@ function App() {
               <OurTeam />
             </Route>
 
+            <Route path="/eventpage">
+              <EventMainPage />
+            </Route>
+
             <Route path="/events">
               <EventsPage />
             </Route>

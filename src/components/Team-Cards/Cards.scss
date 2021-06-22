@@ -15,7 +15,7 @@
   // height: 30rem;
 
   // border-image-slice: 1;
-  border-radius: 5rem !important;
+  border-radius: 3rem !important;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -25,10 +25,19 @@
   //   width: 25rem;
   //   height: 25rem;
   // }
-  @include respond(smallPhone) {
-    width: 20rem;
-    height: 25rem;
-    border-radius: 2rem !important;
+  @include respond(big-desktop) {
+    width: 25rem;
+    height: 40rem;
+  }
+
+  @include respond(desktop) {
+    width: 25rem;
+    height: 40rem;
+  }
+
+  @include respond(tab-port) {
+    width: 30rem;
+    height: 45rem;
   }
 
   @include respond(midPhone) {
@@ -36,102 +45,90 @@
     height: 30rem;
   }
 
-  @include respond(tab-port-min) {
-    width: 30rem;
-    height: 45rem;
-  }
-  @include respond(desktop) {
+  @include respond(smallPhone) {
     width: 25rem;
-    height: 40rem;
+    height: 30rem;
   }
-  @include respond(big-desktop) {
-    width: 25rem;
-    height: 40rem;
+
+  .card-wrapper {
+    margin-top: 5rem;
+    margin-right: 1rem;
   }
-  // @include respond(tab-land) {
-  //   height: 45rem;
-  //   width: 30rem;
-  // }
-}
 
-.card-wrapper {
-  margin-top: 5rem;
-  margin-right: 1rem;
-}
+  .card::before {
+    border-radius: inherit;
+    margin: -1rem;
+    z-index: -1;
+    background: linear-gradient(
+      118.47deg,
+      #102a43 0%,
+      #486581 33.65%,
+      #9fb3c8 63.33%,
+      #102a43 100%
+    );
+  }
 
-.card::before {
-  border-radius: inherit;
-  margin: -1rem;
-  z-index: -1;
-  background: linear-gradient(
-    118.47deg,
-    #102a43 0%,
-    #486581 33.65%,
-    #9fb3c8 63.33%,
-    #102a43 100%
-  );
-}
-
-img {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  @include respond(desktop) {
+  img {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
+    @include respond(desktop) {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+    }
+    @include respond(big-desktop) {
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+    }
+    @include respond(phone) {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+    }
+
+    @include respond(midPhone) {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+    }
   }
-  @include respond(big-desktop) {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-  }
-  @include respond(phone) {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Helvetica';
   }
 
-  @include respond(midPhone) {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
+  .card-text h6 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
   }
-}
 
-.card-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  font-family: 'Helvetica';
-}
-
-.card-text h6 {
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
-  font-weight: 500;
-}
-
-.card-text p {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
-  @include respond(midPhone) {
-    margin-bottom: 0;
+  .card-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    @include respond(midPhone) {
+      margin-bottom: 0;
+    }
   }
-}
 
-.social-media {
-  color: white;
-  font-size: 3rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 70%;
-  margin-bottom: 1rem;
+  .social-media {
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 1rem;
 
-  @include respond(midPhone) {
-    margin-bottom: 0;
+    @include respond(midPhone) {
+      margin-bottom: 0;
+    }
   }
 }

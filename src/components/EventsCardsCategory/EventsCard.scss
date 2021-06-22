@@ -3,16 +3,20 @@
 
 .event-card {
   background: white;
-  width: 35rem;
-  height: 50rem;
-  border-radius: 5%;
+  width: 22rem;
+  height: 55rem;
+  border-radius: 1rem;
   margin-bottom: 3rem;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   // margin-right: 5rem;
 
   @include respond(phone) {
-    width: 30rem;
-    height: 40rem;
+    width: 20rem;
+    height: 42rem;
     // margin-top: 0rem;
     // margin-right: 1rem;
   }
@@ -37,12 +41,16 @@
 }
 
 .event-card .card-img {
-  width: 100%;
-  border-radius: 5%;
+  width: 18rem;
+  border-radius: 50%;
   // border-bottom-right-radius: none;
   // border-bottom-left-radius: none;
-  height: 50%;
-  justify-content: flex-start;
+  height: 18rem;
+  margin-top: 1rem;
+  @include respond(phone) {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 .card-content {
@@ -54,6 +62,10 @@
   height: 50%;
   overflow: wrap;
   margin-top: 2rem;
+  margin-bottom: 3rem;
+  @include respond(phone) {
+    margin-bottom: 7rem;
+  }
 }
 
 .card-content > h2 {
@@ -66,6 +78,7 @@
 
   @include respond(phone) {
     font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -73,14 +86,23 @@
   font-family: 'Helvetica';
   font-size: 1.6rem;
   color: #121c56;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 1rem;
   align-content: center;
   // font-weight: 700;
 
   @include respond(phone) {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
+}
+
+.card-content .description {
+  font-size: 1.2rem;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-weight: 500;
 }
 
 .participate-btn {
@@ -89,14 +111,14 @@
   list-style-type: none;
   font-family: 'Gilroy';
   font-weight: 900;
-  background: #f9a602;
-  margin-top: 2rem;
+  background: #121a53;
+  margin-top: 1rem;
   border-radius: 5px;
 
   @include respond(phone) {
     margin-top: 1rem;
     padding: 0.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 1.1rem;
   }
 }
