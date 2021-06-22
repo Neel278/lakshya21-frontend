@@ -10,7 +10,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import HomePage from './pages/HomePage/HomePage';
 // =======
 import EventsPage from './pages/EventsPage/EventsPage';
-import Events from './pages/Events/Events';
+// import Events from './pages/Events/Events';
 import Sponsore from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
 // import HomePage from './pages/HomePage/HomePage';

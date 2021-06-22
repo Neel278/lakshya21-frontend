@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './OurTeam.scss';
 
 import TeamCategory from '../../components/TeamCategory/TeamCategory';

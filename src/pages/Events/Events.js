@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
-import { spacing } from '@material-ui/system';
+// import { spacing } from '@material-ui/system';
 
 import './Events.scss';
 import './../../sassStyle/layout/_grid.scss';
 
 import EventsCard from '../../components/EventsCard/EventsCard';
 
-import technical from './../../Images/technical-support-icon-robotic-hand-customer-help-tech-support_127544-400 2.png';
+import technical from './../../Images/technical-support-icon-robotic-hand-customer-help-tech-support_127544-400 2.webp';
 
 const eventData = [
   {

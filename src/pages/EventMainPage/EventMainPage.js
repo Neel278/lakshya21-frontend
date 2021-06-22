@@ -2,7 +2,7 @@ import React from 'react';
 
 import './EventMainPage.scss';
 
-import img from './../../Images/EventMain.png';
+import img from './../../Images/EventMain.webp';
 
 import EventDetailBox from './../../components/EventDetailBox/EventDetailBox';
 import EventContactBox from './../../components/EventContactBox/EventContactBox';

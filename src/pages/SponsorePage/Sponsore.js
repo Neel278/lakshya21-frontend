@@ -3,9 +3,9 @@ import './Sponsore.scss';
 
 import SponsoreCard from '../../components/Cards/SponsorCard';
 
-import bbc from './../../Images/logo-bbc.png';
-import bi from './../../Images/logo-bi.png';
-import forbes from './../../Images/logo-forbes.png';
+import bbc from './../../Images/logo-bbc.webp';
+import bi from './../../Images/logo-bi.webp';
+import forbes from './../../Images/logo-forbes.webp';
 
 function Sponsore() {
   return (

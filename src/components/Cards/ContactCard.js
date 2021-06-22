@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Cards.scss';
 
-import img from './../../Images/head.png';
+import img from './../../Images/head.webp';
 
 function cards() {
   return (
