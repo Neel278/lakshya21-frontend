@@ -18,7 +18,11 @@
   @include respond(tab-port) {
     height: auto;
     transform: translate(-50%, -70%);
-  }
+    -webkit-transform: translate(-50%, -70%);
+    -moz-transform: translate(-50%, -70%);
+    -ms-transform: translate(-50%, -70%);
+    -o-transform: translate(-50%, -70%);
+}
 
   @include respond(phone) {
     transform: translate(-50%, -80%);
@@ -33,6 +37,7 @@
     margin-top: 4rem;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }

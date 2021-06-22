@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import Drawer from '@material-ui/core/Drawer';
+import useStyles from './styles';
+import SideBar from '../SideBar/SideBar';
 import './Navbar.scss';
 import { NavLink } from 'react-router-dom';
 
@@ -7,6 +9,8 @@ function NavBar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+
+  const classes = useStyles();
 
   return (
     <>
@@ -35,7 +39,6 @@ function NavBar() {
                 to="/"
                 activeClassName="active"
                 className="nav-link"
-                onClick={handleClick}
               >
                 Home
               </NavLink>
@@ -46,22 +49,20 @@ function NavBar() {
                 to="/about"
                 activeClassName="active"
                 className="nav-link"
-                onClick={handleClick}
               >
                 About
               </NavLink>
             </li>
 
-            {/* sponsor */}
+            {/* sponsore */}
             <li className="nav-item">
               <NavLink
                 exact
-                to="/sponsor"
+                to="/sponsore"
                 activeClassName="active"
                 className="nav-link"
-                onClick={handleClick}
               >
-                Sponsor
+                Sponsores
               </NavLink>
             </li>
 
@@ -72,7 +73,6 @@ function NavBar() {
                 to="/contact"
                 activeClassName="active"
                 className="nav-link"
-                onClick={handleClick}
               >
                 Contact Us
               </NavLink>
@@ -83,7 +83,6 @@ function NavBar() {
                 to="/team"
                 activeClassName="active"
                 className="nav-link"
-                onClick={handleClick}
               >
                 Team
               </NavLink>
@@ -128,6 +127,14 @@ function NavBar() {
                 stroke-linejoin="round"
               />
             </svg>
+            <Drawer
+              anchor="right"
+              open={click}
+              className={classes.drawer}
+              onClose={handleClick}
+            >
+              <SideBar clicked={handleClick} />
+            </Drawer>
           </div>
         </div>
       </nav>

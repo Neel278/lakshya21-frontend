@@ -36,7 +36,8 @@
   }
 
   &__privacy {
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
     color: $color-blue;
   }
 

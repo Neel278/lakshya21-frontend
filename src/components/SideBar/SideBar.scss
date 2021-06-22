@@ -1,0 +1,58 @@
+@import '../../sassStyle/base/_base.scss';
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.sidebar {
+  background-color: $color-off-white;
+  height: 100%;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  @include respond(phone) {
+    width: 100vw;
+  }
+}
+
+.sidebar li {
+  color: $color-blue;
+  font-family: 'Gilroy';
+  font-size: 1.6rem;
+}
+
+.nav-close-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #525252;
+  justify-content: flex-start;
+}
+
+.sidebar .nav-close {
+  color: $color-blue;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+  font-size: 6rem;
+  margin-right: 2rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8rem;
+  margin-left: 1.6rem;
+}
+
+.nav-links {
+  height: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.nav-links li {
+  list-style-type: none;
+}

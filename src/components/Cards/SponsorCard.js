@@ -1,7 +1,6 @@
 import React from 'react';
 import './SponsorCard.scss';
 
-
 function SponsoreCard({ img, headline, text }) {
   return (
     <div className="sponsoreCard">

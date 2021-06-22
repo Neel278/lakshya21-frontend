@@ -1,6 +1,10 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .sponsoreCard {
+// <<<<<<< kaushik
+// =======
+//   margin-top: 2.8rem;
+// >>>>>>> main
   display: flex;
   flex-direction: row;
 
@@ -55,6 +59,8 @@
 
     @include respond(phone) {
       margin-left: 0;
+//     @include respond(phone){
+//       margin-left:0;
     }
 
     &--headline {
@@ -91,6 +97,8 @@
       -webkit-hyphens: auto;
       -ms-hyphens: auto;
       hyphens: auto;
+//           -ms-hyphens: auto;
+//               hyphens: auto;
       color: #ffffff;
 
       @include respond(phone) {

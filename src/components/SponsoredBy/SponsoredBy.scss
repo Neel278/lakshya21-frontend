@@ -4,10 +4,16 @@
 .sponsored-by {
   // margin-top: 60rem;
 
+  -webkit-animation-name: fadeIn;
+
   animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
   animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
+  -webkit-animation-delay: 10s;
   animation-delay: 10s;
 
   @include respond(phone) {
