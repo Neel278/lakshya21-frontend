@@ -9,7 +9,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 // import Sponsore from './pages/SponsorePage/Sponsore';
 import HomePage from './pages/HomePage/HomePage';
 // =======
-// import EventsPage from './pages/EventsPage/EventsPage';
+import EventsPage from './pages/EventsPage/EventsPage';
 import Events from './pages/Events/Events';
 import Sponsore from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
@@ -61,7 +61,7 @@ function App() {
 
             {/* Events Page */}
             <Route path="/events">
-              <Events />
+              <EventsPage />
             </Route>
 
             {/* Homepage */}

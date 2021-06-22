@@ -12,12 +12,12 @@ function EventsCard({ category, img }) {
           <h2>{category}</h2>
           <p>10 Events</p>
           <p>10000 Worth Prizes</p>
-          {/* <p>
+          <p className="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
             incidunt in iusto excepturi recusandae. Veniam dicta vel quos, iure
             !
-          </p> */}
-          <Link to="/">
+          </p>
+          <Link to="/events-main">
             <li className="participate-btn">Participate</li>
           </Link>
         </div>

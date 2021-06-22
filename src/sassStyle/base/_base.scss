@@ -29,13 +29,17 @@ html {
     font-size: 50%; //1rem = 8px, 8/16 = 50%
   }
 
+  @include respond(smallPhone) {
+    font-size: 25%;
+  }
+
   // @include respond(big-desktop) {
   //   font-size: 75%; // 1rem = 12 12/16 = 75%
   // }
 }
 
-body{
-//   font-family: 'Gilroy Light',sans-serif;
+body {
+  //   font-family: 'Gilroy Light',sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
   color: $color-white;
