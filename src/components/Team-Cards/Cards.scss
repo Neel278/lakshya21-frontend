@@ -1,22 +1,45 @@
 @import '../../sassStyle/base/_base.scss';
+@import '../../sassStyle/abstracts/_mixins.scss';
 
 .card {
-  padding: 1rem;
-  background-clip: padding-box;
+  // padding: 1rem;
+  // background-clip: padding-box;
   background: linear-gradient(
     152.97deg,
     rgba(255, 255, 255, 0.039) 0%,
     rgba(160, 180, 199, 0.13) 100%
   );
-  border: 2.5px solid transparent;
-  box-sizing: border-box;
+  border: 1px solid transparent;
+  // box-sizing: border-box;
+  // width: 25rem;
+  // height: 30rem;
 
-  border-image-slice: 1;
+  // border-image-slice: 1;
   border-radius: 5rem !important;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+
+  // @include respond(phone) {
+  //   width: 25rem;
+  //   height: 25rem;
+  // }
+  @include respond(smallPhone) {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 2rem !important;
+  }
+
+  @include respond(midPhone) {
+    width: 25rem;
+    height: 30rem;
+  }
+
+  @include respond(tab-port-min) {
+    width: 30rem;
+    height: 45rem;
+  }
   @include respond(desktop) {
     width: 25rem;
     height: 40rem;
@@ -25,14 +48,15 @@
     width: 25rem;
     height: 40rem;
   }
-  @include respond(phone) {
-    width: 25rem;
-    height: 30rem;
-  }
+  // @include respond(tab-land) {
+  //   height: 45rem;
+  //   width: 30rem;
+  // }
 }
 
 .card-wrapper {
   margin-top: 5rem;
+  margin-right: 1rem;
 }
 
 .card::before {
@@ -49,6 +73,9 @@
 }
 
 img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
   @include respond(desktop) {
     width: 20rem;
     height: 20rem;
@@ -62,6 +89,12 @@ img {
   @include respond(phone) {
     width: 15rem;
     height: 15rem;
+    border-radius: 50%;
+  }
+
+  @include respond(midPhone) {
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
   }
 }
@@ -84,6 +117,9 @@ img {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 300;
+  @include respond(midPhone) {
+    margin-bottom: 0;
+  }
 }
 
 .social-media {
@@ -94,4 +130,8 @@ img {
   align-items: center;
   width: 70%;
   margin-bottom: 1rem;
+
+  @include respond(midPhone) {
+    margin-bottom: 0;
+  }
 }

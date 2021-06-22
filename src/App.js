@@ -51,7 +51,7 @@ function App() {
             </Route>
 
             <Route path="/events">
-              <EventMainPage />
+              <EventsPage />
             </Route>
 
             {/* Homepage */}
