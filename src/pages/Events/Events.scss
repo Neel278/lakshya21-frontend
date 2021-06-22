@@ -1,0 +1,43 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.events {
+  &__card {
+    margin: 0 auto;
+    width: 72%;
+    flex-grow: 1;
+
+    @include respond(phone) {
+      width: 90%;
+    }
+  }
+
+  &__margin {
+    margin-bottom: 5rem;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+
+    & > h1 {
+      margin-top: 2rem;
+      font-family: Poppins;
+      font-size: 3.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 4.2rem;
+      letter-spacing: 0em;
+      border-bottom: 1px solid $color-gold;
+      margin-bottom: 10.9rem;
+
+      @include respond(phone) {
+        font-size: 2.4rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}

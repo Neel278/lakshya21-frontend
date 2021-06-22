@@ -17,7 +17,7 @@ function EventsCard({ category, img }) {
             incidunt in iusto excepturi recusandae. Veniam dicta vel quos, iure
             !
           </p>
-          <Link to="/eventpage">
+          <Link to="/events-main">
             <li className="participate-btn">Participate</li>
           </Link>
         </div>

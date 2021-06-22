@@ -58,7 +58,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/sponsore"
+                to="/sponsor"
                 activeClassName="active"
                 className="nav-link"
               >
