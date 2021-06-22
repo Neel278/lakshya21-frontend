@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sponsore.scss';
 
-import SponsoreCard from '../../components/Cards/SponsoreCard';
+import SponsoreCard from '../../components/Cards/SponsorCard';
 
 import bbc from './../../Images/logo-bbc.png';
 import bi from './../../Images/logo-bi.png';

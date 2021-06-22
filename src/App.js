@@ -6,14 +6,11 @@ import Footer from './components/Footer/Footer';
 import Loading from './components/Loading-Animation/Loading';
 import ContactPage from './pages/ContactPage/ContactPage';
 import EventsPage from './pages/EventsPage/EventsPage';
-// <<<<<<< HEAD
+import Events from './pages/Events/Events';
 import Sponsore from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
-// =======
 import HomePage from './pages/HomePage/HomePage';
 import EventMainPage from './pages/EventMainPage/EventMainPage';
-// import Team from './pages/Team';
-// >>>>>>> 56519cf2b1c3a1e7e39dbcd17d300c93d63d75cb
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -50,8 +47,11 @@ function App() {
               <OurTeam />
             </Route>
 
-            <Route path="/events">
+            <Route path="/events-main">
               <EventsPage />
+            </Route>
+            <Route path="/events-main">
+              <Events />
             </Route>
 
             {/* Homepage */}
