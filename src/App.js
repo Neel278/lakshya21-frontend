@@ -5,12 +5,17 @@ import NavBar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Loading from './components/Loading-Animation/Loading';
 import ContactPage from './pages/ContactPage/ContactPage';
-import EventsPage from './pages/EventsPage/EventsPage';
+// <<<<<<< kaushik
+// import Sponsore from './pages/SponsorePage/Sponsore';
+import HomePage from './pages/HomePage/HomePage';
+// =======
+// import EventsPage from './pages/EventsPage/EventsPage';
 import Events from './pages/Events/Events';
 import Sponsore from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
 import HomePage from './pages/HomePage/HomePage';
 import EventMainPage from './pages/EventMainPage/EventMainPage';
+// >>>>>>> main
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -48,11 +53,17 @@ function App() {
             </Route>
 
             <Route path="/events-main">
-              <EventsPage />
+              <EventMainPage />
             </Route>
-            <Route path="/events-main">
-              <Events />
-            </Route>
+//             <Route path="/events-main">
+//               <Events />
+//             </Route>
+
+
+        {/* Events Page */}
+        <Route path="/event">
+          <Events />
+        </Route>
 
             {/* Homepage */}
             <Route exact path="/">
@@ -65,6 +76,7 @@ function App() {
         <Loading />
       )}
     </>
+// >>>>>>> main
   );
 }
 

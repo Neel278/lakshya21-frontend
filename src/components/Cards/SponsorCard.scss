@@ -1,7 +1,10 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .sponsoreCard {
-  margin-top: 2.8rem;
+// <<<<<<< kaushik
+// =======
+//   margin-top: 2.8rem;
+// >>>>>>> main
   display: flex;
   flex-direction: row;
 
@@ -26,6 +29,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 0% !important;
       }
     }
 
@@ -53,8 +57,10 @@
       margin-left: 8rem;
     }
 
-    @include respond(phone){
-      margin-left:0;
+    @include respond(phone) {
+      margin-left: 0;
+//     @include respond(phone){
+//       margin-left:0;
     }
 
     &--headline {
@@ -89,8 +95,10 @@
       font-size: 2rem;
       line-height: 2.8rem;
       -webkit-hyphens: auto;
-          -ms-hyphens: auto;
-              hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+//           -ms-hyphens: auto;
+//               hyphens: auto;
       color: #ffffff;
 
       @include respond(phone) {

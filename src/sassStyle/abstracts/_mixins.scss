@@ -13,6 +13,37 @@
   transform: translate(-50%, -50%);
 }
 
+// <<<<<<< kaushik
+// // <<<<<<< HEAD
+// @mixin respond($breakpoint) {0rem
+// // =======
+// @mixin respond($breakpoint) {
+// // >>>>>>> 07ff9013928fbee2392f85e9cdcead56dfd3916b
+//     @if $breakpoint == smallPhone{
+//         @media (max-width : 20em) { @content };
+//     }
+    
+//     @if $breakpoint == midPhone{
+//         @media (max-width : 23.4375em) { @content }; 
+//     }
+
+//     @if $breakpoint == phone{
+//         @media (max-width : 37.5em) { @content };
+//     }
+
+//     @if $breakpoint == tab-port{
+//         @media (max-width : 56.25em) { @content };
+//     }
+
+//     @if $breakpoint == tab-land{
+//         @media (max-width : 75em) { @content };
+//     }
+
+//     @if $breakpoint == big-desktop{
+//         @media (min-width : 112.5em) { @content };
+//     }
+// }
+// =======
 // @mixin respond($breakpoint) {
 //   @if $breakpoint == smallPhone {
 //     @media (max-width: 20em) {
@@ -82,3 +113,4 @@
 //     }
 //   }
 //}
+// >>>>>>> main
