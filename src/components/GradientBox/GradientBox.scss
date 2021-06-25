@@ -1,0 +1,10 @@
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.gradient-box {
+  height: 75rem;
+  width: 75rem;
+  background-image: url('../../Images/svgs/Gradient.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

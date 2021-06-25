@@ -41,9 +41,7 @@ function App() {
 
             {/* contect */}
             <Route path="/contact">
-              <div className="container">
-                <ContactPage />
-              </div>
+              <ContactPage></ContactPage>
             </Route>
 
             <Route path="/sponsor">

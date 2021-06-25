@@ -113,3 +113,18 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.gradient {
+  position: absolute;
+  z-index: -1;
+  &--1 {
+    top: 0;
+    left: 0;
+  }
+
+  &--2 {
+    bottom: -30rem;
+    right: 0;
+    transform: rotate(180deg);
+  }
+}

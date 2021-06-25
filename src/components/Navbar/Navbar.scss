@@ -19,7 +19,7 @@
   &-logo {
     &-box {
       margin-right: auto;
-      transform: translateY(5px);
+      transform: translateY(10px);
     }
 
     @include respond(tab-port) {
