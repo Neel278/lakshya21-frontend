@@ -21,7 +21,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 6000);
+    setTimeout(() => setLoading(false), 100);
   }, []);
 
   return (
@@ -32,9 +32,7 @@ function App() {
           <Switch>
             {/* contect */}
             <Route path="/contact">
-              <div className="container">
-                <ContactPage />
-              </div>
+              <ContactPage></ContactPage>
             </Route>
 
             <Route path="/sponsor">

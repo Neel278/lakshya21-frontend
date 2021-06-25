@@ -2,26 +2,29 @@
 @import './../../sassStyle/abstracts/_animation.scss';
 
 .hero-box {
+  width: 100%;
   position: absolute;
-  top: 63%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -90%);
 
-  @include respond(tab-land) {
-    top: 65%;
-  }
+  &__title {
+    font-size: 9rem;
+    font-weight: lighter;
 
-  @include respond(tab-port) {
-    top: 48%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-  }
+    @include respond(tab-land) {
+      font-size: 8rem;
+    }
 
-  @include respond(phone) {
-    top: 50%;
+    @include respond(tab-port) {
+      font-size: 6rem;
+    }
+
+    @include respond(phone){
+      font-size: 5rem;
+    }
+
+    // font-family: 'batman';
   }
 
   -webkit-animation-name: fadeIn;
@@ -34,15 +37,9 @@
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
   -webkit-animation-delay: 10s;
-  animation-delay: 10s;
-
-  @include respond(phone) {
-    margin-top: 2rem;
-  }
+  animation-delay: 5s;
 
   &__button {
-    width: 15.9rem;
-    height: 3.5rem;
     display: inline-block;
     cursor: pointer;
     outline: none;
@@ -50,27 +47,47 @@
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 1.9rem;
-    padding: 0.6rem 3rem;
+    padding: 1.5rem 5rem;
     text-align: center;
     vertical-align: middle;
     border-radius: 3px;
-
     @include respond(phone) {
       display: block;
+    }
+
+    &-box {
+      margin-top: 8rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include respond(tab-land) {
+        margin-top: 8rem;
+      }
+
+      @include respond(tab-port) {
+        margin-top: 6rem;
+      }
+
+     
     }
 
     &:focus {
       border: none;
       outline: none;
     }
+
     &--1 {
       background-color: $color-off-white;
       color: $color-blue;
       margin-right: 3.5rem;
       @include respond(phone) {
-        margin-right: 0;
-        margin-bottom: 1rem;
+        margin-right: 2rem;
+        
       }
+
+     
     }
 
     &--2 {
@@ -78,6 +95,8 @@
       border: 1px solid $color-off-white;
       color: $color-off-white;
       transition: all 0.2s;
+
+      
 
       &:hover,
       &:active {

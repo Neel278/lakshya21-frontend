@@ -2,7 +2,10 @@
 
 .event-main {
   @include respond(phone) {
-   
+  }
+
+  &__container {
+    position: relative;
   }
 
   &__head {
@@ -16,8 +19,8 @@
     display: flex;
     margin-bottom: 7rem;
 
-    @include respond(tab-port){
-        display: block;
+    @include respond(tab-port) {
+      display: block;
     }
 
     &--detail {
@@ -113,4 +116,19 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.gradient {
+  position: absolute;
+  z-index: -1;
+  &--1 {
+    top: 0;
+    left: 0;
+  }
+
+  &--2 {
+    bottom: -4rem;
+    right: 0;
+    transform: rotate(180deg);
+  }
 }
