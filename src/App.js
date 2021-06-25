@@ -10,7 +10,7 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import HomePage from './pages/HomePage/HomePage';
 // =======
 import EventsPage from './pages/EventsPage/EventsPage';
-// import Events from './pages/Events/Events';
+import Events from './pages/Events/Events';
 import Sponsore from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
 // import HomePage from './pages/HomePage/HomePage';
@@ -50,16 +50,17 @@ function App() {
               <OurTeam />
             </Route>
 
-            <Route path="/events-main">
-              <EventMainPage />
-            </Route>
-            {/* <Route path="/events-main">
-               <Events />
-             </Route> */}
-
             {/* Events Page */}
-            <Route path="/events">
+            <Route path="/events" exact>
               <EventsPage />
+            </Route>
+
+            <Route path="/departments/:department">
+              <Events />
+            </Route>
+
+            <Route path="/events/:event" exact>
+              <EventMainPage />
             </Route>
 
             {/* Homepage */}

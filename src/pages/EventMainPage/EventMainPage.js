@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from '../../axios/axios';
 
 import './EventMainPage.scss';
 
@@ -8,8 +9,23 @@ import EventDetailBox from './../../components/EventDetailBox/EventDetailBox';
 import EventContactBox from './../../components/EventContactBox/EventContactBox';
 import EventTextBox from '../../components/EventTextBox/EventTextBox';
 import GradientBox from './../../components/GradientBox/GradientBox';
+import { useParams } from 'react-router';
 
 const EventMainPage = () => {
+  const [event, setEvent] = useState([]);
+  const { event: eventName } = useParams();
+  useEffect(() => {
+    const fetchDeaprtment = async () => {
+      try {
+        console.log(eventName);
+        setEvent(await (await axios.get(`/events/${eventName}`)).data);
+      } catch (e) {
+        console.error(e);
+      }
+    };
+    fetchDeaprtment();
+    // console.log(event.name);
+  }, [eventName]);
   return (
     <div className="event-main__container">
       <div className="gradient gradient--1">
