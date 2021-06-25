@@ -14,10 +14,9 @@ import Events from './pages/Events/Events';
 
 import Sponsor from './pages/SponsorePage/Sponsore';
 
-
 import OurTeam from './pages/OurTeam/OurTeam';
 // import HomePage from './pages/HomePage/HomePage';
-import EventMainPage from '.93%/pages/EventMainPage/EventMainPage';
+// import EventMainPage from '.93%/pages/EventMainPage/EventMainPage';
 import About from './pages/About/About';
 // >>>>>>> main
 
@@ -54,10 +53,6 @@ function App() {
               <OurTeam />
             </Route>
 
-
-            {/* <Route path="/events-main">
-              <EventMainPage />
-            </Route> */}
             {/* <Route path="/event">
                <Events />
              </Route> */}
@@ -71,9 +66,9 @@ function App() {
               <Events />
             </Route>
 
-            <Route path="/events/:event" exact>
+            {/* <Route path="/events/:event" exact>
               <EventMainPage />
-            </Route>
+            </Route> */}
 
             {/* Homepage */}
             <Route exact path="/">

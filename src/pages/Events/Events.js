@@ -30,67 +30,9 @@ function a11yProps(index) {
 }
 ////
 
-function Events() {
-  const [data, setData] = useState(eventData);
-  const [value, setValue] = useState(0);
-  const classes = useStyles();
-
-  const handleTabs = (e, val) => {
-    setValue(val);
-  };
-
-  let type = 'Technical';
-
-// const eventData = [
-//   {
-//     name: 'WEB- O- THON',
-//     detail:
-//       'Test your skills and embraces Yourself to the world of web designing and web development by using the skills in HTML, CSS and backend along with teamwork and presentation skill.',
-//     date: '3rd Aug 2021',
-//   },
-//   {
-//     name: 'WEB- O- THON',
-//     detail:
-//       'Test your skills and embraces Yourself to the world of web designing and web development by using the skills in HTML, CSS and backend along with teamwork and presentation skill.',
-//     date: '3rd Aug 2021',
-//   },
-//   {
-//     name: 'WEB- O- THON',
-//     detail:
-//       'Test your skills and embraces Yourself to the world of web designing and web development by using the skills in HTML, CSS and backend along with teamwork and presentation skill.',
-//     date: '3rd Aug 2021',
-//   },
-//   {
-//     name: 'WEB- O- THON',
-//     detail:
-//       'Test your skills and embraces Yourself to the world of web designing and web development by using the skills in HTML, CSS and backend along with teamwork and presentation skill.',
-//     date: '3rd Aug 2021',
-//   },
-//   {
-//     name: 'WEB- O- THON',
-//     detail:
-//       'Test your skills and embraces Yourself to the world of web designing and web development by using the skills in HTML, CSS and backend along with teamwork and presentation skill.',
-//     date: '3rd Aug 2021',
-//   },
-//   {
-//     name: 'WEB- O- THON',
-//     detail:
-//       'Test your skills and embraces Yourself to the world of web designing and web development by using the skills in HTML, CSS and backend along with teamwork and presentation skill.',
-//     date: '3rd Aug 2021',
-//   },
-//   {
-//     name: 'WEB- O- THON',
-//     detail:
-//       'Test your skills and embraces Yourself to the world of web designing and web development by using the skills in HTML, CSS and backend along with teamwork and presentation skill.',
-//     date: '3rd Aug 2021',
-//   },
-//   {
-//     name: 'WEB- O- THON',
-//     detail:
-//       'Test your skills and embraces Yourself to the world of web designing and web development by using the skills in HTML, CSS and backend along with teamwork and presentation skill.',
-//     date: '3rd Aug 2021',
-//   },
-// ];
+// function Events() {
+//   const [data, setData] = useState(eventData);
+  
 
 function Events(props) {
   const [data, setData] = useState([]);
@@ -105,6 +47,16 @@ function Events(props) {
     };
     fetchDeaprtment();
   }, [department]);
+
+  const [value, setValue] = useState(0);
+  const classes = useStyles();
+
+  const handleTabs = (e, val) => {
+    setValue(val);
+  };
+
+  let type = 'Technical';
+
   return (
     <div className="events">
       <div className="events__heading">
@@ -352,4 +304,3 @@ function Events(props) {
 }
 
 export default Events;
-
