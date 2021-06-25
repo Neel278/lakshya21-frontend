@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './EventsPage.scss';
 import EventsCard from '../../components/EventsCardsCategory/EventsCard';
-import eventsPageData from '../../SiteData/eventsPageData';
+import axios from '../../axios/axios';
+// import eventsPageData from '../../SiteData/eventsPageData';
 
 function EventsPage() {
-  const [pageData, setPageData] = useState(eventsPageData);
+  const [pageData, setPageData] = useState([]);
+
+  useEffect(() => {
+    const fetchDeaprtments = async () => {
+      try {
+        setPageData(await (await axios.get('/departments')).data);
+      } catch (e) {
+        console.error(e);
+      }
+    };
+    fetchDeaprtments();
+  }, []);
 
   return (
     <div className="event-page">
@@ -14,7 +26,7 @@ function EventsPage() {
         </div>
         <ul>
           {pageData.map((item, index) => (
-            <EventsCard key={index} category={item.category} img={item.img} />
+            <EventsCard key={index} category={item.name} img={item.img} />
           ))}
         </ul>
       </div>
