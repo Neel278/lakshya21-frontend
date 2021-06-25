@@ -10,11 +10,12 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import HomePage from './pages/HomePage/HomePage';
 // =======
 import EventsPage from './pages/EventsPage/EventsPage';
-// import Events from './pages/Events/Events';
-import Sponsore from './pages/SponsorePage/Sponsore';
+import Events from './pages/Events/Events';
+import Sponsor from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
 // import HomePage from './pages/HomePage/HomePage';
-import EventMainPage from './pages/EventMainPage/EventMainPage';
+// import EventMainPage from '.93%/pages/EventMainPage/EventMainPage';
+import About from './pages/About/About';
 // >>>>>>> main
 
 function App() {
@@ -30,6 +31,11 @@ function App() {
         <Router>
           <NavBar />
           <Switch>
+            {/* about */}
+            <Route path="/about">
+              <About />
+            </Route>
+
             {/* contect */}
             <Route path="/contact">
               <div className="container">
@@ -39,25 +45,20 @@ function App() {
 
             <Route path="/sponsor">
               <div>
-                <Sponsore />
+                <Sponsor />
               </div>
             </Route>
 
-            {/* about */}
-            {/* <Route path="/about">
-          <h1>about</h1>
-        </Route> */}
-            {/* about */}
             <Route path="/team">
               <OurTeam />
             </Route>
 
-            <Route path="/events-main">
-              <EventMainPage />
-            </Route>
             {/* <Route path="/events-main">
+              <EventMainPage />
+            </Route> */}
+            <Route path="/event">
                <Events />
-             </Route> */}
+             </Route>
 
             {/* Events Page */}
             <Route path="/events">
