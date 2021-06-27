@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './EventsPage.scss';
 import EventsCard from '../../components/EventsCardsCategory/EventsCard';
+import eventsPageData from '../../SiteData/eventsPageData';
+import GradientBox from '../../components/GradientBox/GradientBox';
 import axios from '../../axios/axios';
 // import eventsPageData from '../../SiteData/eventsPageData';
 
@@ -19,7 +21,14 @@ function EventsPage() {
   }, []);
 
   return (
-    <div className="event-page">
+    <div className="event-page__container">
+      <div className="gradient gradient--1">
+        <GradientBox></GradientBox>
+      </div>
+      <div className="gradient gradient--2">
+        <GradientBox></GradientBox>
+      </div>
+      <div className="event-page">
       <div className="page-wrapper">
         <div className="page-heading-wrapper">
           <div className="page-heading">Events</div>
@@ -30,6 +39,7 @@ function EventsPage() {
           ))}
         </ul>
       </div>
+    </div>
     </div>
   );
 }

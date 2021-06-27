@@ -11,10 +11,13 @@ import HomePage from './pages/HomePage/HomePage';
 // =======
 import EventsPage from './pages/EventsPage/EventsPage';
 import Events from './pages/Events/Events';
-import Sponsore from './pages/SponsorePage/Sponsore';
+
+import Sponsor from './pages/SponsorePage/Sponsore';
+
 import OurTeam from './pages/OurTeam/OurTeam';
 // import HomePage from './pages/HomePage/HomePage';
-import EventMainPage from './pages/EventMainPage/EventMainPage';
+// import EventMainPage from '.93%/pages/EventMainPage/EventMainPage';
+import About from './pages/About/About';
 // >>>>>>> main
 
 function App() {
@@ -30,27 +33,29 @@ function App() {
         <Router>
           <NavBar />
           <Switch>
+            {/* about */}
+            <Route path="/about">
+              <About />
+            </Route>
+
             {/* contect */}
             <Route path="/contact">
-              <div className="container">
-                <ContactPage />
-              </div>
+              <ContactPage></ContactPage>
             </Route>
 
             <Route path="/sponsor">
               <div>
-                <Sponsore />
+                <Sponsor />
               </div>
             </Route>
 
-            {/* about */}
-            {/* <Route path="/about">
-          <h1>about</h1>
-        </Route> */}
-            {/* about */}
             <Route path="/team">
               <OurTeam />
             </Route>
+
+            {/* <Route path="/event">
+               <Events />
+             </Route> */}
 
             {/* Events Page */}
             <Route path="/events" exact>
@@ -61,9 +66,9 @@ function App() {
               <Events />
             </Route>
 
-            <Route path="/events/:event" exact>
+            {/* <Route path="/events/:event" exact>
               <EventMainPage />
-            </Route>
+            </Route> */}
 
             {/* Homepage */}
             <Route exact path="/">
