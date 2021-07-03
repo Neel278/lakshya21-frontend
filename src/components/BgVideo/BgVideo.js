@@ -2,7 +2,7 @@ import React from 'react';
 
 import './BgVideo.scss';
 
-import video from './../../Images/BgVideo.mp4';
+import video from './../../Images/lakshya.mp4';
 
 function BgVideo() {
   return (

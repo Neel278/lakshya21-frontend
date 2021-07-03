@@ -1,10 +1,6 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .sponsoreCard {
-  // <<<<<<< kaushik
-  // =======
-  //   margin-top: 2.8rem;
-  // >>>>>>> main
   display: flex;
   flex-direction: row;
 
@@ -34,11 +30,11 @@
     }
 
     @include respond(tab-land) {
-      margin-left: 20rem;
+      margin-left: 28rem;
     }
 
     @include respond(tab-port) {
-      margin-left: 10rem;
+      margin-left: 22rem;
     }
 
     @include respond(phone) {
@@ -48,6 +44,10 @@
 
   &__right {
     margin-left: 29.9rem;
+
+    @include respond(big-desktop) {
+      margin-left: 15rem;
+    }
 
     @include respond(tab-land) {
       margin-left: 25rem;
@@ -59,8 +59,6 @@
 
     @include respond(phone) {
       margin-left: 0;
-      //     @include respond(phone){
-      //       margin-left:0;
     }
 
     &--headline {
@@ -97,8 +95,6 @@
       -webkit-hyphens: auto;
       -ms-hyphens: auto;
       hyphens: auto;
-      //           -ms-hyphens: auto;
-      //               hyphens: auto;
       color: #ffffff;
 
       @include respond(phone) {

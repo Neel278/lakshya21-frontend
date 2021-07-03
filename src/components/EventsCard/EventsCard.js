@@ -20,7 +20,7 @@ function EventsCard({ img, title, detail, date }) {
             <img src={calendar} alt="" />
             {date}
           </p>
-          <Link to="/" className="eventsCard__join">
+          <Link to={`/events/${title}`} className="eventsCard__join">
             Join
           </Link>
         </div>

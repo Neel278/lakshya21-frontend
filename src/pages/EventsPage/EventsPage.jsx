@@ -1,25 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './EventsPage.scss';
 import EventsCard from '../../components/EventsCardsCategory/EventsCard';
 import eventsPageData from '../../SiteData/eventsPageData';
-import BgAnim from '../../components/Bg-Animation/BgAnim';
+import GradientBox from '../../components/GradientBox/GradientBox';
+import axios from '../../axios/axios';
+// import eventsPageData from '../../SiteData/eventsPageData';
 
 function EventsPage() {
-  const [pageData, setPageData] = useState(eventsPageData);
+  const [pageData, setPageData] = useState([]);
+
+  useEffect(() => {
+    const fetchDeaprtments = async () => {
+      try {
+        setPageData(await (await axios.get('/departments')).data);
+      } catch (e) {
+        console.error(e);
+      }
+    };
+    fetchDeaprtments();
+  }, []);
 
   return (
-    <div className="event-page">
-      <div className="page-wrapper">
-        {/* <BgAnim className="bg" /> */}
+    <div className="event-page__container">
+      <div className="gradient gradient--1">
+        <GradientBox></GradientBox>
+      </div>
+      <div className="gradient gradient--2">
+        <GradientBox></GradientBox>
+      </div>
+      <div className="event-page">
+        <div className="page-wrapper">
+          {/* <BgAnim className="bg" /> */}
 
-        <div className="page-heading-wrapper">
-          <div className="page-heading">Events</div>
+          <div className="page-heading-wrapper">
+            <div className="page-heading">Events</div>
+          </div>
+          <ul>
+            {pageData.map((item, index) => (
+              <EventsCard key={index} category={item.name} img={item.img} />
+            ))}
+          </ul>
         </div>
-        <ul>
-          {pageData.map((item, index) => (
-            <EventsCard key={index} category={item.category} img={item.img} />
-          ))}
-        </ul>
       </div>
     </div>
   );

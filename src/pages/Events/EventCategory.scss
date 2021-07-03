@@ -1,0 +1,15 @@
+@import '../../sassStyle/base/_base.scss';
+@import './../../sassStyle/abstracts/_variables.scss';
+
+.tabs {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 5rem;
+  margin-top: 0rem;
+}
+
+.event-category {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
