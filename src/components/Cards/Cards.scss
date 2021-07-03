@@ -1,14 +1,14 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .card-contact {
-  margin: 5rem 0;
+  margin: 8rem 0;
   width: 100%;
   // height: 15.4rem;
   display: flex;
   align-items: center;
 
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.3rem;
 
   @include respond(phone) {
@@ -39,10 +39,10 @@
   }
 
   &__img {
-    width: 100%;
+    width: 10rem;
     height: auto;
     &-box {
-      width: 12rem;
+      width: 10rem;
     }
   }
 
@@ -51,11 +51,12 @@
 
   &__head {
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid $color-gold;
+    border-bottom: 3px solid rgba(1, 255, 255, 0.63);
     margin-bottom: 2.5rem;
   }
 
   &__mail {
+    font-size: 1.6rem;
     &-box {
       display: flex;
       align-items: center;
@@ -69,6 +70,7 @@
   }
 
   &__call {
+    font-size: 1.6rem;
     &-box {
       display: flex;
       align-items: center;

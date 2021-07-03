@@ -1,10 +1,10 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .sponsoreCard {
-// <<<<<<< kaushik
-// =======
-//   margin-top: 2.8rem;
-// >>>>>>> main
+  // <<<<<<< kaushik
+  // =======
+  //   margin-top: 2.8rem;
+  // >>>>>>> main
   display: flex;
   flex-direction: row;
 
@@ -59,8 +59,8 @@
 
     @include respond(phone) {
       margin-left: 0;
-//     @include respond(phone){
-//       margin-left:0;
+      //     @include respond(phone){
+      //       margin-left:0;
     }
 
     &--headline {
@@ -86,7 +86,7 @@
     &--text {
       margin-top: 2.5rem;
       margin-bottom: 10.4rem;
-      width: 52.2rem;
+      width: 48.2rem;
       height: 11.2rem;
 
       font-family: Roboto;
@@ -97,8 +97,8 @@
       -webkit-hyphens: auto;
       -ms-hyphens: auto;
       hyphens: auto;
-//           -ms-hyphens: auto;
-//               hyphens: auto;
+      //           -ms-hyphens: auto;
+      //               hyphens: auto;
       color: #ffffff;
 
       @include respond(phone) {

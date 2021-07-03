@@ -9,7 +9,7 @@
   &__title {
     width: 19rem;
     padding-bottom: 1rem;
-    border-bottom: 3px solid $color-gold;
+    border-bottom: 3px solid #486581;
 
     @include respond(phone) {
       margin: 0 auto;
@@ -28,7 +28,7 @@
   }
 
   &__left {
-    width: 33%;
+    width: 50%;
 
     @include respond(phone) {
       width: 100%;
@@ -37,7 +37,7 @@
   }
 
   &__right {
-    width: 67%;
+    width: 50%;
 
     @include respond(tab-land) {
       width: 60%;

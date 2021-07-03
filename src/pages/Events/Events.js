@@ -60,7 +60,7 @@ const eventData = [
   },
 ];
 
-function Events() {
+function Events(category) {
   const [data, setData] = useState(eventData);
 
   return (

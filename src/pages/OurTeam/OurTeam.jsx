@@ -1,26 +1,23 @@
 import React, { useState } from 'react';
 import './OurTeam.scss';
-
+import Particle from 'react-particles-js';
 import TeamCategory from '../../components/TeamCategory/TeamCategory';
+import particlesConfig from '../../SiteData/particlesConfig.json';
 
 function OurTeam() {
-  // const [button, setButton] = useState([]);
-
-  // const handlePeople = (button) => {
-  //   const filteredData = menuItem.filter((item) => item.team === button);
-  //   setMenuItem(filteredData);
-  // };
-
   return (
-    <div className="container">
-      <div className="page-wrapper">
-        <div className="page-title">
-          <div className="title-text">Our Team</div>
-          {/* <div className="underline"></div> */}
+    <>
+      <div className="container">
+        <div className="page-wrapper">
+          <div className="page-title">
+            <div className="title-text">Our Team</div>
+            {/* <div className="underline"></div> */}
+          </div>
+          <TeamCategory className="carousel" />
         </div>
-        <TeamCategory className="" />
       </div>
-    </div>
+      {/* <Particle params={particlesConfig} className="particles-container" /> */}
+    </>
   );
 }
 

@@ -52,7 +52,7 @@ function App() {
               <OurTeam />
             </Route>
 
-            <Route path="/events-main">
+            <Route path="/event-main">
               <EventMainPage />
             </Route>
             {/* <Route path="/events-main">

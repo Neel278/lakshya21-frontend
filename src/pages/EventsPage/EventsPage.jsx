@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './EventsPage.scss';
 import EventsCard from '../../components/EventsCardsCategory/EventsCard';
 import eventsPageData from '../../SiteData/eventsPageData';
+import BgAnim from '../../components/Bg-Animation/BgAnim';
 
 function EventsPage() {
   const [pageData, setPageData] = useState(eventsPageData);
@@ -9,6 +10,8 @@ function EventsPage() {
   return (
     <div className="event-page">
       <div className="page-wrapper">
+        {/* <BgAnim className="bg" /> */}
+
         <div className="page-heading-wrapper">
           <div className="page-heading">Events</div>
         </div>

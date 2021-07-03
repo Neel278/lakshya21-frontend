@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './EventsCard.scss';
 import { Link } from 'react-router-dom';
 import EventIcon from '@material-ui/icons/Event';
@@ -17,7 +17,7 @@ function EventsCard({ category, img }) {
             incidunt in iusto excepturi recusandae. Veniam dicta vel quos, iure
             !
           </p>
-          <Link to="/events-main">
+          <Link to="/event-main">
             <li className="participate-btn">Participate</li>
           </Link>
         </div>

@@ -2,7 +2,6 @@
 
 .event-main {
   @include respond(phone) {
-   
   }
 
   &__head {
@@ -16,8 +15,8 @@
     display: flex;
     margin-bottom: 7rem;
 
-    @include respond(tab-port){
-        display: block;
+    @include respond(tab-port) {
+      display: block;
     }
 
     &--detail {
@@ -113,4 +112,5 @@
   position: absolute;
   top: 0;
   left: 0;
+  border: 0px solid transparent;
 }
