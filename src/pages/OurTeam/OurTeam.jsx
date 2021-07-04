@@ -4,15 +4,9 @@ import './OurTeam.scss';
 import GradientBox from './../../components/GradientBox/GradientBox';
 
 import TeamCategory from '../../components/TeamCategory/TeamCategory';
+import particlesConfig from '../../SiteData/particlesConfig.json';
 
 function OurTeam() {
-  // const [button, setButton] = useState([]);
-
-  // const handlePeople = (button) => {
-  //   const filteredData = menuItem.filter((item) => item.team === button);
-  //   setMenuItem(filteredData);
-  // };
-
   return (
     <div className="container">
       <div className="gradient gradient--1">
@@ -26,8 +20,9 @@ function OurTeam() {
           <div className="title-text">Our Team</div>
           {/* <div className="underline"></div> */}
         </div>
-        <TeamCategory className="" />
+        <TeamCategory />
       </div>
+      {/* <Particle params={particlesConfig} className="particles-container" /> */}
     </div>
   );
 }

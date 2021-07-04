@@ -32,7 +32,6 @@ function a11yProps(index) {
 
 // function Events() {
 //   const [data, setData] = useState(eventData);
-  
 
 function Events(props) {
   const [data, setData] = useState([]);

@@ -5,7 +5,7 @@
   align-items: center;
   margin-bottom: 2rem;
 
-  @include respond(phone){
+  @include respond(phone) {
     margin-bottom: 1rem;
   }
 
@@ -39,19 +39,23 @@
 
     backdrop-filter: blur(13.9683px);
 
-    border-radius: 1rem;
+    // border-radius: 1rem;
     border: 2.54px solid;
-    border-image-source: radial-gradient(
-        69.43% 69.43% at 191.57% 41.53%,
-        #ffffff 0%,
-        rgba(255, 255, 255, 0) 100%
-      ),
-      linear-gradient(
-        238.49deg,
-        rgba(143, 147, 248, 0.72) -0.74%,
-        rgba(255, 255, 255, 0) 47.05%,
-        rgba(143, 147, 248, 0.72) 99.43%
-      );
+    border-image: linear-gradient(
+      118.47deg,
+      #102a43 0%,
+      #486581 33.65%,
+      #9fb3c8 63.33%,
+      #102a43 100%
+    );
+    border-image: -webkit-linear-gradient(
+      118.47deg,
+      #102a43 0%,
+      #486581 33.65%,
+      #9fb3c8 63.33%,
+      #102a43 100%
+    );
+    border-image-slice: 1;
   }
 
   &__icon {

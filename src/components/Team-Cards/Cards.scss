@@ -2,29 +2,51 @@
 @import '../../sassStyle/abstracts/_mixins.scss';
 
 .card {
-  // padding: 1rem;
-  // background-clip: padding-box;
-  background: linear-gradient(
-    152.97deg,
-    rgba(255, 255, 255, 0.039) 0%,
-    rgba(160, 180, 199, 0.13) 100%
-  );
-  border: 1px solid transparent;
-  // box-sizing: border-box;
-  // width: 25rem;
-  // height: 30rem;
+  // background: linear-gradient(
+  //   152.97deg,
+  //   rgba(255, 255, 255, 0.039) 0%,
+  //   rgba(160, 180, 199, 0.13) 100%
+  // );
 
-  // border-image-slice: 1;
-  border-radius: 3rem !important;
+  background-image: linear-gradient(
+    152.97deg,
+    rgba(255, 255, 255, 0.253) 0%,
+    #0b0d4777 100%
+  );
+
+  margin-top: 5rem;
+
+  box-shadow: 0 8px 32px 0 rgba(9, 14, 83, 0.37);
+  backdrop-filter: blur(42px);
+  -webkit-backdrop-filter: blur(42px);
+  background-clip: content-box, border-box;
+
+  border: double 2.5px transparent;
+
+  border-image: linear-gradient(
+    118.47deg,
+    #102a43 0%,
+    #486581 33.65%,
+    #9fb3c8 63.33%,
+    #102a43 100%
+  );
+  border-image: -webkit-linear-gradient(
+    118.47deg,
+    #102a43 0%,
+    #486581 33.65%,
+    #9fb3c8 63.33%,
+    #102a43 100%
+  );
+  border-image-slice: 1;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  // border-radius: 3rem !important;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
 
-  // @include respond(phone) {
-  //   width: 25rem;
-  //   height: 25rem;
-  // }
   @include respond(big-desktop) {
     width: 25rem;
     height: 40rem;
@@ -50,13 +72,9 @@
     height: 30rem;
   }
 
-  .card-wrapper {
-    margin-top: 5rem;
-    margin-right: 1rem;
-  }
-
   .card::before {
     border-radius: inherit;
+    content: '';
     margin: -1rem;
     z-index: -1;
     background: linear-gradient(
@@ -72,6 +90,7 @@
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
+
     @include respond(desktop) {
       width: 20rem;
       height: 20rem;
@@ -99,7 +118,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Helvetica';
   }
 

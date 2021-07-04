@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from '../../axios/axios';
 
 import './EventMainPage.scss';
+import eventimg from '../../Images/events-banners/arduino2.png';
 
 import img from './../../Images/EventMain.webp';
 
