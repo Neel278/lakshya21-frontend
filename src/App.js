@@ -17,7 +17,7 @@ import Sponsor from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
 import EventMainPage from './pages/EventMainPage/EventMainPage';
 // import HomePage from './pages/HomePage/HomePage';
-import EventMainPage from './pages/EventMainPage/EventMainPage';
+
 import About from './pages/About/About';
 // >>>>>>> main
 
@@ -54,16 +54,6 @@ function App() {
               <OurTeam />
             </Route>
 
-<<<<<<< HEAD
-=======
-            <Route path="/event-main">
-              <EventMainPage />
-            </Route>
-            {/* <Route path="/events-main">
-               <Events />
-             </Route> */}
-
->>>>>>> 6b48c20252c945c6e1e05a4463d013cccb47d1f2
             {/* Events Page */}
             <Route path="/events" exact>
               <EventsPage />
