@@ -7,12 +7,6 @@ export default makeStyles((theme) => ({
     fontWeight: '700',
   },
   indicator: {
-    display: 'flex',
-    justifyContent: 'center',
-    '& > div': {
-      maxWidth: 40,
-      width: '100%',
-      backgroundColor: '#635ee7',
-    },
+    backgroundColor: '#486581',
   },
 }));

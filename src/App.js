@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage/HomePage';
 import EventsPage from './pages/EventsPage/EventsPage';
 import Events from './pages/Events/Events';
 import Sponsor from './pages/SponsorePage/Sponsore';
+import LiveDesk from './pages/LiveDesk/LiveDesk';
 import OurTeam from './pages/OurTeam/OurTeam';
 import EventMainPage from './pages/EventMainPage/EventMainPage';
 import About from './pages/About/About';
@@ -54,6 +55,9 @@ function App() {
           {/* Homepage */}
           <Route exact path="/">
             <HomePage></HomePage>
+          </Route>
+          <Route path="/liveDesk">
+            <LiveDesk />
           </Route>
         </Switch>
         <Footer />

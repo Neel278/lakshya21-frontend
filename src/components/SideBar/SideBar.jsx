@@ -50,9 +50,10 @@ function SideBar({ clicked }) {
           <Link to="/contact" className="contact">
             <li>CONTACT US</li>
           </Link>
-          <Link to="/help" className="help">
-            <li>HELP</li>
+          <Link to="/liveDesk">
+            <li>LIVE DESK</li>
           </Link>
+          -
         </div>
       </div>
     </>
