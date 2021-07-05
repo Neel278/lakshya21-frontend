@@ -11,6 +11,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
   }
 
   &__heading {
@@ -22,12 +26,16 @@
     line-height: 5.6rem;
     letter-spacing: 0em;
     text-align: left;
+
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 
   &__left {
     width: 57.7rem;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 100%;
       flex: 1;
     }
@@ -43,10 +51,18 @@
       line-height: 2.8rem;
       letter-spacing: 0em;
       hyphens: auto;
+
+      @include respond(phone) {
+        // box-sizing: border-box;
+        padding: 0 1rem;
+        text-indent: 5rem;
+      }
     }
 
     &--2,
-    &--3 {
+    &--3,
+    &--4 {
+      text-indent: 5rem;
       hyphens: auto;
       font-family: Roboto;
       font-size: 1.8rem;
@@ -54,19 +70,27 @@
       font-weight: 400;
       line-height: 2.5rem;
       letter-spacing: 0em;
+
+      @include respond(phone) {
+        padding: 0 1rem;
+      }
     }
 
     &--2 {
       margin-top: 4rem;
     }
 
-    &--3 {
+    &--3,
+    &--4 {
       margin-top: 2rem;
     }
   }
 
   &__btn {
     margin-top: 4.2rem;
+    @include respond(phone) {
+      margin-left: 1rem;
+    }
   }
 
   &__events,
@@ -102,8 +126,8 @@
   }
 
   &__logo {
-    height: 65rem;
-    @include respond(phone) {
+    height: 70rem;
+    @include respond(tab-port) {
       display: none;
     }
   }

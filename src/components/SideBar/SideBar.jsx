@@ -47,6 +47,9 @@ function SideBar({ clicked }) {
           <Link to="/contact">
             <li>CONTACT US</li>
           </Link>
+          <Link to="/liveDesk">
+            <li>LIVE DESK</li>
+          </Link>
           -
         </div>
       </div>
