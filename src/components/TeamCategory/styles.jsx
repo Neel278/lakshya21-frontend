@@ -6,4 +6,13 @@ export default makeStyles((theme) => ({
     fontFamily: 'Helvetica',
     fontWeight: '700',
   },
+  indicator: {
+    display: 'flex',
+    justifyContent: 'center',
+    '& > div': {
+      maxWidth: 40,
+      width: '100%',
+      backgroundColor: '#635ee7',
+    },
+  },
 }));

@@ -1,7 +1,7 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .footer {
-  margin-top: 3rem;
+  margin-top: 5rem;
   padding: 5rem 0;
   font-weight: normal;
   font-size: 1.5rem;
@@ -47,13 +47,14 @@
     }
 
     &--title {
-      font-weight: bold;
+      font-weight: 600;
       margin-bottom: 1.5rem;
     }
 
     &--item {
       margin-bottom: 1.5rem;
       cursor: pointer;
+      color: #102a43;
     }
   }
 
@@ -62,13 +63,14 @@
       display: none;
     }
     &--title {
-      font-weight: bold;
+      font-weight: 600;
       margin-bottom: 1.5rem;
     }
 
     &--item {
       margin-bottom: 1.5rem;
       cursor: pointer;
+      color: #102a43;
     }
   }
 
@@ -82,7 +84,7 @@
     }
 
     &--title {
-      font-weight: bold;
+      font-weight: 600;
       margin-bottom: 1.5rem;
     }
 
@@ -95,45 +97,8 @@
 
   &__sign-up {
     &--title {
-      font-weight: bold;
+      font-weight: 600;
       margin-bottom: 1.5rem;
-    }
-
-    &--input {
-      width: 15.8rem;
-      font-weight: 500;
-      font-size: 1rem;
-      line-height: 1rem;
-      color: $color-blue;
-      background-color: transparent;
-      outline: none;
-      border: none;
-      border-bottom: 1px solid $color-blue;
-      margin-right: 1rem;
-      padding-bottom: 5px;
-      &-box {
-        display: flex;
-        align-items: flex-end;
-
-        @include respond(phone) {
-          display: block;
-          margin: 0 auto;
-        }
-      }
-    }
-
-    &--submit {
-      height: 2rem;
-      background-color: transparent;
-      cursor: pointer;
-      padding: 0 1rem;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 1rem;
-      line-height: 1.2rem;
-      outline: none;
-      border: 1px solid $color-blue;
-      border-radius: 3px;
     }
 
     &--social {
@@ -153,12 +118,14 @@
       }
 
       &-box {
-        margin-top: 4.5rem;
+        // margin-top: 4.5rem;
         @include respond(phone) {
           display: block;
         }
       }
       &--title {
+        font-weight: 600;
+        font-size: 1.5rem;
         @include respond(phone) {
         }
         margin-bottom: 1.5rem;

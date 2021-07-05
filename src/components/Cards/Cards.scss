@@ -1,22 +1,32 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .card-contact {
-  margin: 4rem 0;
+  margin: 6rem 0;
+  margin-bottom: 6rem;
+  width: 50rem;
+
+  // padding: 2rem;
 
   // height: 15.4rem;
   display: flex;
   align-items: center;
+  margin-left: 0;
+  // margin-right: auto;
 
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 2.3rem;
 
   @include respond(tab-port) {
-    margin: 8rem 0;
+    // margin: 8rem 0;
   }
 
   @include respond(phone) {
     justify-content: center;
+    // margin-left: 8rem;
+    // margin-right: 0;
+    width: 40rem;
+    font-size: 1rem;
   }
 
   &__left {
@@ -24,14 +34,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 4.8rem;
+    width: 20%;
+    // margin-right: 4.8rem;
+    // padding-left: 2rem;
 
     @include respond(tab-port) {
-      margin-right: 3rem;
+      // margin-right: 3rem;
     }
 
     @include respond(phone) {
-      margin-right: 4rem;
+      // margin-right: 4rem;
     }
   }
 
@@ -40,17 +52,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // padding-right: 2rem;
+    width: 50%;
   }
 
   &__img {
     width: 10rem;
     height: auto;
+    @include respond(phone) {
+      width: 8rem;
+      height: auto;
+    }
     &-box {
       width: 10rem;
+      @include respond(phone) {
+        width: 8rem;
+      }
     }
   }
 
   &__name {
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
   }
 
   &__head {
@@ -61,6 +85,11 @@
 
   &__mail {
     font-size: 1.6rem;
+
+    @include respond(phone) {
+      font-size: 1.4;
+    }
+
     &-box {
       display: flex;
       align-items: center;

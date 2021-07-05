@@ -30,7 +30,12 @@ function TeamCategory() {
           value={value}
           onChange={handleTabs}
           className="tabs-wrapper"
-          TabIndicatorProps={{ backgroundColor: '#21E6C1' }}
+          textColor="inherit"
+          fullWidth
+          centered
+          classes={{
+            indicator: classes.indicator,
+          }}
         >
           <Tab label={<span className={classes.tabLabel}>Convener</span>} />
           <Tab label={<span className={classes.tabLabel}>Heads</span>} />
