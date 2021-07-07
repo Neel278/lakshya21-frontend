@@ -46,11 +46,11 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/events"
                 activeClassName="active"
                 className="nav-link"
               >
-                About
+                Events
               </NavLink>
             </li>
 
@@ -58,11 +58,11 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/sponsor"
+                to="/about"
                 activeClassName="active"
                 className="nav-link"
               >
-                Sponsores
+                About
               </NavLink>
             </li>
 

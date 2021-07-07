@@ -7,4 +7,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include respond(phone) {
+    width: 40rem;
+    height: 40rem;
+  }
 }

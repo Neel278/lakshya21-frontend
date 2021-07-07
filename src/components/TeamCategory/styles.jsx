@@ -6,4 +6,7 @@ export default makeStyles((theme) => ({
     fontFamily: 'Helvetica',
     fontWeight: '700',
   },
+  indicator: {
+    backgroundColor: '#486581',
+  },
 }));

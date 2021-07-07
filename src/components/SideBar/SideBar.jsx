@@ -29,23 +29,29 @@ function SideBar({ clicked }) {
         </div>
 
         <div className="nav-links">
-          <Link to="/">
+          <Link to="/" className="home">
             <li>HOME</li>
           </Link>
-          <Link to="/events">
+          <Link to="/events" className="events">
             <li>EVENTS</li>
           </Link>
-          <Link to="/gallery">
-            <li>GALLERY</li>
+          <Link to="/glimpse" className="glimpse">
+            <li>GLIMPSE</li>
           </Link>
-          <Link to="/about">
+          <Link to="/about" className="about">
             <li>ABOUT</li>
           </Link>
-          <Link to="/team">
+          <Link to="/team" className="team">
             <li>OUR TEAM</li>
           </Link>
-          <Link to="/contact">
+          <Link to="/sponsor" className="sponsors">
+            <li>SPONSORS</li>
+          </Link>
+          <Link to="/contact" className="contact">
             <li>CONTACT US</li>
+          </Link>
+          <Link to="/liveDesk">
+            <li>LIVE DESK</li>
           </Link>
           -
         </div>

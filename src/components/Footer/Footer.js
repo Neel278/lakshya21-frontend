@@ -37,17 +37,27 @@ function Footer() {
         </div>
         <div className="footer__links">
           <div className="footer__links--title">LINKS</div>
-          <div className="footer__links--item">Lorem ipsum</div>
-          <div className="footer__links--item">Lorem ipsum</div>
-          <div className="footer__links--item">Lorem ipsum</div>
-          <div className="footer__links--item">Lorem ipsum</div>
+          <Link to="/">
+            <div className="footer__links--item">Home</div>
+          </Link>
+          <Link to="/events">
+            <div className="footer__links--item">Events</div>
+          </Link>
+          <Link to="/contact">
+            <div className="footer__links--item">Contact</div>
+          </Link>
         </div>
         <div className="footer__about">
           <div className="footer__about--title">ABOUT</div>
-          <div className="footer__about--item">Lorem ipsum </div>
-          <div className="footer__about--item">Lorem ipsum </div>
-          <div className="footer__about--item">Lorem ipsum </div>
-          <div className="footer__about--item">Lorem ipsum </div>
+          <Link to="/about">
+            <div className="footer__about--item">Lakshya</div>
+          </Link>
+          <Link to="/team">
+            <div className="footer__about--item">Our Team</div>
+          </Link>
+          <Link to="/sponsor">
+            <div className="footer__about--item">Sponsors</div>
+          </Link>
         </div>
 
         <div className="footer__contact">
@@ -60,19 +70,6 @@ function Footer() {
           </div>
         </div>
         <div className="footer__sign-up">
-          <div className="footer__sign-up--title">
-            SIGN UP FOR OUR EVENT BROCHURE
-          </div>
-          <div className="footer__sign-up--input-box">
-            <input
-              type="text"
-              placeholder="Enter your email"
-              className="footer__sign-up--input"
-            />
-            <button type="submit" className="footer__sign-up--submit">
-              Submit
-            </button>
-          </div>
           <div className="footer__sign-up--social-box">
             <div className="footer__sign-up--social--title">Our Socials</div>
             <div className="footer__sign-up--social--icon-box">

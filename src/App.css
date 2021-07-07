@@ -1,1 +1,5 @@
-
+* {
+  background-image: url('./Images/svgs/Gradient.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
