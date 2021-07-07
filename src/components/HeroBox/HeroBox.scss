@@ -7,9 +7,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -90%);
+  display: none;
 
   &__title {
     font-size: 9rem;
+    line-height: 5rem;
     font-weight: lighter;
 
     @include respond(tab-land) {
@@ -20,7 +22,7 @@
       font-size: 6rem;
     }
 
-    @include respond(phone){
+    @include respond(phone) {
       font-size: 5rem;
     }
 
@@ -36,8 +38,6 @@
   animation-timing-function: ease-out;
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
-  -webkit-animation-delay: 10s;
-  animation-delay: 5s;
 
   &__button {
     display: inline-block;
@@ -69,8 +69,6 @@
       @include respond(tab-port) {
         margin-top: 6rem;
       }
-
-     
     }
 
     &:focus {
@@ -84,10 +82,7 @@
       margin-right: 3.5rem;
       @include respond(phone) {
         margin-right: 2rem;
-        
       }
-
-     
     }
 
     &--2 {
@@ -95,8 +90,6 @@
       border: 1px solid $color-off-white;
       color: $color-off-white;
       transition: all 0.2s;
-
-      
 
       &:hover,
       &:active {

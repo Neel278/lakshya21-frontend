@@ -1,7 +1,6 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 @import './../../sassStyle/abstracts/_animation.scss';
 
-
 .home-page {
   width: 100%;
   height: 85vh;
@@ -10,7 +9,9 @@
   position: relative;
 
   &__container {
+    padding-bottom: 5rem;
     position: relative;
+    overflow: hidden;
   }
 
   @include respond(tab-port) {

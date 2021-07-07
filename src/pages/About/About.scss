@@ -4,7 +4,10 @@
 .about-wrapper {
   padding: 5rem 0;
 
-  .about__container {
+  position: relative;
+  overflow: hidden;
+
+  &__container {
     width: 80%;
     margin: 0 auto;
 
@@ -130,5 +133,20 @@
     @include respond(tab-port) {
       display: none;
     }
+  }
+}
+
+.gradient {
+  position: absolute;
+  z-index: -1;
+  &--1 {
+    top: 0;
+    left: 0;
+  }
+
+  &--2 {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
   }
 }

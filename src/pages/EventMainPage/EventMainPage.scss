@@ -6,6 +6,7 @@
 
   &__container {
     position: relative;
+    overflow: hidden;
   }
 
   &__head {
@@ -119,17 +120,23 @@
   border: 0px solid transparent;
 }
 
-// .gradient {
-//   position: absolute;
-//   z-index: -1;
-//   &--1 {
-//     top: 0;
-//     left: 0;
-//   }
+.gradient {
+  position: absolute;
+  z-index: -1;
+  &--1 {
+    top: 0;
+    left: 0;
+  }
 
-//   &--2 {
-//     bottom: -4rem;
-//     right: 0;
-//     transform: rotate(180deg);
-//   }
-// }
+  &--2 {
+    bottom: -4rem;
+    right: 0;
+    transform: rotate(180deg);
+  }
+}
+
+.event-main__rule-btn-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
