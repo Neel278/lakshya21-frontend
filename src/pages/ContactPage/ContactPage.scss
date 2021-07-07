@@ -10,6 +10,7 @@
 
   &__container {
     position: relative;
+    overflow: hidden;
   }
 
   // &__container {
@@ -21,12 +22,15 @@
   // }
 
   &__title {
+    display: inline-block;
     padding-bottom: 1rem;
     border-bottom: 3px solid #486581;
 
     @include respond(phone) {
-      margin: 0 auto;
-      margin-bottom: 7rem;
+      display: block;
+      text-align: center;
+      margin: 4rem auto;
+      border-bottom: 3px solid transparent;
     }
   }
 

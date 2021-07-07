@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import GradientBox from './../../components/GradientBox/GradientBox';
 import img from './../../Images/Logo - With doodles.png';
 import './About.scss';
 
 function About() {
   return (
     <div className="about">
+      <div className="gradient gradient--1">
+        <GradientBox></GradientBox>
+      </div>
+      <div className="gradient gradient--2">
+        <GradientBox></GradientBox>
+      </div>
       <div className="about__container">
         <div className="about__left">
           <h1 className="about__heading">About Us</h1>

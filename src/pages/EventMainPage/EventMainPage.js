@@ -56,6 +56,9 @@ const EventMainPage = () => {
               <EventContactBox></EventContactBox>
             </div>
             <EventTextBox></EventTextBox>
+            <div className="event-main__rule-btn-box">
+              <button className="event-main__btn">Download Rule Book</button>
+            </div>
           </div>
         </div>
       </div>
