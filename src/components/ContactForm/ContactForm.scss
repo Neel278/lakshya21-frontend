@@ -16,6 +16,12 @@
     margin-right: auto;
   }
 
+  @include respond(midPhone) {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   background: linear-gradient(
     122.21deg,
     rgba(143, 147, 248, 0.09) 83.58%,
@@ -40,7 +46,7 @@
   backdrop-filter: blur(22px);
   // border-radius: 16px;
   &__title {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 2.4rem;
     line-height: 5.1rem;
     margin-bottom: 4.2rem;
@@ -103,6 +109,9 @@
       width: 100%;
       height: 4.5rem;
       margin-bottom: 3rem;
+    }
+    @include respond(midPhone) {
+      // padding: 2rem 3rem;
     }
 
     &::placeholder {
@@ -176,11 +185,17 @@
     cursor: pointer;
     background-color: #486581;
     padding: 1.5rem 3.3rem;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.1rem;
     text-align: center;
     color: $color-white;
     border-radius: 10rem;
+  }
+
+  @include respond(phone) {
+    padding: 1rem 3.3rem;
+    // margin-top: 3rem;
+    font-size: 1.2rem;
   }
 }
