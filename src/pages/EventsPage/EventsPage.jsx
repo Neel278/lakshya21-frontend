@@ -29,17 +29,19 @@ function EventsPage() {
         <GradientBox></GradientBox>
       </div>
       <div className="event-page">
-      <div className="page-wrapper">
-        <div className="page-heading-wrapper">
-          <div className="page-heading">Events</div>
+        <div className="page-wrapper">
+          {/* <BgAnim className="bg" /> */}
+
+          <div className="page-heading-wrapper">
+            <div className="page-heading">Events</div>
+          </div>
+          <ul>
+            {pageData.map((item, index) => (
+              <EventsCard key={index} category={item.name} img={item.img} />
+            ))}
+          </ul>
         </div>
-        <ul>
-          {pageData.map((item, index) => (
-            <EventsCard key={index} category={item.name} img={item.img} />
-          ))}
-        </ul>
       </div>
-    </div>
     </div>
   );
 }

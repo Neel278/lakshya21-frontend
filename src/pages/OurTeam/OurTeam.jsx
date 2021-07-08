@@ -6,27 +6,19 @@ import GradientBox from './../../components/GradientBox/GradientBox';
 import TeamCategory from '../../components/TeamCategory/TeamCategory';
 
 function OurTeam() {
-  // const [button, setButton] = useState([]);
-
-  // const handlePeople = (button) => {
-  //   const filteredData = menuItem.filter((item) => item.team === button);
-  //   setMenuItem(filteredData);
-  // };
-
   return (
-    <div className="container">
-      <div className="gradient gradient--1">
+    <div className="our-team__container">
+      <div className="gradient  gradient--1 gradient-team">
         <GradientBox></GradientBox>
       </div>
-      <div className="gradient gradient--2">
+      <div className="gradient gradient--2 gradient-team">
         <GradientBox></GradientBox>
       </div>
       <div className="page-wrapper">
         <div className="page-title">
           <div className="title-text">Our Team</div>
-          {/* <div className="underline"></div> */}
         </div>
-        <TeamCategory className="" />
+        <TeamCategory />
       </div>
     </div>
   );

@@ -12,7 +12,8 @@
 
   @include respond(phone) {
     width: 80%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: 1px;
   }
 
   background: linear-gradient(
@@ -157,7 +158,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: $color-gold;
+    background-color: #486581;
     padding: 1.5rem 3.3rem;
     font-weight: bold;
     font-size: 1.4rem;

@@ -1,47 +1,99 @@
 @import '../../sassStyle/base/_base.scss';
 
-// .container {
-//   background-image: url('bg.png');
-//   width: 100vw;
-//   min-height: 100vh;
-//   object-fit: contain;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: covr;
-// }
+.container-box {
+  overflow: hidden;
+  // background-image: url('bg.png');
+  // width: 100vw;
+  // min-height: 100vh;
+  // object-fit: contain;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: covr;
+}
+
+.our-team__container {
+  width: 100vw;
+  overflow: hidden;
+}
 
 .page-wrapper {
   width: 100%;
   height: 100vh;
 
+  padding-bottom: 6rem;
+
+  -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   @include respond(big-desktop) {
     height: 90vh;
   }
 
   @include respond(desktop) {
-    width: 100%;
+    width: 90vw;
     height: 200%;
   }
 
   @include respond(tab-land) {
-    width: 100%;
+    width: 90vw;
     height: 80vh;
   }
 
   @include respond(tab-port) {
-    width: 100%;
-    height: 200%;
+    width: 90vw;
+    height: 99vh;
   }
 
   @include respond(phone) {
-    width: 100%;
-    height: 200%;
+    width: 90vw;
+    height: 100vh;
   }
+}
 
-  @include respond(midPhone) {
-    width: 100%;
-    height: 200%;
+.carousel {
+  z-index: 10;
+}
+
+.particles-container {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+@-webkit-keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
   }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-top {
+  0% {
+    -webkit-transform: translateZ(-1400px) translateY(-800px);
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.particles-container canvas {
+  transition: 0.2s all ease-in-out;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
 }
 
 .page-title {
@@ -62,7 +114,7 @@
 }
 
 .title-text {
-  border-bottom: solid 3px #0c7b93;
+  border-bottom: solid 3px #486581;
   padding: 1rem;
   border-radius: 1%;
 }
@@ -75,6 +127,7 @@
 .rec.rec-arrow {
   color: white;
   border: none;
+  z-index: 10;
   @include respond(phone) {
     visibility: hidden;
   }
@@ -82,25 +135,44 @@
 
 .rec.rec-dot {
   background: rgb(255, 255, 255);
-  border-radius: 0;
-  width: 1.5rem;
-  height: 0.5rem;
-  border: 1px solid rgb(255, 147, 23);
+  width: 1rem;
+  height: 1rem;
+  // visibility: hidden;
+  margin-top: 5rem;
+  border: 1px solid #486581;
+
+  @include respond(tab-port) {
+    margin-top: 5rem;
+  }
+  @include respond(phone) {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 1.5rem;
+  }
 }
 .rec.rec-dot_active {
-  background: rgb(255, 147, 23);
-  width: 2.5rem;
+  background: #62686d;
+  width: 1rem;
+  @include respond(phone) {
+    width: 0.5rem;
+    background: #62686d;
+  }
 }
 .rec.rec-arrow:hover {
-  background-color: rgb(255, 145, 0);
+  background-color: #486581;
   border-radius: 50%;
 }
 .rec.rec-arrow {
   border-radius: 0;
 }
 
+.rec.rec-arrow:disabled {
+  border-radius: 0;
+}
+
 .rec.rec-arrow:disabled:hover {
-  background-color: rgb(255, 145, 0);
+  background-color: #486581;
+  border-radius: 50%;
 }
 
 .category-comp {
@@ -117,6 +189,13 @@
 .gradient {
   position: absolute;
   z-index: -1;
+
+  &-team {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
   &--1 {
     top: 0;
     left: 0;
@@ -126,5 +205,15 @@
     bottom: -30rem;
     right: 0;
     transform: rotate(180deg);
+
+    @include respond(desktop) {
+      bottom: -40rem;
+    }
+    @include respond(tab-land) {
+      bottom: -10rem;
+    }
+    @include respond(phone) {
+      bottom: -30rem;
+    }
   }
 }

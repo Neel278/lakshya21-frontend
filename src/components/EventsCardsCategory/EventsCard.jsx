@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './EventsCard.scss';
 import { Link } from 'react-router-dom';
 // import EventIcon from '@material-ui/icons/Event';

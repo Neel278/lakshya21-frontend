@@ -2,10 +2,11 @@
 @import '../../sassStyle/abstracts/_mixins.scss';
 
 .event-card {
-  background: white;
-  width: 22rem;
-  height: 55rem;
+  background: rgb(255, 255, 255);
+  width: 25rem;
+  height: 52rem;
   border-radius: 1rem;
+  border-color: transparent;
   margin-bottom: 3rem;
   margin-top: 2rem;
   display: flex;
@@ -15,7 +16,7 @@
   // margin-right: 5rem;
 
   @include respond(phone) {
-    width: 20rem;
+    width: 80%;
     height: 42rem;
     // margin-top: 0rem;
     // margin-right: 1rem;
@@ -41,15 +42,15 @@
 }
 
 .event-card .card-img {
-  width: 18rem;
+  width: 16rem;
   border-radius: 50%;
   // border-bottom-right-radius: none;
   // border-bottom-left-radius: none;
-  height: 18rem;
-  margin-top: 1rem;
+  height: 16rem;
+  margin-top: 2rem;
   @include respond(phone) {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
   }
 }
 
@@ -73,7 +74,7 @@
   font-size: 2.6rem;
   color: #121c56;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   // width: 100%;
 
   @include respond(phone) {
@@ -85,7 +86,7 @@
 .card-content > p {
   font-family: 'Helvetica';
   font-size: 1.6rem;
-  color: #121c56;
+  color: #18074e;
   font-weight: 700;
   margin-bottom: 1rem;
   align-content: center;
@@ -97,28 +98,30 @@
 }
 
 .card-content .description {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 80%;
+  line-height: 14px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   font-weight: 500;
+  // margin-top: rem;
 }
 
 .participate-btn {
   padding: 1rem;
-  color: white;
+  color: #ffffff;
   list-style-type: none;
   font-family: 'Gilroy';
-  font-weight: 900;
-  background: #121a53;
+  font-weight: bold;
+  background: #121c56;
   margin-top: 1rem;
   border-radius: 5px;
 
   @include respond(phone) {
-    margin-top: 1rem;
-    padding: 0.3rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
     font-size: 1.1rem;
   }
 }
