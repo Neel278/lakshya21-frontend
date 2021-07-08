@@ -31,56 +31,60 @@ function App() {
   // function App() {
   return (
     <>
-      <Router>
-        <NavBar />
-        <Switch>
-          {/* about */}
-          <Route path="/about">
-            <About />
-          </Route>
+      {loading === false ? (
+        <Router>
+          <NavBar />
+          <Switch>
+            {/* about */}
+            <Route path="/about">
+              <About />
+            </Route>
 
-          <Route path="/checkout">
-            <Checkout />
-          </Route>
+            <Route path="/checkout">
+              <Checkout />
+            </Route>
 
-          {/* contect */}
-          <Route path="/contact">
-            <ContactPage></ContactPage>
-          </Route>
+            {/* contect */}
+            <Route path="/contact">
+              <ContactPage></ContactPage>
+            </Route>
 
-          <Route path="/sponsor">
-            <div>
-              <Sponsor />
-            </div>
-          </Route>
+            <Route path="/sponsor">
+              <div>
+                <Sponsor />
+              </div>
+            </Route>
 
-          <Route path="/team">
-            <OurTeam />
-          </Route>
+            <Route path="/team">
+              <OurTeam />
+            </Route>
 
-          {/* Events Page */}
-          <Route path="/events" exact>
-            <EventMainPage />
-          </Route>
+            {/* Events Page */}
+            <Route path="/events" exact>
+              <EventsPage />
+            </Route>
 
-          <Route path="/departments/:department">
-            <Events />
-          </Route>
+            <Route path="/departments/:department">
+              <Events />
+            </Route>
 
-          <Route path="/events/:event" exact>
-            <EventMainPage />
-          </Route>
+            <Route path="/events/:event" exact>
+              <EventMainPage />
+            </Route>
 
-          {/* Homepage */}
-          <Route exact path="/">
-            <HomePage></HomePage>
-          </Route>
-          <Route path="/liveDesk">
-            <LiveDesk />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
+            {/* Homepage */}
+            <Route exact path="/">
+              <HomePage></HomePage>
+            </Route>
+            <Route path="/liveDesk">
+              <LiveDesk />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      ) : (
+        <Loading />
+      )}
     </>
   );
 }
