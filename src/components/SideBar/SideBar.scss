@@ -19,6 +19,9 @@
   color: $color-blue;
   font-family: 'Gilroy';
   font-size: 1.6rem;
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
 }
 
 .nav-close-wrapper {

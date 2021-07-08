@@ -60,7 +60,7 @@ function App() {
 
           {/* Events Page */}
           <Route path="/events" exact>
-            <EventsPage />
+            <EventMainPage />
           </Route>
 
           <Route path="/departments/:department">

@@ -53,7 +53,6 @@ function SideBar({ clicked }) {
           <Link to="/liveDesk">
             <li>LIVE DESK</li>
           </Link>
-          -
         </div>
       </div>
     </>
