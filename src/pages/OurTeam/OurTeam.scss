@@ -30,22 +30,22 @@
   }
 
   @include respond(desktop) {
-    width: 90vw;
+    width: 100vw;
     height: 200%;
   }
 
   @include respond(tab-land) {
-    width: 90vw;
+    width: 100vw;
     height: 80vh;
   }
 
   @include respond(tab-port) {
-    width: 90vw;
+    width: 100vw;
     height: 99vh;
   }
 
   @include respond(phone) {
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
   }
 }
