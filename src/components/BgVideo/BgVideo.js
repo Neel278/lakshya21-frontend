@@ -7,7 +7,16 @@ import video from './../../Images/lakshya.mp4';
 function BgVideo() {
   return (
     <div className="bg-video">
-      <video className="bg-video__content" autoPlay muted>
+      <video
+        onEnded={() => {
+          setTimeout(() => {
+            document.getElementById('hero').style.display = 'block';
+          }, 1200);
+        }}
+        className="bg-video__content"
+        autoPlay
+        muted
+      >
         <source src={video} type="video/mp4"></source>
         Your browser not supported
       </video>

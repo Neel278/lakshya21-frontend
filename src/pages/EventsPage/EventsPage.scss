@@ -1,9 +1,14 @@
 @import '../../sassStyle/base/_base.scss';
 @import '../../sassStyle/abstracts/_mixins.scss';
 
+.event-page__container {
+  position: relative;
+  overflow: hidden;
+}
+
 .event-page .page-wrapper {
   width: 100%;
-  height: 200%;
+  // height: 200%;
 
   @include respond(big-desktop) {
     height: 90vh;
@@ -11,7 +16,7 @@
 
   @include respond(desktop) {
     width: 100%;
-    height: 200%;
+    height: 150%;
   }
 
   @include respond(tab-land) {
@@ -34,6 +39,16 @@
     height: 200%;
   }
 }
+.bg {
+  // height: 200%;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+}
 
 .page-wrapper > ul {
   display: flex;
@@ -42,6 +57,7 @@
   flex-flow: wrap;
   padding-top: 10rem;
   margin-left: 5rem;
+  // z-index: 100;
 }
 
 .page-heading-wrapper {
@@ -57,9 +73,11 @@
 }
 
 .page-heading {
-  border-bottom: solid 3px #f9a602;
+  border-bottom: solid 3px #486581;
   padding: 1rem;
   border-radius: 1%;
+  color: -webkit-linear-gradient(white, #38495a);
+  // background: -webkit-linear-gradient(white, #38495a);
 }
 
 .gradient {

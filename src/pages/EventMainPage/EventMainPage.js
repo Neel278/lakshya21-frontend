@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from '../../axios/axios';
 
 import './EventMainPage.scss';
+import eventimg from '../../Images/events-banners/arduino2.png';
 
 import img from './../../Images/EventMain.webp';
 
@@ -55,6 +56,9 @@ const EventMainPage = () => {
               <EventContactBox></EventContactBox>
             </div>
             <EventTextBox></EventTextBox>
+            <div className="event-main__rule-btn-box">
+              <button className="event-main__btn">Download Rule Book</button>
+            </div>
           </div>
         </div>
       </div>

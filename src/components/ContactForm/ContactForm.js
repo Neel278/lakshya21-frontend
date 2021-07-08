@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './ContactForm.scss';
+import Confirmation from '../Confirmation/Confirmation';
 import axios from '../../axios/axios';
-
-import './ContactForm.scss';
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -10,6 +9,17 @@ function ContactForm() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState('');
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const submitMessage = async (e) => {
     e.preventDefault();
     const data = {
@@ -21,13 +31,16 @@ function ContactForm() {
     console.log(result.message);
     if (result.type === 'error') {
       setError(result.message);
+      setOpen(false);
       // have to show pop up for showing error message
       console.warn(error);
     } else {
       setSuccess(result.message[0]);
+      setOpen(true);
       // have to show same pop up but with success content
       console.log(success);
     }
+
     setName('');
     setEmail('');
     setMessage('');
@@ -41,14 +54,14 @@ function ContactForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             type="text"
-            placeholder="Name"
+            placeholder="Your Name"
             className="contact-form__name"
           />
           <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
-            placeholder="Email"
+            placeholder="Your Email"
             className="contact-form__mail"
           />
         </div>
@@ -60,13 +73,11 @@ function ContactForm() {
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-        <button
-          className="contact-form__submit"
-          onClick={(e) => submitMessage(e)}
-        >
+        <button className="contact-form__submit" onClick={handleClickOpen}>
           Submit
         </button>
       </div>
+      <Confirmation open={open} close={handleClose} />
     </div>
   );
 }
