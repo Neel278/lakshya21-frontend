@@ -11,6 +11,7 @@ import EventContactBox from './../../components/EventContactBox/EventContactBox'
 import EventTextBox from '../../components/EventTextBox/EventTextBox';
 import GradientBox from './../../components/GradientBox/GradientBox';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const EventMainPage = () => {
   const [event, setEvent] = useState([]);
@@ -57,7 +58,9 @@ const EventMainPage = () => {
             </div>
             <EventTextBox></EventTextBox>
             <div className="event-main__rule-btn-box">
-              <button className="event-main__btn">Download Rule Book</button>
+              <Link to="/" className="event-main__btn">
+                Download Rule Book
+              </Link>
             </div>
           </div>
         </div>

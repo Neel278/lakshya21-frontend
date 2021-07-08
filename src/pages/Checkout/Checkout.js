@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import axios from '../../axios/axios';
+// import axios from '../../axios/axios';
 
 function Checkout() {
   //   useEffect(() => {
@@ -54,7 +54,7 @@ function Checkout() {
       productinfo: pd.productinfo,
       firstname: pd.firstname,
     };
-    let self = this;
+    // let self = this;
 
     // API call to get the Hash value
     fetch('http://localhost:8000/api/checkout', {
@@ -78,7 +78,11 @@ function Checkout() {
   }
 
   useEffect(() => {
-    payumoney();
+    try {
+      payumoney();
+    } catch (e) {
+      console.error(e);
+    }
   }, []);
   return <div>Hello Neel</div>;
 }

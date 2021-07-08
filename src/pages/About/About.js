@@ -48,7 +48,7 @@ function About() {
             advancing world, we need to shape our thoughts progressively.
           </p>
           <div className="about__btn">
-            <Link className="about__events" to="/">
+            <Link className="about__events" to="/events">
               See Events
             </Link>
 
