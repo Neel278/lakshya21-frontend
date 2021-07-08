@@ -29,6 +29,13 @@
     // font-family: 'batman';
   }
 
+  &__sub-title {
+    font-weight: lighter;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
   -webkit-animation-name: fadeIn;
 
   animation-name: fadeIn;
@@ -56,7 +63,7 @@
     }
 
     &-box {
-      margin-top: 8rem;
+      margin-top: 4rem;
 
       display: flex;
       align-items: center;
