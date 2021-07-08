@@ -8,11 +8,14 @@ import Zoom from '@material-ui/core/Zoom';
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: 'fixed',
-    width: 921,
-    height: 516,
-    backgroundColor: theme.palette.background.paper,
+    width: '80%',
+    height: '60%',
+    backgroundColor: '#232A67',
+    backdropFilter: 'blur(40px)',
     borderRadius: '20px',
     backgroundImage: `url(${bg})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     boxShadow: theme.shadows[5],
     display: 'flex',
     border: 'none',
@@ -35,7 +38,7 @@ export default function Confirmation(props) {
       >
         <Zoom in={props.open}>
           <div className={classes.paper}>
-            <p>Your message has been received.</p>
+            <p className="success-msg">Your message has been received.</p>
             <br></br>
             <button className="back-btn" onClick={props.close}>
               Back

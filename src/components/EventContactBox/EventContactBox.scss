@@ -31,6 +31,14 @@
         rgba(143, 147, 248, 0.72) 99.43%
       );
 
+    border-image: -webkit-linear-gradient(
+      118.47deg,
+      #102a43 0%,
+      #486581 33.65%,
+      #9fb3c8 63.33%,
+      #102a43 100%
+    );
+
     background: linear-gradient(
       122.21deg,
       rgba(143, 147, 248, 0.09) 83.58%,
@@ -39,8 +47,7 @@
     -webkit-backdrop-filter: blur(13.9683px);
     backdrop-filter: blur(13.9683px);
     /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 1rem;
+    border-image-slice: 1;
   }
 
   &__left {

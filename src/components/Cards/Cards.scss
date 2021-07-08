@@ -1,7 +1,7 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
 .card-contact {
-  margin: 6rem 0;
+  margin: 9rem 0;
   margin-bottom: 6rem;
   width: 40rem;
   background: linear-gradient(
@@ -9,39 +9,51 @@
     rgba(255, 255, 255, 0.039) 0%,
     rgba(160, 180, 199, 0.13) 100%
   );
-
+  border: 1px solid;
+  border-color: #275e995e;
+  // border-radius: 1rem;
   padding: 2rem;
-
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
   margin-left: 0;
-  // margin-right: auto;
-
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 2.3rem;
 
   @include respond(tab-land) {
     width: 40rem;
-    border-radius: 1rem;
-    // margin: 8rem 0;
   }
 
   @include respond(phone) {
     justify-content: space-evenly;
-    margin-left: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 3rem;
     width: 35rem;
     font-size: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.281);
     background: linear-gradient(
       152.97deg,
       rgba(255, 255, 255, 0.039) 0%,
       rgba(160, 180, 199, 0.13) 100%
     );
-
-    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    border-image: linear-gradient(
+      118.47deg,
+      #04101b 0%,
+      #486581 33.65%,
+      #c0d4eb 63.33%,
+      #102a43 100%
+    );
+    border-image: -webkit-linear-gradient(
+      118.47deg,
+      #102a43 0%,
+      #486581 33.65%,
+      #9fb3c8 63.33%,
+      #102a43 100%
+    );
+    border-image-slice: 1;
   }
 
   &__left {

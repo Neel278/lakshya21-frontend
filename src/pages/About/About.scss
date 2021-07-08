@@ -6,7 +6,24 @@
 
   position: relative;
   overflow: hidden;
+}
 
+.gradient {
+  position: absolute;
+  z-index: -1;
+  &--1 {
+    top: 0;
+    left: 0;
+  }
+
+  &--2 {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+}
+
+.about {
   &__container {
     width: 80%;
     margin: 0 auto;
@@ -20,8 +37,8 @@
     }
   }
 
-  .about__heading {
-    margin-top: -1rem;
+  &__heading {
+    margin-top: 1.5rem !important;
     font-family: 'Gilroy';
     font-size: 4.8rem;
     font-style: normal;
@@ -35,7 +52,7 @@
     }
   }
 
-  .about__left {
+  &__left {
     width: 57.7rem;
 
     @include respond(tab-port) {
@@ -44,7 +61,7 @@
     }
   }
 
-  .about__text {
+  &__text {
     &--1 {
       margin-top: 2.9rem;
       font-family: Arial, Helvetica, sans-serif;
@@ -89,15 +106,16 @@
     }
   }
 
-  .about__btn {
+  &__btn {
     margin-top: 4.2rem;
+    margin-bottom: 3rem;
     @include respond(phone) {
       margin-left: 1rem;
     }
   }
 
-  .about__events,
-  .about__contact {
+  &__events,
+  &__contact {
     width: 18.1rem;
     height: 4.6rem;
 
@@ -116,11 +134,11 @@
     padding: 1rem;
   }
 
-  .about__events {
+  &__events {
     margin-right: 2.7rem;
   }
 
-  .about__contact {
+  &__contact {
     border: 1px solid #f2f2f2;
     box-sizing: border-box;
     border-radius: 5px;
@@ -128,25 +146,10 @@
     color: #f2f2f2;
   }
 
-  .about__logo {
+  &__logo {
     height: 70rem;
     @include respond(tab-port) {
-      display: none;
+      display: none !important;
     }
-  }
-}
-
-.gradient {
-  position: absolute;
-  z-index: -1;
-  &--1 {
-    top: 0;
-    left: 0;
-  }
-
-  &--2 {
-    bottom: 0;
-    right: 0;
-    transform: rotate(180deg);
   }
 }
