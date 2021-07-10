@@ -1,11 +1,11 @@
 import React from 'react';
-import './EventsCard.scss';
+import './SectionsCard.scss';
 
 import { Link } from 'react-router-dom';
 
 import calendar from './../../Images/Vector.png';
 
-function EventsCard({ img, title, detail, date }) {
+function SectionsCard({ img, title, detail, date }) {
   return (
     <div className="eventsCard">
       <img src={img} alt="" className="eventsCard__img" />
@@ -20,7 +20,7 @@ function EventsCard({ img, title, detail, date }) {
             <img src={calendar} alt="" />
             {date}
           </p>
-          <Link to={`/sections/${title}`} className="eventsCard__join">
+          <Link to={`/events/${title}`} className="eventsCard__join">
             Join
           </Link>
         </div>
@@ -29,4 +29,4 @@ function EventsCard({ img, title, detail, date }) {
   );
 }
 
-export default EventsCard;
+export default SectionsCard;

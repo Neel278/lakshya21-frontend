@@ -19,8 +19,8 @@ const EventMainPage = () => {
   useEffect(() => {
     const fetchDeaprtment = async () => {
       try {
-        console.log(eventName);
-        setEvent(await (await axios.get(`/events/${eventName}`)).data);
+        // console.log(eventName);
+        setEvent(await (await axios.get(`/main_events/${eventName}`)).data);
       } catch (e) {
         console.error(e);
       }
@@ -39,7 +39,7 @@ const EventMainPage = () => {
       <div className="event-main">
         <div className="event-main__head">
           <div className="event-main__hero-box">
-            <h2 className="event-main__title">Web-O-Thon</h2>
+            <h2 className="event-main__title">{event.name}</h2>
             <div className="event-main__btn-box">
               <button className="event-main__btn">Participate</button>
             </div>

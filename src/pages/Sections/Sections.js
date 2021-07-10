@@ -3,17 +3,18 @@ import Grid from '@material-ui/core/Grid';
 
 // import { Tabs, Tab } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import TabPanel from './TabPanel.jsx';
+import TabPanel from '../Events/TabPanel.jsx';
 // import useStyles from './styles.jsx';
 // import eventData from './EventData';
 
-import './EventCategory.scss';
-import './Events.scss';
+import '../Events/EventCategory.scss';
+import '../Events/Events.scss';
 import './../../sassStyle/layout/_grid.scss';
 import axios from '../../axios/axios';
-import EventsCard from '../../components/EventsCard/EventsCard';
+// import EventsCard from '../../components/EventsCard/EventsCard';
 import technical from './../../Images/technical-support-icon-robotic-hand-customer-help-tech-support_127544-400 2.webp';
 import { useParams } from 'react-router';
+import SectionsCard from '../../components/SectionsCard/SectionsCard.js';
 
 // tabpanel
 TabPanel.propTypes = {
@@ -22,24 +23,24 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-function Events(props) {
+function Sections(props) {
   const [data, setData] = useState([]);
-  const { department } = useParams();
+  const { section } = useParams();
   useEffect(() => {
     const fetchDeaprtment = async () => {
       try {
-        setData(await (await axios.get(`/departments/${department}`)).data);
+        setData(await (await axios.get(`/events/${section}`)).data);
       } catch (e) {
         console.error(e);
       }
     };
     fetchDeaprtment();
-  }, [department]);
+  }, [section]);
 
   return (
     <div className="events">
       <div className="events__heading">
-        <h1>{department} Events</h1>
+        <h1>{section} Events</h1>
       </div>
       <div className="events__card">
         <Grid
@@ -49,7 +50,7 @@ function Events(props) {
         >
           {data.map((item, index) => (
             <Grid xs={12} sm={12} md={6} key={index}>
-              <EventsCard
+              <SectionsCard
                 key={index}
                 img={technical}
                 title={item.name}
@@ -69,4 +70,4 @@ function Events(props) {
   );
 }
 
-export default Events;
+export default Sections;

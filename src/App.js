@@ -20,12 +20,13 @@ import OurTeam from './pages/OurTeam/OurTeam';
 import About from './pages/About/About';
 import Checkout from './pages/Checkout/Checkout';
 import LiveDesk from './pages/LiveDesk/LiveDesk';
+import Sections from './pages/Sections/Sections';
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(false);
+    setTimeout(setLoading(false), 300);
   }, []);
 
   // function App() {
@@ -66,6 +67,10 @@ function App() {
 
             <Route path="/departments/:department">
               <Events />
+            </Route>
+
+            <Route path="/sections/:section">
+              <Sections />
             </Route>
 
             <Route path="/events/:event" exact>
