@@ -18,7 +18,6 @@ import EventMainPage from './pages/EventMainPage/EventMainPage';
 import Sponsor from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
 import About from './pages/About/About';
-import Checkout from './pages/Checkout/Checkout';
 import LiveDesk from './pages/LiveDesk/LiveDesk';
 import Sections from './pages/Sections/Sections';
 
@@ -39,10 +38,6 @@ function App() {
             {/* about */}
             <Route path="/about">
               <About />
-            </Route>
-
-            <Route path="/checkout">
-              <Checkout />
             </Route>
 
             {/* contect */}
