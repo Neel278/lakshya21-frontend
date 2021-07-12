@@ -2,10 +2,11 @@ import React from 'react';
 
 import './EventDetailBox.scss';
 
-const EventDetailBox = () => {
+const EventDetailBox = ({ platform, participants }) => {
+  // console.log(platform, participants);
   return (
     <div className="event-detail-box">
-      <div className="event-detail">
+      {/* <div className="event-detail">
         <div className="event-detail__icon-box">
           <svg
             className="event-detail__icon"
@@ -24,7 +25,7 @@ const EventDetailBox = () => {
           </svg>
         </div>
         <p class="event-detail__tag">3 August, 2021</p>
-      </div>
+      </div> */}
       <div className="event-detail">
         <div className="event-detail__icon-box">
           <svg
@@ -43,7 +44,10 @@ const EventDetailBox = () => {
             />
           </svg>
         </div>
-        <p class="event-detail__tag">Ms Teams, Discord</p>
+        <p
+          class="event-detail__tag"
+          dangerouslySetInnerHTML={{ __html: platform }}
+        ></p>
       </div>
       <div className="event-detail">
         <div className="event-detail__icon-box">
@@ -63,7 +67,10 @@ const EventDetailBox = () => {
             />
           </svg>
         </div>
-        <p class="event-detail__tag">2-3 participants per team</p>
+        <p
+          class="event-detail__tag"
+          dangerouslySetInnerHTML={{ __html: participants }}
+        ></p>
       </div>
       <div className="event-detail">
         <div className="event-detail__icon-box">

@@ -42,13 +42,13 @@
   }
 
   &__rules {
-    list-style-type: disc;
+    list-style: none;
     &-box {
       margin-bottom: 4rem;
     }
 
     &-item {
-      list-style-type: disc;
+      list-style: none;
     }
   }
 }

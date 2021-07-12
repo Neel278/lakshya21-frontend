@@ -3,7 +3,7 @@ import './SectionsCard.scss';
 
 import { Link } from 'react-router-dom';
 
-import calendar from './../../Images/Vector.png';
+// import calendar from './../../Images/Vector.png';
 
 function SectionsCard({ img, title, detail, date }) {
   return (
@@ -16,10 +16,6 @@ function SectionsCard({ img, title, detail, date }) {
         <p className="eventsCard__detail">{detail}</p>
 
         <div className="eventsCard__container">
-          <p className="eventsCard__date">
-            <img src={calendar} alt="" />
-            {date}
-          </p>
           <Link to={`/events/${title}`} className="eventsCard__join">
             Join
           </Link>

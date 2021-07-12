@@ -22,6 +22,17 @@ function ContactForm() {
 
   const submitMessage = async (e) => {
     e.preventDefault();
+    if (
+      name === '' ||
+      email === '' ||
+      message === '' ||
+      name.length > 256 ||
+      email.length > 256 ||
+      message.length > 256
+    ) {
+      setError('Your input is not valid! Please enter only 256 letters');
+      handleClickOpen();
+    }
     const data = {
       name: name,
       email: email,
@@ -40,7 +51,7 @@ function ContactForm() {
       // have to show same pop up but with success content
       console.log(success);
     }
-
+    handleClickOpen();
     setName('');
     setEmail('');
     setMessage('');
@@ -73,11 +84,15 @@ function ContactForm() {
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-        <button className="contact-form__submit" onClick={handleClickOpen}>
+        <button className="contact-form__submit" onClick={submitMessage}>
           Submit
         </button>
       </div>
-      <Confirmation open={open} close={handleClose} />
+      <Confirmation
+        open={open}
+        close={handleClose}
+        message={error || success}
+      />
     </div>
   );
 }

@@ -53,10 +53,13 @@ const EventMainPage = () => {
         <div className="container">
           <div className="event-main__body">
             <div className="event-main__box-container">
-              <EventDetailBox></EventDetailBox>
+              <EventDetailBox
+                platform={event.platform}
+                participants={event.participants}
+              ></EventDetailBox>
               <EventContactBox></EventContactBox>
             </div>
-            <EventTextBox></EventTextBox>
+            <EventTextBox details={event}></EventTextBox>
             <div className="event-main__rule-btn-box">
               <Link to="/" className="event-main__btn">
                 Download Rule Book

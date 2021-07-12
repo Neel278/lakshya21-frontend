@@ -55,10 +55,9 @@ function Sections(props) {
                 img={technical}
                 title={item.name}
                 detail={
-                  item.detail ??
-                  'I am a fake detail please update me in events page'
+                  item.overview.substr(0, 100) + '...' ??
+                  'This is a lakshya 2021 event'
                 }
-                date={item.date ?? 'DD/MM/YYYY'}
               />
 
               <div className="events__margin"></div>

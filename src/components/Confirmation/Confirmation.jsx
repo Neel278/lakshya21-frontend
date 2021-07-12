@@ -38,7 +38,7 @@ export default function Confirmation(props) {
       >
         <Zoom in={props.open}>
           <div className={classes.paper}>
-            <p className="success-msg">Your message has been received.</p>
+            <p className="success-msg">{props.message}</p>
             <br></br>
             <button className="back-btn" onClick={props.close}>
               Back
