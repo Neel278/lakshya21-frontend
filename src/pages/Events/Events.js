@@ -36,6 +36,31 @@ function Events(props) {
     fetchDeaprtment();
   }, [department]);
 
+  const idToDepartment = (idOfDepartment) => {
+    switch (idOfDepartment) {
+      case 1:
+        return 'COMPUTER/IT';
+      case 2:
+        return 'EC/IC/ELECTRICAL';
+      case 3:
+        return 'CHEMICAL';
+      case 4:
+        return 'CIVIL';
+      case 5:
+        return 'MECHANICAL';
+      case 6:
+        return 'ROBOTICS';
+      case 7:
+        return 'LITERARY';
+      case 8:
+        return 'FUN';
+      case 9:
+        return 'WORKSHOPS';
+      default:
+        return 'GENRAL';
+    }
+  };
+
   return (
     <div className="events">
       <div className="events__heading">
@@ -55,9 +80,9 @@ function Events(props) {
                 title={item.name}
                 detail={
                   item.detail ??
-                  'I am a fake detail please update me in events page'
+                  'This is an ' + idToDepartment(item.id) + ' department event'
                 }
-                date={item.date ?? 'DD/MM/YYYY'}
+                department={idToDepartment(item.id)}
               />
 
               <div className="events__margin"></div>

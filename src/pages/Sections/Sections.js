@@ -37,6 +37,30 @@ function Sections(props) {
     fetchDeaprtment();
   }, [section]);
 
+  const idToDepartment = (idOfDepartment) => {
+    switch (idOfDepartment) {
+      case 1:
+        return 'COMPUTER/IT';
+      case 2:
+        return 'EC/IC/ELECTRICAL';
+      case 3:
+        return 'CHEMICAL';
+      case 4:
+        return 'CIVIL';
+      case 5:
+        return 'MECHANICAL';
+      case 6:
+        return 'ROBOTICS';
+      case 7:
+        return 'LITERARY';
+      case 8:
+        return 'FUN';
+      case 9:
+        return 'WORKSHOPS';
+      default:
+        return 'GENRAL';
+    }
+  };
   return (
     <div className="events">
       <div className="events__heading">
@@ -58,6 +82,7 @@ function Sections(props) {
                   item.overview.substr(0, 100) + '...' ??
                   'This is a lakshya 2021 event'
                 }
+                department={idToDepartment(item.event_id)}
               />
 
               <div className="events__margin"></div>

@@ -3,7 +3,7 @@ import React from 'react';
 import './EventTextBox.scss';
 
 const EventTextBox = ({ details }) => {
-  console.log(details);
+  // console.log(details);
   return (
     <div className="event-text">
       <div className="event-text__overview-box">
