@@ -1,5 +1,16 @@
 @import './../../sassStyle/abstracts/_variables.scss';
 
+.nav-lantern {
+  width: 1rem;
+  height: auto;
+  transform: translateY(-5px);
+  fill: $color-blue;
+
+  @include respond(phone) {
+    transform: translateY(-10px);
+  }
+}
+
 .nav {
   position: -webkit-sticky;
   position: sticky;
@@ -18,6 +29,8 @@
 
   &-logo {
     &-box {
+      display: flex;
+      align-items: center;
       margin-right: auto;
       transform: translateY(10px);
     }

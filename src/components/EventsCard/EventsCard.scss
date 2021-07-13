@@ -15,6 +15,10 @@
   backface-visibility: hidden;
   margin-right: 4rem;
 
+  @include respond(phone) {
+    margin-right: 0;
+  }
+
   @include respond(tab-port) {
     width: 80%;
     height: 95%;
@@ -134,6 +138,6 @@
 
   &__join1 {
     background: white;
-    color: rgba(0, 0, 0, 1);;
+    color: rgba(0, 0, 0, 1);
   }
 }
