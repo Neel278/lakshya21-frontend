@@ -14,12 +14,12 @@ import EventsPage from './pages/EventsPage/EventsPage';
 import Events from './pages/Events/Events';
 // page to show one event
 import EventMainPage from './pages/EventMainPage/EventMainPage';
-
 import Sponsor from './pages/SponsorePage/Sponsore';
 import OurTeam from './pages/OurTeam/OurTeam';
 import About from './pages/About/About';
 import LiveDesk from './pages/LiveDesk/LiveDesk';
 import Sections from './pages/Sections/Sections';
+import GlimpsePage from './pages/GlimpsePage/GlimpsePage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -40,7 +40,11 @@ function App() {
               <About />
             </Route>
 
-            {/* contect */}
+            <Route path="/glimpse">
+              <GlimpsePage />
+            </Route>
+
+            {/* contact */}
             <Route path="/contact">
               <ContactPage></ContactPage>
             </Route>
