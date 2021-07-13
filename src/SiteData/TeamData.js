@@ -10,7 +10,7 @@ const Data = [
   },
   {
     name: 'Akash Bhat',
-    roles: 'Events',
+    roles: 'Events Convener',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'akashbhat0007@gmail.com',
@@ -19,7 +19,7 @@ const Data = [
   },
   {
     name: 'Muskan Biala',
-    roles: 'Events Convener',
+    roles: 'Marketing Convener',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'muskan.biala@gmail.com',
@@ -28,7 +28,7 @@ const Data = [
   },
   {
     name: 'Jinay Shah',
-    roles: 'Campaigning',
+    roles: 'Campaigning Convener',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'jinayshah192@gmail.com ',
@@ -37,7 +37,7 @@ const Data = [
   },
   {
     name: 'Shivani Pandey',
-    roles: 'Campaigning',
+    roles: 'Campaigning Convener',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'pandeyshivania@gmail.com',
@@ -46,7 +46,7 @@ const Data = [
   },
   {
     name: 'Utsav Doshi',
-    roles: 'Events',
+    roles: 'Events Convener',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'utsavdoshi321@gmail.com',
@@ -55,7 +55,7 @@ const Data = [
   },
   {
     name: 'Navneet Dubey',
-    roles: 'Marketing',
+    roles: 'Marketing Convener',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'navneetnkd123@gmail.com',
@@ -64,7 +64,7 @@ const Data = [
   },
   {
     name: 'Shubham Dave',
-    roles: 'Campaigning',
+    roles: 'Campaigning Conevenr',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'daveshubham600@gmail.com',
@@ -73,7 +73,7 @@ const Data = [
   },
   {
     name: 'Manashi Pandey',
-    roles: 'Campaigning',
+    roles: 'Campaigning Convener',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'pandeymanashia@gmail.com',

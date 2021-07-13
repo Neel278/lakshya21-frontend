@@ -1,0 +1,77 @@
+@import '../../sassStyle/base/_base.scss';
+
+.gallery-page-wrapper {
+  width: 100%;
+  height: 200%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  @include respond(big-desktop) {
+    height: 180vh;
+    margin-top: 5rem;
+  }
+
+  @include respond(desktop) {
+    height: 180vh;
+  }
+
+  @include respond(tab-land) {
+    height: 200vh;
+  }
+  @include respond(tab-port) {
+    height: 170vh;
+  }
+  @include respond(phone) {
+    height: 200%;
+  }
+}
+
+.video-grid {
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  @include respond(big-desktop) {
+    width: 60%;
+  }
+}
+
+.grid-video-content {
+  width: 100%;
+  height: 300px;
+
+  @include respond(phone) {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.page-header {
+  margin-top: 10rem;
+
+  border-bottom: 3px solid #486581;
+  padding: 1rem;
+}
+
+.page-header h2 {
+  font-family: 'Gilroy';
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.gallery-page-wrapper br {
+}
+
+.gallery-grid {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2px;
+  margin-bottom: 2rem;
+  @include respond(big-desktop) {
+    width: 60%;
+  }
+}

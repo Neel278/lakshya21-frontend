@@ -14,7 +14,10 @@ function EventsCard({ img, title, detail, department }) {
         <div className="eventsCard__cont">
           <h1 className="eventsCard__heading">{title}</h1>
 
-          <p className="eventsCard__detail">{detail}</p>
+          <p
+            className="eventsCard__detail"
+            dangerouslySetInnerHTML={{ __html: detail }}
+          ></p>
 
           <div className="eventsCard__container">
             <p className="eventsCard__date">

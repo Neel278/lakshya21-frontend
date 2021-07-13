@@ -36,7 +36,6 @@ function Sections(props) {
     };
     fetchDeaprtment();
   }, [section]);
-
   const idToDepartment = (idOfDepartment) => {
     switch (idOfDepartment) {
       case 1:
@@ -61,6 +60,7 @@ function Sections(props) {
         return 'GENRAL';
     }
   };
+  // add item.image
   return (
     <div className="events">
       <div className="events__heading">
