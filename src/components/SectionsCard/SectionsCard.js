@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import calendar from './../../Images/Vector.png';
 
 function SectionsCard({ img, title, detail, department }) {
+  // console.log(img);
   return (
     <div className="eventsCard">
       <Link to={`/events/${title}`} className="eventsCard__join">
@@ -14,7 +15,10 @@ function SectionsCard({ img, title, detail, department }) {
         <div className="eventsCard__cont">
           <h1 className="eventsCard__heading">{title}</h1>
 
-          <p className="eventsCard__detail">{detail}</p>
+          <p
+            className="eventsCard__detail"
+            dangerouslySetInnerHTML={{ __html: detail }}
+          ></p>
 
           <div className="eventsCard__container">
             <p className="eventsCard__date">
