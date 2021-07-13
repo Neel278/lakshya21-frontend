@@ -6,7 +6,10 @@
   font-weight: 500;
   font-size: 3.6rem;
   line-height: 5.4rem;
-  margin-bottom: 25rem;
+
+  @media (max-width: 1400px) {
+    margin-bottom: 25rem;
+  }
 
   @include respond(phone) {
     margin-bottom: 10rem;
