@@ -139,7 +139,7 @@
   height: 1rem;
   // visibility: hidden;
   margin-top: 5rem;
-  border: 1px solid #486581;
+  border: none;
 
   @include respond(tab-port) {
     margin-top: 5rem;

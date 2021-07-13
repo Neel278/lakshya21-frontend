@@ -10,7 +10,7 @@ const Data = [
   },
   {
     name: 'Akash Bhat',
-    roles: 'Events',
+    roles: 'Events Convener',
     url: 'https://picsum.photos/500',
     team: 'convener',
     email: 'akashbhat0007@gmail.com',
