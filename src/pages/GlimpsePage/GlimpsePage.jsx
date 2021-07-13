@@ -25,6 +25,8 @@ function GlimpsePage() {
         <h2>Glimpse of Lakshya</h2>
       </div>
       <br />
+      <br />
+      <br />
       <div className="video-grid">
         <iframe
           src="https://www.youtube.com/embed/oX-opSiVojo"
