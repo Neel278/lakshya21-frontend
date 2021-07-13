@@ -3,7 +3,7 @@ import Gallery from 'react-photo-gallery';
 import './GlimpsePage.scss';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import photos from '../../SiteData/photos';
-import video from '../../Images/lakshya.mp4';
+// import video from '../../Images/lakshya.mp4';
 
 function GlimpsePage() {
   const [currentImage, setCurrentImage] = useState(0);

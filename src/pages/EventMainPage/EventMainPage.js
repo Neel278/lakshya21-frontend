@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from '../../axios/axios';
 
 import './EventMainPage.scss';
-import eventimg from '../../Images/events-banners/arduino2.png';
+// import eventimg from '../../Images/events-banners/arduino2.png';
 
 import img from './../../Images/EventMain.webp';
 
@@ -28,6 +28,7 @@ const EventMainPage = () => {
     fetchDeaprtment();
     // console.log(event.name);
   }, [eventName]);
+  // console.table(event);
   return (
     <div className="event-main__container">
       <div className="gradient gradient--1">
@@ -41,7 +42,15 @@ const EventMainPage = () => {
           <div className="event-main__hero-box">
             <h2 className="event-main__title">{event.name}</h2>
             <div className="event-main__btn-box">
-              <button className="event-main__btn">Participate</button>
+              {/* <button className="event-main__btn">Participate</button> */}
+              <button
+                // onclick="open_ae_ticket_modal('80008103395933','1784072',event);return false;"
+                data-event-id="80008103395933"
+                data-ticket-id={event.allevents_id}
+                class="ae-ticket-book-button event-main__btn"
+              >
+                Participate
+              </button>
             </div>
           </div>
           <div className="event-main__img-box">

@@ -10,7 +10,7 @@ function HeroBox() {
       <h2 className="hero-box__sub-title">03-08-2021 To 08-08-2021</h2>
       <div className="hero-box__button-box">
         <Link to="/events" className="hero-box__button hero-box__button--1">
-          Book Events
+          Participate Now
         </Link>
         <Link to="/about" className="hero-box__button hero-box__button--2">
           About Us
