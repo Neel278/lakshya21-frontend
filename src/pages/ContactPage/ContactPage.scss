@@ -7,6 +7,14 @@
   font-size: 3.6rem;
   line-height: 5.4rem;
 
+  @media (max-width: 1400px) {
+    margin-bottom: 25rem;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 10rem;
+  }
+
   &__container {
     position: relative;
     overflow: hidden;
