@@ -7,7 +7,7 @@ function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [error, setError] = useState([]);
+  const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
   const [open, setOpen] = React.useState(false);
@@ -39,17 +39,12 @@ function ContactForm() {
       message: message,
     };
     let result = await (await axios.post('/contact', data)).data;
-    console.log(result.message);
     if (result.type === 'error') {
       setError(result.message);
       setOpen(false);
-      // have to show pop up for showing error message
-      console.warn(error);
     } else {
       setSuccess(result.message[0]);
       setOpen(true);
-      // have to show same pop up but with success content
-      console.log(success);
     }
     handleClickOpen();
     setName('');
@@ -88,11 +83,7 @@ function ContactForm() {
           Submit
         </button>
       </div>
-      <Confirmation
-        open={open}
-        close={handleClose}
-        message={error || success}
-      />
+      <Confirmation open={open} close={handleClose} message={error} />
     </div>
   );
 }

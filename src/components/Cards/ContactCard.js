@@ -4,14 +4,14 @@ import './Cards.scss';
 
 import img from './../../Images/head.webp';
 
-function cards() {
+function cards({ details }) {
   return (
     <div className="card-contact">
       <div className="card-contact__left">
         <div className="card-contact__img-box">
           <img src={img} alt="" className="card-contact__img" />
         </div>
-        <p className="card-contact__name">Name</p>
+        <p className="card-contact__name">{details.name}</p>
       </div>
       <div className="card-contact__right">
         <div className="card-contact__head">Event Head</div>
@@ -37,7 +37,7 @@ function cards() {
               </g>
             </g>
           </svg>
-          <div className="card-contact__mail">xyz@gmail.com</div>
+          <div className="card-contact__mail">{details.email}</div>
         </div>
         <div className="card-contact__call-box">
           <svg
@@ -62,7 +62,7 @@ function cards() {
             </g>
           </svg>
 
-          <div className="card-contact__call">+91 1234567890</div>
+          <div className="card-contact__call">+91 {details.mobile}</div>
         </div>
       </div>
     </div>
