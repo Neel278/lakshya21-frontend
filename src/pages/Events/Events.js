@@ -79,7 +79,7 @@ function Events(props) {
                 img={technical}
                 title={item.name}
                 detail={
-                  item.detail ??
+                  item.description ??
                   'This is an ' + idToDepartment(item.id) + ' department event'
                 }
                 department={idToDepartment(item.id)}

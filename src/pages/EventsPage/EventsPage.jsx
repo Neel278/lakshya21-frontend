@@ -37,7 +37,12 @@ function EventsPage() {
           </div>
           <ul>
             {pageData.map((item, index) => (
-              <EventsCard key={index} category={item.name} img={item.img} />
+              <EventsCard
+                key={index}
+                category={item.name}
+                img={item.img}
+                description={item.description}
+              />
             ))}
           </ul>
         </div>
