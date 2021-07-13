@@ -14,19 +14,20 @@
 .our-team__container {
   width: 100vw;
   overflow: hidden;
+  position: relative;
+  margin-bottom: -15rem;
 }
 
 .page-wrapper {
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
 
-  padding-bottom: 6rem;
+  // padding-bottom: 6rem;
 
   -webkit-animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-in-fwd-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   @include respond(big-desktop) {
-    height: 90vh;
   }
 
   @include respond(desktop) {
@@ -36,17 +37,14 @@
 
   @include respond(tab-land) {
     width: 100vw;
-    height: 80vh;
   }
 
   @include respond(tab-port) {
     width: 100vw;
-    height: 99vh;
   }
 
   @include respond(phone) {
     width: 100vw;
-    height: 100vh;
   }
 }
 
@@ -175,6 +173,10 @@
   border-radius: 50%;
 }
 
+.TC {
+  margin-bottom: 25rem;
+}
+
 .category-comp {
   height: 100%;
   display: flex;
@@ -189,31 +191,14 @@
 .gradient {
   position: absolute;
   z-index: -1;
-
-  &-team {
-    @include respond(phone) {
-      display: none;
-    }
-  }
-
   &--1 {
     top: 0;
     left: 0;
   }
 
   &--2 {
-    bottom: -30rem;
+    bottom: 0;
     right: 0;
     transform: rotate(180deg);
-
-    @include respond(desktop) {
-      bottom: -40rem;
-    }
-    @include respond(tab-land) {
-      bottom: -10rem;
-    }
-    @include respond(phone) {
-      bottom: -30rem;
-    }
   }
 }
