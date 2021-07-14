@@ -24,12 +24,12 @@ function EventsCard({ img, title, detail, department }) {
               <img src={calendar} alt="" />
               {department}
             </p>
-            <Link
+            {/* <Link
               to={`/sections/${title}`}
               className="eventsCard__join eventsCard__join1"
             >
               Join
-            </Link>
+            </Link> */}
           </div>
         </div>
       </Link>

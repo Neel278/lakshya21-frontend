@@ -63,6 +63,7 @@ const EventMainPage = () => {
           <div className="event-main__body">
             <div className="event-main__box-container">
               <EventDetailBox
+                price={event.price}
                 platform={event.platform}
                 participants={event.participants}
               ></EventDetailBox>

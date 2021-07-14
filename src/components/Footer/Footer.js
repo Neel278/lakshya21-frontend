@@ -25,8 +25,8 @@ function Footer() {
             </svg>
           </div>
           <div className="footer__description">
-            This year Lakshya 2021 is based on the theme named "PERCEPTION". The
-            fest is scheduled from 3rd August to 7th August.
+            Lakshya is an only National level Edu-Technical festival of L.D.
+            College of Engineering which is held every year since 2014.
           </div>
           <div className="footer__privacy-box">
             <Link to="#" className="footer__privacy">
@@ -61,11 +61,13 @@ function Footer() {
 
         <div className="footer__contact">
           <div className="footer__contact--title">CONTACT US</div>
-          <div className="footer__contact--phone">Phone: +91 1234 5678 123</div>
-          <div className="footer__contact--phone">Phone: +91 1234 5678 123</div>
-          <div className="footer__contact--email">Email: xyz@gmail.com</div>
+          <div className="footer__contact--phone">Phone: +91 87589 42513</div>
+          <div className="footer__contact--phone">Phone: +91 90167 77043</div>
+          <div className="footer__contact--email">
+            Email: lakshyafestldce@gmail.com
+          </div>
           <div className="footer__contact--address">
-            Address: xyz, lorem ipsum, lorem ipsium.
+            Address: L.D. College Of Engineering, Ahmedabad 380015
           </div>
         </div>
         <div className="footer__sign-up">
