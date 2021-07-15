@@ -170,7 +170,7 @@ const Data = [
   },
   {
     name: 'Neel Thakkar',
-    roles: 'Back-end Developer',
+    roles: 'Web team lead',
     url: 'https://picsum.photos/500',
     team: 'developers',
     email: 'neelthakkar2001@gmail.com',

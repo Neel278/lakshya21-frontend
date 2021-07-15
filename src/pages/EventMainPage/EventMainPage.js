@@ -18,6 +18,7 @@ const EventMainPage = () => {
   const [event, setEvent] = useState([]);
   const { event: eventName } = useParams();
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchDeaprtment = async () => {
       try {
         // console.log(eventName);
