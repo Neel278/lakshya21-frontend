@@ -60,13 +60,13 @@ const EventMainPage = () => {
                   Participate
                 </button>
                 {/* <button
-                // onclick="open_ae_ticket_modal('80008103395933','1784072',event);return false;"
-                data-event-id="80008103395933"
-                data-ticket-id={event.allevents_id}
-                class="ae-ticket-book-button event-main__btn event-main__btn--proceed"
-              >
-                Participate
-              </button> */}
+                  // onclick="open_ae_ticket_modal('80008103395933','1784072',event);return false;"
+                  data-event-id="80008103395933"
+                  data-ticket-id={event.allevents_id}
+                  class="ae-ticket-book-button event-main__btn event-main__btn--proceed"
+                >
+                  Participate
+                </button> */}
               </div>
             </div>
             <div className="event-main__box-container">

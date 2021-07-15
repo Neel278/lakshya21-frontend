@@ -18,12 +18,12 @@ function About() {
           <h1 className="about__heading">About Us</h1>
 
           <p className="about__text--1">
-            Lakshya is an only National level Edu-Technical festival of L.D.
-            College of Engineering which is held every year since 2014. Every
-            year the fest is based on unique and different theme and a main
-            event is organised in accordance to it. Through our theme we try to
-            bring out something unique that creates a change in assertive and
-            constructive manner.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lakshya
+            is an only National level Edu-Technical festival of L.D. College of
+            Engineering which is held every year since 2014. Every year the fest
+            is based on unique and different theme and a main event is organised
+            in accordance to it. Through our theme we try to bring out something
+            unique that creates a change in assertive and constructive manner.
           </p>
 
           <p className="about__text--2">
