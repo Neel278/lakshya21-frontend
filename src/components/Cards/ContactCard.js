@@ -14,9 +14,9 @@ function cards({ details }) {
         <p className="card-contact__name">{details.name}</p>
       </div>
       <div className="card-contact__right">
-        <div className="card-contact__head">Event Head</div>
+        <div className="card-contact__head">{details.position}</div>
         <div className="card-contact__mail-box">
-          <svg
+          {/* <svg
             className="card-contact__mail-icon"
             width="24"
             height="24"
@@ -36,11 +36,11 @@ function cards({ details }) {
                 />
               </g>
             </g>
-          </svg>
-          <div className="card-contact__mail">{details.email}</div>
+          </svg> */}
+          <div className="card-contact__call">+91 {details.mobile}</div>
         </div>
         <div className="card-contact__call-box">
-          <svg
+          {/* <svg
             className="card-contact__call-icon"
             width="24"
             height="24"
@@ -60,9 +60,8 @@ function cards({ details }) {
                 />
               </g>
             </g>
-          </svg>
-
-          <div className="card-contact__call">+91 {details.mobile}</div>
+          </svg> */}
+          <div className="card-contact__mail">{details.email}</div>
         </div>
       </div>
     </div>

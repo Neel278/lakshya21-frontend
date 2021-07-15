@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from '../../axios/axios';
 
 import './EventMainPage.scss';
-import eventimg from '../../Images/events-banners/arduino2.png';
+// import eventimg from '../../Images/events-banners/arduino2.png';
 
 import img from './../../Images/EventMain.webp';
 
@@ -28,6 +28,7 @@ const EventMainPage = () => {
     fetchDeaprtment();
     // console.log(event.name);
   }, [eventName]);
+  // console.table(event);
   return (
     <div className="event-main__container">
       <div className="gradient gradient--1">
@@ -38,12 +39,6 @@ const EventMainPage = () => {
       </div>
       <div className="event-main">
         <div className="event-main__head">
-          <div className="event-main__hero-box">
-            <h2 className="event-main__title">{event.name}</h2>
-            <div className="event-main__btn-box">
-              <button className="event-main__btn">Participate</button>
-            </div>
-          </div>
           <div className="event-main__img-box">
             <img src={img} alt="" className="event-main__img" />
             <div className="overlay"></div>
@@ -52,8 +47,17 @@ const EventMainPage = () => {
 
         <div className="container">
           <div className="event-main__body">
+            <div className="event-main__hero-box">
+              <h2 className="event-main__title">{event.name}</h2>
+              <div className="event-main__btn-box">
+                <button className="event-main__btn event-main__btn--proceed">
+                  Proceed to Pay
+                </button>
+              </div>
+            </div>
             <div className="event-main__box-container">
               <EventDetailBox
+                price={event.price}
                 platform={event.platform}
                 participants={event.participants}
               ></EventDetailBox>
@@ -61,7 +65,10 @@ const EventMainPage = () => {
             </div>
             <EventTextBox details={event}></EventTextBox>
             <div className="event-main__rule-btn-box">
-              <Link to="/" className="event-main__btn">
+              <Link
+                to="/"
+                className="event-main__btn event-main__btn--download"
+              >
                 Download Rule Book
               </Link>
             </div>

@@ -176,6 +176,15 @@ const Data = [
     email: 'neelthakkar2001@gmail.com',
     linkedin: 'https://www.linkedin.com/in/neel-thakkar-1221a0194/',
   },
+  {
+    name: 'Parth Thakkar',
+    roles: 'Back-end Developer',
+    url: 'https://picsum.photos/500',
+    team: 'developers',
+    email: 'parthishere1234@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/parth-thakkar-819616197',
+    insta: 'https://www.instagram.com/parth._.thakkar_/',
+  },
 
   {
     name: 'khushvi purohit',
@@ -246,6 +255,13 @@ const Data = [
     linkedin: 'https://www.linkedin.com/in/jeel-patel-9394a21a6',
     Insta: 'https://www.instagram.com/__jeeeel/',
     email: ' jeel4580patel@gmail.com',
+    roles: 'Core Team',
+    team: 'core-team',
+  },
+  {
+    name: 'Meet Parikh',
+    email: 'meet.parikh7777@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/meet-parikh-a178751aa',
     roles: 'Core Team',
     team: 'core-team',
   },

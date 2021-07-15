@@ -24,7 +24,7 @@ function TeamCategory() {
     setValue(val);
   };
   return (
-    <div>
+    <div className="team-category__container">
       <div className="team-category">
         <Tabs
           value={value}

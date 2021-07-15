@@ -64,7 +64,7 @@ function Sections(props) {
   return (
     <div className="events">
       <div className="events__heading">
-        <h1>{section} Events</h1>
+        <h1>{section}</h1>
       </div>
       <div className="events__card">
         <Grid
@@ -79,7 +79,7 @@ function Sections(props) {
                 img={technical}
                 title={item.name}
                 detail={
-                  item.overview.substr(0, 100) + '...' ??
+                  item.overview.substr(0, 99) + '...' ??
                   'This is a lakshya 2021 event'
                 }
                 department={idToDepartment(item.event_id)}
