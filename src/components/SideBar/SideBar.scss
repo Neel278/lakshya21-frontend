@@ -15,6 +15,13 @@
   }
 }
 
+.sidebar-logo {
+  width: 10rem;
+  height: 15rem;
+  fill: $color-blue;
+  transform: translateY(-1rem);
+}
+
 .sidebar li {
   color: $color-blue;
   font-family: 'Gilroy';
@@ -40,12 +47,13 @@
   margin-right: 2rem;
 }
 
-.nav-logo {
+.navbar-logo {
   // display: flex;
   // align-items: center;
   // margin-bottom: 1.8rem;
-  margin-left: 1.6rem;
+  // margin-left: 1.6rem;
   margin-bottom: 1rem;
+  transform: translateX(-1rem);
 }
 
 .nav-links {
