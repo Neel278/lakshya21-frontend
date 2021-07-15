@@ -1,25 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './SideBar.scss';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-
-function SideBar({ clicked }) {
-  return (
-    <>
-      <div className="sidebar">
-        <div className="nav-close-wrapper">
-          <ArrowForwardIosIcon
-            className="nav-close"
-            size="80"
-            onClick={clicked}
-          />
-         
-<svg className="sidebar-logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="1080.000000pt" height="1597.000000pt" viewBox="0 0 1080.000000 1597.000000"
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,1597.000000) scale(0.100000,-0.100000)"
- stroke="none">
+fill="#000000" stroke="none">
 <path d="M1426 9299 c24 -90 1 -270 -48 -379 -42 -92 -188 -294 -300 -415 -52
 -56 -116 -160 -138 -225 -18 -54 -21 -82 -18 -160 3 -86 7 -101 37 -155 18
 -33 40 -68 49 -78 11 -12 12 -21 5 -28 -24 -24 -121 50 -173 131 -49 77 -61
@@ -74,38 +61,3 @@ c-71 73 -130 139 -130 148 0 9 59 71 130 138 72 67 130 126 130 131 0 5 -57 9
 9 154 35 0 8 -9 19 -19 25 -25 13 -240 13 -263 -1z"/>
 </g>
 </svg>
-
-        </div>
-
-        <div className="nav-links">
-          <Link to="/" className="home">
-            <li>HOME</li>
-          </Link>
-          <Link to="/events" className="events">
-            <li>EVENTS</li>
-          </Link>
-          <Link to="/glimpse" className="glimpse">
-            <li>GLIMPSE</li>
-          </Link>
-          <Link to="/about" className="about">
-            <li>ABOUT</li>
-          </Link>
-          <Link to="/team" className="team">
-            <li>OUR TEAM</li>
-          </Link>
-          <Link to="/sponsor" className="sponsors">
-            <li>SPONSORS</li>
-          </Link>
-          <Link to="/contact" className="contact">
-            <li>CONTACT US</li>
-          </Link>
-          <Link to="/liveDesk">
-            <li>LIVE DESK</li>
-          </Link>
-        </div>
-      </div>
-    </>
-  );
-}
-
-export default SideBar;
