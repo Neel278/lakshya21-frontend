@@ -25,12 +25,12 @@ export const photos = [
   },
   {
     src: 'https://source.unsplash.com/qDkso9nvCg0/1200x1600',
-    srcSet: [
-      'https://source.unsplash.com/qDkso9nvCg0/375x500 375w',
-      'https://source.unsplash.com/qDkso9nvCg0/600x800 600w',
-      'https://source.unsplash.com/qDkso9nvCg0/768x1024 768w',
-      'https://source.unsplash.com/qDkso9nvCg0/1200x1600 1200w',
-    ],
+    // srcSet: [
+    //   'https://source.unsplash.com/qDkso9nvCg0/375x500 375w',
+    //   'https://source.unsplash.com/qDkso9nvCg0/600x800 600w',
+    //   'https://source.unsplash.com/qDkso9nvCg0/768x1024 768w',
+    //   'https://source.unsplash.com/qDkso9nvCg0/1200x1600 1200w',
+    // ],
     sizes: ['(min-width: 480px) 50vw,(min-width: 1024px) 33.3vw,100vw'],
     width: 3,
     height: 4,

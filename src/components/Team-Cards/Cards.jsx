@@ -14,27 +14,33 @@ function Cards({ name, image, role, insta, linkedin, email }) {
           <p>{role}</p>
         </div>
         <div className="social-media">
-          <a href={`mailto:${email}`}>
-            <EmailIcon
-              className="email-icon"
-              inline="true"
-              style={{ fontSize: '3rem' }}
-            />
-          </a>
-          <a href={linkedin}>
-            <LinkedInIcon
-              className="linkedin-icon"
-              inline="true"
-              style={{ fontSize: '3rem' }}
-            />
-          </a>
-          <a href={insta}>
-            <InstagramIcon
-              className="instagram-icon"
-              inline="true"
-              style={{ fontSize: '3rem' }}
-            />
-          </a>
+          {email && (
+            <a href={`mailto:${email}`}>
+              <EmailIcon
+                className="email-icon"
+                inline="true"
+                style={{ fontSize: '3rem' }}
+              />
+            </a>
+          )}
+          {linkedin && (
+            <a href={linkedin}>
+              <LinkedInIcon
+                className="linkedin-icon"
+                inline="true"
+                style={{ fontSize: '3rem' }}
+              />
+            </a>
+          )}
+          {insta && (
+            <a href={insta}>
+              <InstagramIcon
+                className="instagram-icon"
+                inline="true"
+                style={{ fontSize: '3rem' }}
+              />
+            </a>
+          )}
         </div>
       </div>
     </div>
