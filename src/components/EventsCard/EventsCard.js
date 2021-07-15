@@ -4,6 +4,7 @@ import './EventsCard.scss';
 import { Link } from 'react-router-dom';
 
 import calendar from './../../Images/Vector.png';
+// const driveURL = 'https://drive.google.com/uc?id=';
 
 function EventsCard({ img, title, detail, department }) {
   return (
