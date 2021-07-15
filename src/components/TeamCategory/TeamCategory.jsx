@@ -39,7 +39,7 @@ function TeamCategory() {
         >
           <Tab label={<span className={classes.tabLabel}>Convener</span>} />
           <Tab label={<span className={classes.tabLabel}>Heads</span>} />
-          {/* <Tab label={<span className={classes.tabLabel}>Core-Team</span>} /> */}
+          <Tab label={<span className={classes.tabLabel}>Core-Team</span>} />
           <Tab label={<span className={classes.tabLabel}>Developers</span>} />
         </Tabs>
         <div className="cards-wrapper">
@@ -89,7 +89,7 @@ function TeamCategory() {
               </Carousel>
             </div>
           </TabPanel>
-          {/* <TabPanel value={value} index={2} className="core-team">
+          <TabPanel value={value} index={2} className="core-team">
             <div>
               <Carousel
                 enableAutoPlay
@@ -105,12 +105,15 @@ function TeamCategory() {
                       name={item.name}
                       role={item.roles}
                       image={item.url}
+                      email={item.email}
+                      linkedin={item.linkedin}
+                      insta={item.insta}
                     />
                   ))}
               </Carousel>
             </div>
-          </TabPanel> */}
-          <TabPanel value={value} index={2} className="developers">
+          </TabPanel>
+          <TabPanel value={value} index={3} className="developers">
             <div>
               <Carousel
                 enableAutoPlay
@@ -125,6 +128,9 @@ function TeamCategory() {
                       name={item.name}
                       role={item.roles}
                       image={item.url}
+                      email={item.email}
+                      linkedin={item.linkedin}
+                      insta={item.insta}
                     />
                   ))}
               </Carousel>
