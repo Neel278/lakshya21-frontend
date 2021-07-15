@@ -6,15 +6,24 @@
   margin-bottom: 1rem;
 
   &-box {
-    flex: 1;
+    margin-left: 3rem;
+    width: 48%;
     font-weight: normal;
     font-size: 2rem;
     line-height: 3.3rem;
     color: $color-off-white;
     padding: 3rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
     @include respond(tab-land) {
       padding: 3rem 7rem;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
     }
 
     border: 2.54px solid;
@@ -51,7 +60,8 @@
   }
 
   &__left {
-    margin-right: 6.5rem;
+    min-width: 15rem;
+    margin-right: 3.5rem;
 
     @include respond(tab-land) {
       margin-right: 2.5rem;

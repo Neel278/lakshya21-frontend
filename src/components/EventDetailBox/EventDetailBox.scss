@@ -14,8 +14,8 @@
   }
 
   &-box {
-    flex: 1;
-    margin-right: 10rem;
+    width: 48%;
+
     padding: 3rem 10rem;
 
     @include respond(tab-land) {

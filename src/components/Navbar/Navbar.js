@@ -3,6 +3,7 @@ import Drawer from '@material-ui/core/Drawer';
 import useStyles from './styles';
 import SideBar from '../SideBar/SideBar';
 import './Navbar.scss';
+import imgLogo from './../../Images/NavLogo.png';
 import { NavLink } from 'react-router-dom';
 
 function NavBar() {
@@ -17,6 +18,10 @@ function NavBar() {
       <nav className="nav">
         <div className="nav-container container">
           <NavLink exact to="/" className="nav-logo-box">
+            {/* <div className="nav-logo-img-box">
+              <img src={imgLogo} alt="" className="nav-logo-img" />
+            </div> */}
+
             <svg
               className="nav-lantern"
               width="913"
