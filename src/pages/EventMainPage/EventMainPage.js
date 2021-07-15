@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from '../../axios/axios';
 
 import './EventMainPage.scss';
-import eventimg from '../../Images/events-banners/arduino2.png';
+// import eventimg from '../../Images/events-banners/arduino2.png';
 
 import img from './../../Images/EventMain.webp';
 
@@ -28,6 +28,7 @@ const EventMainPage = () => {
     fetchDeaprtment();
     // console.log(event.name);
   }, [eventName]);
+  // console.table(event);
   return (
     <div className="event-main__container">
       <div className="gradient gradient--1">
@@ -56,6 +57,7 @@ const EventMainPage = () => {
             </div>
             <div className="event-main__box-container">
               <EventDetailBox
+                price={event.price}
                 platform={event.platform}
                 participants={event.participants}
               ></EventDetailBox>

@@ -64,7 +64,7 @@ function Events(props) {
   return (
     <div className="events">
       <div className="events__heading">
-        <h1>{department} Events</h1>
+        <h1>{department}</h1>
       </div>
       <div className="events__card">
         <Grid

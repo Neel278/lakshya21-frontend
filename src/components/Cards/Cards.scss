@@ -88,6 +88,7 @@
       // margin-right: 4rem;
       margin: 0 auto;
     }
+//     width: 70%;
   }
 
   &__img {
@@ -122,6 +123,7 @@
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
+//     font-size: 1.8rem;
   }
 
   &__mail {
@@ -129,6 +131,8 @@
 
     @include respond(phone) {
       font-size: rem;
+//       font-size: 1.4rem;
+//       margin-left: 1.5rem;
     }
 
     &-box {
