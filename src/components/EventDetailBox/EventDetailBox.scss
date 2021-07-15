@@ -20,11 +20,9 @@
 
     @include respond(tab-land) {
       padding: 3rem 7rem;
-      margin-right: 6rem;
     }
 
     @include respond(tab-port) {
-      margin-right: 0rem;
       width: 100%;
       margin-bottom: 4rem;
     }

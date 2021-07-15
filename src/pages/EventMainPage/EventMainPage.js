@@ -51,7 +51,7 @@ const EventMainPage = () => {
               <h2 className="event-main__title">{event.name}</h2>
               <div className="event-main__btn-box">
                 <button className="event-main__btn event-main__btn--proceed">
-                  Proceed to Pay
+                  Participate
                 </button>
               </div>
             </div>

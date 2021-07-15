@@ -5,8 +5,14 @@
   align-items: flex-end;
   margin-bottom: 1rem;
 
+  @include respond(phone) {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   &-box {
-    margin-left: 3rem;
     width: 48%;
     font-weight: normal;
     font-size: 2rem;
@@ -66,6 +72,11 @@
     @include respond(tab-land) {
       margin-right: 2.5rem;
     }
+
+    @include respond(phone) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__right {
@@ -79,6 +90,13 @@
     border-bottom: 3px solid $color-blue-light;
     display: inline-block;
     padding-bottom: 1rem;
+
+    @include respond(phone) {
+      // width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
 
   &_name {
