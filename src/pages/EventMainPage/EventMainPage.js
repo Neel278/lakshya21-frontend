@@ -39,20 +39,6 @@ const EventMainPage = () => {
       </div>
       <div className="event-main">
         <div className="event-main__head">
-          <div className="event-main__hero-box">
-            <h2 className="event-main__title">{event.name}</h2>
-            <div className="event-main__btn-box">
-              <button className="event-main__btn">Participate</button>
-              {/* <button
-                // onclick="open_ae_ticket_modal('80008103395933','1784072',event);return false;"
-                data-event-id="80008103395933"
-                data-ticket-id={event.allevents_id}
-                class="ae-ticket-book-button event-main__btn"
-              >
-                Participate
-              </button> */}
-            </div>
-          </div>
           <div className="event-main__img-box">
             <img src={img} alt="" className="event-main__img" />
             <div className="overlay"></div>
@@ -61,6 +47,14 @@ const EventMainPage = () => {
 
         <div className="container">
           <div className="event-main__body">
+            <div className="event-main__hero-box">
+              <h2 className="event-main__title">{event.name}</h2>
+              <div className="event-main__btn-box">
+                <button className="event-main__btn event-main__btn--proceed">
+                  Proceed to Pay
+                </button>
+              </div>
+            </div>
             <div className="event-main__box-container">
               <EventDetailBox
                 price={event.price}
@@ -71,7 +65,10 @@ const EventMainPage = () => {
             </div>
             <EventTextBox details={event}></EventTextBox>
             <div className="event-main__rule-btn-box">
-              <Link to="/" className="event-main__btn">
+              <Link
+                to="/"
+                className="event-main__btn event-main__btn--download"
+              >
                 Download Rule Book
               </Link>
             </div>
