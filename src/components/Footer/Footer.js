@@ -29,7 +29,14 @@ function Footer() {
             College of Engineering which is held every year since 2014.
           </div>
           <div className="footer__privacy-box">
-            <Link to="#" className="footer__privacy">
+            <Link
+              to={{
+                pathname:
+                  'https://drive.google.com/file/d/1k5Ja13jS1v_Ed3EegLoi6OcMiUmCLQUW/view?usp=drivesdk',
+              }}
+              target="_blank"
+              className="footer__privacy"
+            >
               Privacy Policy
             </Link>
           </div>

@@ -2,14 +2,14 @@ import React from 'react';
 
 import './Cards.scss';
 
-import img from './../../Images/head.webp';
+// import img from './../../Images/head.webp';
 
 function cards({ details }) {
   return (
     <div className="card-contact">
       <div className="card-contact__left">
         <div className="card-contact__img-box">
-          <img src={img} alt="" className="card-contact__img" />
+          <img src={details.img} alt="" className="card-contact__img" />
         </div>
         <p className="card-contact__name">{details.name}</p>
       </div>

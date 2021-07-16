@@ -180,7 +180,7 @@ c-71 73 -130 139 -130 148 0 9 59 71 130 138 72 67 130 126 130 131 0 5 -57 9
               </NavLink>
             </li>
 
-            {/* sponsore */}
+            {/* about */}
             <li className="nav-item">
               <NavLink
                 exact
@@ -192,15 +192,15 @@ c-71 73 -130 139 -130 148 0 9 59 71 130 138 72 67 130 126 130 131 0 5 -57 9
               </NavLink>
             </li>
 
-            {/* contact */}
+            {/* sponsor */}
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact"
+                to="/sponsor"
                 activeClassName="active"
                 className="nav-link"
               >
-                Contact Us
+                Sponsors
               </NavLink>
             </li>
             <li className="nav-item">
