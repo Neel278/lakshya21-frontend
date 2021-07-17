@@ -28,7 +28,7 @@ function About() {
 
           <p className="about__text--2">
             This year Lakshya 2021 is based on the theme named "PERCEPTION". The
-            fest is scheduled from 3rd August to 7th August.
+            fest is scheduled from 10th August to 14th August.
           </p>
 
           <p className="about__text--3">

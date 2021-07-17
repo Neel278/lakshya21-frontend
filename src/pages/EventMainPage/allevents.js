@@ -23,7 +23,7 @@ window.ae_plugin_lib_button_init = function () {
             params.r_qty = 1;
           }
           if (typeof AE !== 'undefined') {
-            AE.showTicketModal(event_id, params);
+            window.AE.showTicketModal(event_id, params);
           } else if (lib_loaded === false) {
             req_cache.push({
               event_id: event_id,
@@ -36,7 +36,7 @@ window.ae_plugin_lib_button_init = function () {
           setTimeout(function () {
             $(e.target).removeAttr('disabled');
             $(e.target).html(ae_btn_text);
-            ae_btn_text = '';
+            ae_btn_text = 'Participate';
           }, 5000);
         };
 
@@ -67,7 +67,7 @@ window.ae_plugin_lib_button_init = function () {
                   var eventId = $(this).data('event-id');
                   var ticketId = $(this).data('ticket-id');
                   if (ticketId == undefined) ticketId = 0;
-                  w.open_ae_ticket_modal(eventId, ticketId, event);
+                  w.open_ae_ticket_modal(eventId, ticketId, window.event);
                 }
               });
           } catch (e) {
@@ -82,7 +82,7 @@ window.ae_plugin_lib_button_init = function () {
         setTimeout(bind_ticket_book_click_event, 10000);
         setTimeout(bind_ticket_book_click_event, 20000);
       } else console.log('jQuery is Required.');
-    })(window, jQuery);
+    })(window, window.jQuery);
 
     clearInterval(window.ae_plugin_lib_button_interval);
   } catch (e) {
