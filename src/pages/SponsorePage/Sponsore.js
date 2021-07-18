@@ -21,7 +21,10 @@ function Sponsore() {
         <div className="sponsore__heading">
           <h1>Meet Our Sponsors</h1>
         </div>
-        <SponsoreCard
+        <div className="sponsore__heading">
+          <h1>To be added soon...</h1>
+        </div>
+        {/*<SponsoreCard
           img={bbc}
           headline="sample headline"
           text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto est similique quod praesentium fugit nulla eius, aperiam placeat modi minus adipisci, expedita totam assumenda ad, facere voluptatibus provident earum perspiciatis?"
@@ -61,7 +64,7 @@ function Sponsore() {
             <img src={forbes} alt="" className="otherSponsore__img" />
             <img src={bbc} alt="" className="otherSponsore__img" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

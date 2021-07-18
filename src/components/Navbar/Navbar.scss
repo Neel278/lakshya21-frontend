@@ -27,21 +27,6 @@
     align-items: center;
   }
 
-  &-logo {
-    &-box {
-      display: flex;
-      align-items: center;
-      margin-right: auto;
-      transform: translateY(10px);
-    }
-
-    @include respond(tab-port) {
-      transform: translateY(-5px);
-      height: 2rem;
-      width: auto;
-    }
-  }
-
   &-menu {
     list-style: none;
     display: flex;
@@ -84,6 +69,24 @@
       }
     }
   }
+}
+
+.navbar-logo {
+  width: 100%;
+  height: auto;
+  &-box {
+    width: 14rem;
+    height: auto;
+    margin-right: auto;
+    transform: translateY(5px);
+    fill: $color-blue;
+  }
+
+  // @include respond(tab-port) {
+  //   transform: translateY(-5px);
+  //   height: 2rem;
+  //   width: auto;
+  // }
 }
 
 // .nav {

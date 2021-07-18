@@ -36,26 +36,26 @@ function App() {
           <NavBar />
           <Switch>
             {/* about */}
-            <Route path="/about">
+            <Route path="/about" exact>
               <About />
             </Route>
 
-            <Route path="/glimpse">
+            <Route path="/glimpse" exact>
               <GlimpsePage />
             </Route>
 
             {/* contact */}
-            <Route path="/contact">
+            <Route path="/contact" exact>
               <ContactPage></ContactPage>
             </Route>
 
-            <Route path="/sponsor">
+            <Route path="/sponsor" exact>
               <div>
                 <Sponsor />
               </div>
             </Route>
 
-            <Route path="/team">
+            <Route path="/team" exact>
               <OurTeam />
             </Route>
 
@@ -64,11 +64,11 @@ function App() {
               <EventsPage />
             </Route>
 
-            <Route path="/departments/:department">
+            <Route path="/departments/:department" exact>
               <Events />
             </Route>
 
-            <Route path="/sections/:section">
+            <Route path="/sections/:section" exact>
               <Sections />
             </Route>
 
@@ -76,12 +76,12 @@ function App() {
               <EventMainPage />
             </Route>
 
-            {/* Homepage */}
-            <Route exact path="/">
-              <HomePage></HomePage>
-            </Route>
-            <Route path="/liveDesk">
+            <Route path="/liveDesk" exact>
               <LiveDesk />
+            </Route>
+            {/* Homepage */}
+            <Route path="/">
+              <HomePage></HomePage>
             </Route>
           </Switch>
           <Footer />

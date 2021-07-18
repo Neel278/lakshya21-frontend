@@ -5,16 +5,31 @@
   align-items: flex-end;
   margin-bottom: 1rem;
 
+  @include respond(phone) {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   &-box {
-    flex: 1;
+    width: 48%;
     font-weight: normal;
     font-size: 2rem;
     line-height: 3.3rem;
     color: $color-off-white;
     padding: 3rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
     @include respond(tab-land) {
       padding: 3rem 7rem;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
     }
 
     border: 2.54px solid;
@@ -51,10 +66,16 @@
   }
 
   &__left {
-    margin-right: 6.5rem;
+    min-width: 15rem;
+    margin-right: 3.5rem;
 
     @include respond(tab-land) {
       margin-right: 2.5rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -69,6 +90,13 @@
     border-bottom: 3px solid $color-blue-light;
     display: inline-block;
     padding-bottom: 1rem;
+
+    @include respond(phone) {
+      // width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
 
   &_name {
