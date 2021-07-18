@@ -8,7 +8,7 @@ export default function Confirmation(props) {
   const useStyles = makeStyles((theme) => ({
     paper: {
       position: 'fixed',
-      width: '80%',
+      width: `${props.paperWidth}`,
       height: `${props.paperHeight}`,
       backgroundColor: `${props.bgColor}`,
       backdropFilter: 'blur(40px)',

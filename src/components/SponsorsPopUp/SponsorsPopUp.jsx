@@ -17,10 +17,11 @@ function SponsorsPopUp(props) {
       </div>
       <PopUp
         bg={props.SponsorsBanner}
-        paperHeight="50%"
+        paperHeight="60%"
         bgColor="white"
         open={props.openSponsors}
         close={props.closeSponsors}
+        paperWidth="60%"
       />
     </div>
   );

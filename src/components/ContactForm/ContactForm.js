@@ -93,6 +93,7 @@ function ContactForm() {
         paperHeight="60%"
         paperRadius="20px"
         button="true"
+        paperWidth="80%"
       />
     </div>
   );

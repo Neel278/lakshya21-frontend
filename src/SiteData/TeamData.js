@@ -121,6 +121,7 @@ const Data = [
     roles: 'UI/UX Designer',
     url: 'https://picsum.photos/500',
     team: 'developers',
+    email: 'swatipanchal008@gmail.com',
     linkedin: 'https://www.linkedin.com/in/swatipanchal23/',
     insta: 'https://instagram.com/uiuxeclectic?utm_medium=copy_link',
   },
@@ -130,7 +131,7 @@ const Data = [
     url: driveURL + '1ulji9alJ6Lnorkov9GAq_eJe5vSF_gLz',
     team: 'developers',
     email: 'darshanshah7869@gmail.com',
-    insta: 'https://www.instagram.com/darshan_shah7868',
+    insta: 'https://www.instagram.com/darshan_shah7869',
     linkedin: 'https://www.linkedin.com/in/darshan-shah-b6b8671b4',
   },
   {
@@ -185,6 +186,31 @@ const Data = [
     email: 'parthishere1234@gmail.com',
     linkedin: 'https://www.linkedin.com/in/parth-thakkar-819616197',
     insta: 'https://www.instagram.com/parth._.thakkar_/',
+  },
+  {
+    name: 'Deep Makadiya',
+    roles: 'Graphic Designer',
+    email: ' deep.makadiya25@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/deep-makadiya-1908b6190',
+    image: 'https://picsum.photos/500',
+    team: 'developers',
+  },
+  {
+    name: 'Ashwi Patel',
+    roles: 'Graphic Designer',
+    email: ' ashwipatel1410@gmail.com',
+    insta: 'https://www.instagram.com/_ashwi._/',
+    image: 'https://picsum.photos/500',
+    team: 'developers',
+  },
+  {
+    name: 'Jay Joshi',
+    roles: 'Graphic Designer',
+    linkedin: 'https://www.linkedin.com/in/jay-joshi-',
+    insta:
+      'https://www.instagram.com/invites/contact/?i=1omkbuexj80qy&utm_content=3haavx0',
+    image: 'https://picsum.photos/500',
+    team: 'developers',
   },
 
   {

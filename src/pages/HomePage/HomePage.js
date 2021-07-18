@@ -19,9 +19,9 @@ function HomePage() {
       <div className="home-page">
         <BgVideo></BgVideo>
         <HeroBox></HeroBox>
-        {/* <div className="home-page__sponsors container">
+        <div className="home-page__sponsors container">
           <SponsoredBy></SponsoredBy>
-        </div> */}
+        </div>
       </div>
     </div>
   );
