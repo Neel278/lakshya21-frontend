@@ -1,0 +1,14 @@
+@import '../../sassStyle/base/_base.scss';
+
+.sponsored-by__logo {
+  width: 100%;
+  height: auto;
+
+  &-item {
+    flex-basis: 10rem;
+
+    @include respond(phone) {
+      width: 10rem;
+    }
+  }
+}
