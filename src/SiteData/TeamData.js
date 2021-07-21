@@ -205,15 +205,6 @@ const Data = [
     team: 'core-team',
   },
   {
-    name: 'Anjali Jha',
-    email: 'anjalijha291103@gmail.com ',
-    url: driveURL + '1P1lMTLMR06owpAd7f-9fmZPbdJ8f7CtK',
-    linkedin: 'https://www.linkedin.com/in/anjali-jha-64693b20a',
-    insta: ' https://www.instagram.com/_.anjali11',
-    roles: 'Core Team',
-    team: 'core-team',
-  },
-  {
     name: 'Harsh Patel',
     email: 'hhpatel1408@gmail.com',
     url: driveURL + '11Tmt3OrqgsBAcdwDEbVguCmns5uqYmHP',

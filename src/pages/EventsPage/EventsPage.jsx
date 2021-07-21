@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './EventsPage.scss';
 import EventsCard from '../../components/EventsCardsCategory/EventsCard';
-import eventsPageData from '../../SiteData/eventsPageData';
+// import eventsPageData from '../../SiteData/eventsPageData';
 import GradientBox from '../../components/GradientBox/GradientBox';
 import axios from '../../axios/axios';
 // import eventsPageData from '../../SiteData/eventsPageData';

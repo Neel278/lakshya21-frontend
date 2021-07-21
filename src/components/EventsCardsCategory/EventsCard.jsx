@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './EventsCard.scss';
 import { Link } from 'react-router-dom';
 // import EventIcon from '@material-ui/icons/Event';
+const driveURL = 'https://drive.google.com/uc?id=';
 
 function EventsCard({ category, img, description }) {
   return (
     <div>
       <Link to={'/departments/' + category}>
         <div className="event-card">
-          <img className="card-img" src={img} alt={category}></img>
+          <img className="card-img" src={driveURL + img} alt={category}></img>
           <div className="card-content">
             <h2>{category}</h2>
             {/* <p>10 Events</p>
