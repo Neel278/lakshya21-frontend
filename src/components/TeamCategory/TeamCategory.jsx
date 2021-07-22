@@ -45,11 +45,7 @@ function TeamCategory() {
         <div className="cards-wrapper">
           <TabPanel value={value} index={0} className="convener">
             <div>
-              <Carousel
-                enableAutoPlay
-                autoPlaySpeed={3000}
-                breakPoints={breakPoints}
-              >
+              <Carousel breakPoints={breakPoints}>
                 {menuItem
                   .filter((item) => item.team === 'convener')
                   .map((item, index) => (
@@ -68,11 +64,7 @@ function TeamCategory() {
           </TabPanel>
           <TabPanel value={value} index={1} className="heads">
             <div>
-              <Carousel
-                enableAutoPlay
-                autoPlaySpeed={2000}
-                breakPoints={breakPoints}
-              >
+              <Carousel breakPoints={breakPoints}>
                 {menuItem
                   .filter((item) => item.team === 'heads')
                   .map((item, index) => (
@@ -91,12 +83,7 @@ function TeamCategory() {
           </TabPanel>
           <TabPanel value={value} index={2} className="core-team">
             <div>
-              <Carousel
-                enableAutoPlay
-                autoPlaySpeed={2000}
-                breakPoints={breakPoints}
-                breakPoints={breakPoints}
-              >
+              <Carousel breakPoints={breakPoints}>
                 {menuItem
                   .filter((item) => item.team === 'core-team')
                   .map((item, index) => (
@@ -115,11 +102,7 @@ function TeamCategory() {
           </TabPanel>
           <TabPanel value={value} index={3} className="developers">
             <div>
-              <Carousel
-                enableAutoPlay
-                autoPlaySpeed={2000}
-                breakPoints={breakPoints}
-              >
+              <Carousel breakPoints={breakPoints}>
                 {menuItem
                   .filter((item) => item.team === 'developers')
                   .map((item, index) => (
