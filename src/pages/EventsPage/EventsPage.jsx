@@ -29,8 +29,6 @@ function EventsPage() {
       </div>
       <div className="event-page">
         <div className="page-wrapper">
-          {/* <BgAnim className="bg" /> */}
-
           <div className="page-heading-wrapper">
             <div className="page-heading">Events</div>
           </div>

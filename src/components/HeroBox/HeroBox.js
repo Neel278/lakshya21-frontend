@@ -7,18 +7,6 @@ function HeroBox() {
   return (
     <div id="hero" className="hero-box">
       <h1 className="hero-box__title">Lakshya Fest 2021</h1>
-      <h3 className="hero-box__power">
-        Powered By <br />
-        <Link
-          to={{
-            pathname: 'https://allevents.in/',
-          }}
-          target="_blank"
-          className="hero-box__link"
-        >
-          AllEvents.in
-        </Link>
-      </h3>
       <h2 className="hero-box__sub-title">10-08-2021 To 14-08-2021</h2>
       <h3 className="hero-box__power">
         <i>Powered By </i>

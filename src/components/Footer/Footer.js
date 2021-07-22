@@ -47,7 +47,7 @@ function Footer() {
               target="_blank"
               className="footer__privacy"
             >
-              Events Detail
+              Events Detailer
             </Link>
           </div>
         </div>
