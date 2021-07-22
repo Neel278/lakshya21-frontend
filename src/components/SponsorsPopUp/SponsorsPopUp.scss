@@ -11,4 +11,22 @@
       width: 10rem;
     }
   }
+
+  .sponsors-banner img {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+  }
+
+  .modal-sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sponsors-banner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

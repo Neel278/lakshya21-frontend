@@ -39,6 +39,16 @@ function Footer() {
             >
               Privacy Policy
             </Link>
+            <Link
+              to={{
+                pathname:
+                  'https://drive.google.com/file/d/1k5Ja13jS1v_Ed3EegLoi6OcMiUmCLQUW/view?usp=drivesdk',
+              }}
+              target="_blank"
+              className="footer__privacy"
+            >
+              Events Detail
+            </Link>
           </div>
         </div>
         <div className="footer__links">

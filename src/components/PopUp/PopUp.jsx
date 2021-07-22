@@ -4,7 +4,7 @@ import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
 import Zoom from '@material-ui/core/Zoom';
 
-export default function Confirmation(props) {
+export default function PopUp(props) {
   const useStyles = makeStyles((theme) => ({
     paper: {
       position: 'fixed',

@@ -5,11 +5,12 @@ import img1 from './../../Images/logo-bbc.webp';
 import img2 from './../../Images/logo-bi.webp';
 import img3 from './../../Images/logo-forbes.webp';
 import img4 from './../../Images/logo-techcrunch.webp';
+import bannerImg from './../../Images/sample.png';
 
 const images = [
   {
     name: 'bbc',
-    source: 'https://picsum.photos/500',
+    source: bannerImg,
     src: img1,
   },
   {
@@ -49,8 +50,8 @@ function SponsoredBy() {
           imgHover={() => {
             setOpenOne(true);
           }}
-          openSponsors={openOne}
-          closeSponsors={() => {
+          open={openOne}
+          close={() => {
             setOpenOne(false);
           }}
           SponsorsBanner={images[0].source}
@@ -59,40 +60,40 @@ function SponsoredBy() {
         <SponsorsPopUp
           source={images[1].src}
           sponsorAlt={images[1].name}
-          closeSponsors={() => {
+          close={() => {
             setOpenImgTwo(false);
           }}
           imgHover={() => {
             setOpenImgTwo(true);
           }}
           bgColor="black"
-          openSponsors={OpenImgTwo}
+          open={OpenImgTwo}
           SponsorsBanner={images[1].source}
         />
         <SponsorsPopUp
           source={images[2].src}
           sponsorAlt={images[2].name}
-          closeSponsors={() => {
+          close={() => {
             setOpenImgThree(false);
           }}
           imgHover={() => {
             setOpenImgThree(true);
           }}
           bgColor="black"
-          openSponsors={OpenImgThree}
+          open={OpenImgThree}
           SponsorsBanner={images[2].source}
         />
         <SponsorsPopUp
           source={images[3].src}
           sponsorAlt={images[3].name}
-          closeSponsors={() => {
+          close={() => {
             setOpenImgFour(false);
           }}
           imgHover={() => {
             setOpenImgFour(true);
           }}
           bgColor="black"
-          openSponsors={OpenImgFour}
+          open={OpenImgFour}
           SponsorsBanner={images[3].source}
         />
       </div>

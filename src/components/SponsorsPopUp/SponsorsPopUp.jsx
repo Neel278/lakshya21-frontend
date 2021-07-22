@@ -1,8 +1,20 @@
-import React from 'react';
-import PopUp from '../PopUp/PopUp';
+import React, { useEffect, useState } from 'react';
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
+import Zoom from '@material-ui/core/Zoom';
 import './SponsorsPopUp.scss';
 
 function SponsorsPopUp(props) {
+  const useStyles = makeStyles((theme) => ({
+    modal: {
+      display: 'flex',
+      padding: theme.spacing(1),
+      alignItems: 'center',
+      justifyContent: 'center',
+      border: 'none',
+    },
+  }));
+  const classes = useStyles();
   return (
     <div className="sponsors-wrapper">
       <div className="sponsored-by__logo-box">
@@ -15,14 +27,16 @@ function SponsorsPopUp(props) {
           />
         </div>
       </div>
-      <PopUp
-        bg={props.SponsorsBanner}
-        paperHeight="60%"
-        bgColor="white"
-        open={props.openSponsors}
-        close={props.closeSponsors}
-        paperWidth="60%"
-      />
+      <Modal
+        open={props.open}
+        onClose={props.close}
+        aria-labelledby="simple-dialog-title"
+        className={classes.modal}
+      >
+        <Zoom in={props.open}>
+          <img src={props.SponsorsBanner} className="sponsors-banner" />
+        </Zoom>
+      </Modal>
     </div>
   );
 }

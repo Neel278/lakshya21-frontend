@@ -9,13 +9,13 @@ function HeroBox() {
       <h1 className="hero-box__title">Lakshya Fest 2021</h1>
       <h2 className="hero-box__sub-title">10-08-2021 To 14-08-2021</h2>
       <h3 className="hero-box__power">
-        Powered By{' '}
+        <i>Powered By </i>
         <a
           href="https://allevents.in/"
           target="_blank"
           className="hero-box__link"
         >
-          AllEvents.in
+          allevents.in
         </a>
       </h3>
 
