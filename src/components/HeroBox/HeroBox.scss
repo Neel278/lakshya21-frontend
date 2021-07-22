@@ -8,6 +8,33 @@
   left: 50%;
   transform: translate(-50%, -90%);
   display: none;
+  margin-top: 8rem;
+
+  @include respond(phone) {
+    transform: translate(-50%, -85%);
+  }
+
+  &__power {
+    font-size: 2.5rem;
+    // font-weight: lighter;
+    text-align: center;
+    margin-top: 4rem;
+
+    @include respond(tab-port) {
+      margin-top: 2rem;
+      margin-bottom: -2rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    // text-decoration: underline;
+    font-size: 4rem;
+    // font-weight: lighter;
+    text-align: center;
+  }
 
   @include respond(phone) {
     transform: translate(-50%, -85%);
