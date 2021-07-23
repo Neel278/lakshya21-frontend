@@ -39,6 +39,7 @@ function EventsPage() {
             {pageData.map((item, index) => (
               <EventsCard
                 key={index}
+                id={item.id}
                 category={item.name}
                 img={item.img}
                 description={item.description}

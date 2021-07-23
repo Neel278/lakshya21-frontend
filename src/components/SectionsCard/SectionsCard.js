@@ -4,6 +4,7 @@ import './SectionsCard.scss';
 import { Link } from 'react-router-dom';
 
 import calendar from './../../Images/Vector.png';
+import technical from './../../Images/technical-support-icon-robotic-hand-customer-help-tech-support_127544-400 2.webp';
 const driveURL = 'https://drive.google.com/uc?id=';
 
 function SectionsCard({ img, title, detail, department }) {
@@ -11,7 +12,11 @@ function SectionsCard({ img, title, detail, department }) {
   return (
     <div className="eventsCard">
       <Link to={`/events/${title}`} className="eventsCard__join">
-        <img src={driveURL + img} alt="" className="eventsCard__img" />
+        <img
+          src={img === '' ? technical : driveURL + img}
+          alt=""
+          className="eventsCard__img"
+        />
 
         <div className="eventsCard__cont">
           <h1 className="eventsCard__heading">{title}</h1>
