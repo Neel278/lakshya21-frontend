@@ -1,31 +1,29 @@
-import './Confirmation.scss';
-import bg from './PopUp.png';
+import './PopUp.scss';
 import React, { useEffect, useState } from 'react';
 import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
 import Zoom from '@material-ui/core/Zoom';
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    position: 'fixed',
-    width: '80%',
-    height: '60%',
-    backgroundColor: '#232A67',
-    backdropFilter: 'blur(40px)',
-    borderRadius: '20px',
-    backgroundImage: `url(${bg})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    boxShadow: theme.shadows[5],
-    display: 'flex',
-    border: 'none',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-}));
-
-export default function Confirmation(props) {
+export default function PopUp(props) {
+  const useStyles = makeStyles((theme) => ({
+    paper: {
+      position: 'fixed',
+      width: `${props.paperWidth}`,
+      height: `${props.paperHeight}`,
+      backgroundColor: `${props.bgColor}`,
+      backdropFilter: 'blur(40px)',
+      borderRadius: `${props.paperRadius}`,
+      backgroundImage: `url(${props.bg})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      boxShadow: theme.shadows[5],
+      display: 'flex',
+      border: 'none',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+  }));
   const classes = useStyles();
   const [message, setMessage] = useState('');
 
@@ -51,9 +49,11 @@ export default function Confirmation(props) {
           <div className={classes.paper}>
             <p className="success-msg">{message}</p>
             <br></br>
-            <button className="back-btn" onClick={props.close}>
-              Back
-            </button>
+            {props.button && (
+              <button className="back-btn" onClick={props.close}>
+                Back
+              </button>
+            )}
           </div>
         </Zoom>
       </Modal>

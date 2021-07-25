@@ -12,7 +12,7 @@ import '../Events/Events.scss';
 import './../../sassStyle/layout/_grid.scss';
 import axios from '../../axios/axios';
 // import EventsCard from '../../components/EventsCard/EventsCard';
-import technical from './../../Images/technical-support-icon-robotic-hand-customer-help-tech-support_127544-400 2.webp';
+// import technical from './../../Images/technical-support-icon-robotic-hand-customer-help-tech-support_127544-400 2.webp';
 import { useParams } from 'react-router';
 import SectionsCard from '../../components/SectionsCard/SectionsCard.js';
 
@@ -64,7 +64,7 @@ function Sections(props) {
   return (
     <div className="events">
       <div className="events__heading">
-        <h1>{section} Events</h1>
+        <h1>{section}</h1>
       </div>
       <div className="events__card">
         <Grid
@@ -76,10 +76,10 @@ function Sections(props) {
             <Grid xs={12} sm={12} md={6} key={index}>
               <SectionsCard
                 key={index}
-                img={technical}
+                img={item.img}
                 title={item.name}
                 detail={
-                  item.overview.substr(0, 100) + '...' ??
+                  item.overview.substr(0, 99) + '...' ??
                   'This is a lakshya 2021 event'
                 }
                 department={idToDepartment(item.event_id)}

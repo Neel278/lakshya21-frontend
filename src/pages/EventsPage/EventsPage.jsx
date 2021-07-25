@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './EventsPage.scss';
 import EventsCard from '../../components/EventsCardsCategory/EventsCard';
-import eventsPageData from '../../SiteData/eventsPageData';
 import GradientBox from '../../components/GradientBox/GradientBox';
 import axios from '../../axios/axios';
 // import eventsPageData from '../../SiteData/eventsPageData';
@@ -30,8 +29,6 @@ function EventsPage() {
       </div>
       <div className="event-page">
         <div className="page-wrapper">
-          {/* <BgAnim className="bg" /> */}
-
           <div className="page-heading-wrapper">
             <div className="page-heading">Events</div>
           </div>
@@ -39,6 +36,7 @@ function EventsPage() {
             {pageData.map((item, index) => (
               <EventsCard
                 key={index}
+                id={item.id}
                 category={item.name}
                 img={item.img}
                 description={item.description}

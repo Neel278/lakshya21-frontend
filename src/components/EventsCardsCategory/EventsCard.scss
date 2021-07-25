@@ -27,19 +27,19 @@
   }
 }
 
-.event-card:hover {
-  @include respond(desktop) {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-    transition: 600ms ease-in-out;
-  }
+// .event-card:hover {
+//   @include respond(desktop) {
+//     transform: scale(1.05);
+//     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+//     transition: 600ms ease-in-out;
+//   }
 
-  @include respond(big-desktop) {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
-    transition: 600ms ease-in-out;
-  }
-}
+//   @include respond(big-desktop) {
+//     transform: scale(1.05);
+//     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+//     transition: 600ms ease-in-out;
+//   }
+// }
 
 .event-card .card-img {
   width: 16rem;
@@ -62,7 +62,7 @@
   width: 100%;
   height: 50%;
   overflow: wrap;
-  margin-top: 2rem;
+  // margin-top: 2rem;
   margin-bottom: 3rem;
   @include respond(phone) {
     margin-bottom: 7rem;
@@ -74,8 +74,6 @@
   font-size: 2.6rem;
   color: #121c56;
   font-weight: 700;
-  margin-bottom: 2rem;
-  // width: 100%;
 
   @include respond(phone) {
     font-size: 1.8rem;
@@ -88,9 +86,9 @@
   font-size: 1.6rem;
   color: #18074e;
   font-weight: 700;
+  opacity: 0.8;
   margin-bottom: 1rem;
   align-content: center;
-  // font-weight: 700;
 
   @include respond(phone) {
     font-size: 1.4rem;
@@ -100,12 +98,13 @@
 .card-content .description {
   font-size: 1.4rem;
   width: 80%;
-  line-height: 14px;
+  line-height: 1.8rem;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   font-weight: 500;
-  // margin-top: rem;
+  opacity: 1;
+  margin-bottom: 1.5rem;
 }
 
 .participate-btn {
@@ -116,7 +115,7 @@
   font-weight: bold;
   background: #121c56;
   margin-top: auto;
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
   border-radius: 5px;
 
   @include respond(phone) {

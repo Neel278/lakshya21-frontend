@@ -29,13 +29,13 @@
 
   &__img {
     border-radius: 0% !important;
-    height: 25vw;
+    height: auto;
     width: 100%;
-    object-fit: cover;
+    // object-fit: cover;
 
     @include respond(tab-land) {
       width: 100%;
-      height: 100%;
+      height: auto;
     }
   }
 

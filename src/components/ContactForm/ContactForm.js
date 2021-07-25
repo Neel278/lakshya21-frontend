@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './ContactForm.scss';
-import Confirmation from '../Confirmation/Confirmation';
+import PopUp from '../PopUp/PopUp';
 import axios from '../../axios/axios';
+import Bg from '../../Images/PopUp.png';
 
 function ContactForm() {
   const [name, setName] = useState('');
@@ -83,7 +84,17 @@ function ContactForm() {
           Submit
         </button>
       </div>
-      <Confirmation open={open} close={handleClose} message={error} />
+      <PopUp
+        open={open}
+        close={handleClose}
+        message={error}
+        bg={Bg}
+        bgColor="#232A67"
+        paperHeight="60%"
+        paperRadius="20px"
+        button="true"
+        paperWidth="80%"
+      />
     </div>
   );
 }

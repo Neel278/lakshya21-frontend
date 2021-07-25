@@ -3,7 +3,7 @@
 .card-contact {
   margin: 9rem 0;
   margin-bottom: 6rem;
-  width: 40rem;
+  width: 100%;
   background: linear-gradient(
     152.97deg,
     rgba(255, 255, 255, 0.039) 0%,
@@ -26,7 +26,8 @@
   }
 
   @include respond(phone) {
-    justify-content: space-evenly;
+    display: block;
+    // justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -62,6 +63,7 @@
     justify-content: center;
     align-items: center;
     width: 30%;
+    margin-right: 2rem;
     // margin-right: 4.8rem;
     // padding-left: 2rem;
 
@@ -71,6 +73,7 @@
 
     @include respond(phone) {
       // margin-right: 4rem;
+      margin: 0 auto;
     }
   }
 
@@ -81,6 +84,11 @@
     align-items: center;
     // padding-right: 2rem;
     width: 50%;
+
+    @include respond(phone) {
+      // margin-right: 4rem;
+      margin: 0 auto;
+    }
   }
 
   &__img {
@@ -100,22 +108,43 @@
   }
 
   &__name {
+    text-align: center;
+    min-width: 15rem;
     @include respond(phone) {
       font-size: 1.4rem;
     }
   }
 
   &__head {
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid rgba(1, 255, 255, 0.63);
+    text-align: center;
+    min-width: 18rem;
+    // border-bottom: 3px solid #486581;
+    @include respond(phone) {
+      // margin-right: 4rem;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__headUnderline {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #486581;
     margin-bottom: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
   }
 
   &__mail {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
     @include respond(phone) {
-      font-size: 1.4;
+      font-size: rem;
     }
 
     &-box {
@@ -123,7 +152,7 @@
       align-items: center;
       color: rgba(255, 255, 255, 0.8);
       margin-bottom: 2.5rem;
-
+      text-align: left;
       @include respond(phone) {
         margin-bottom: 1rem;
       }
@@ -138,7 +167,7 @@
   }
 
   &__call {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     &-box {
       display: flex;
       align-items: center;

@@ -18,7 +18,9 @@ function OurTeam() {
         <div className="page-title">
           <div className="title-text">Our Team</div>
         </div>
+        <div className="TC">
         <TeamCategory />
+        </div>
       </div>
     </div>
   );

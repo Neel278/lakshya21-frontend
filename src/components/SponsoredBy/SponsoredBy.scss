@@ -55,31 +55,18 @@
     flex: 1;
     background-color: $color-off-white;
   }
-
-  &__logo {
+  .logo-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: auto;
 
-    &-item {
-      flex-basis: 10rem;
-
-      @include respond(phone) {
-        width: 10rem;
-      }
-    }
-
-    &-box {
-      display: flex;
-      justify-content: space-between;
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
       align-items: center;
-
-      @include respond(phone) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
-        grid-row-gap: 1rem;
-      }
+      grid-row-gap: 1rem;
     }
   }
 }

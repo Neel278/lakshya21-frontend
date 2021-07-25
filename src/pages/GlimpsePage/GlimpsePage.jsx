@@ -3,7 +3,7 @@ import Gallery from 'react-photo-gallery';
 import './GlimpsePage.scss';
 import Carousel, { Modal, ModalGateway } from 'react-images';
 import photos from '../../SiteData/photos';
-import video from '../../Images/lakshya.mp4';
+// import video from '../../Images/lakshya.mp4';
 
 function GlimpsePage() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -47,7 +47,7 @@ function GlimpsePage() {
                 currentIndex={currentImage}
                 views={photos.map((x) => ({
                   ...x,
-                  srcset: x.srcSet,
+                  srcset: x.src,
                   caption: x.title,
                 }))}
               />
