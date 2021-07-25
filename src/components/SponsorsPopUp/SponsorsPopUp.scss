@@ -1,15 +1,25 @@
 @import '../../sassStyle/base/_base.scss';
 
 .sponsored-by__logo {
-  width: 100%;
-  height: auto;
+  max-width: 20rem;
+  max-height: 20rem;
 
   &-item {
     flex-basis: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @include respond(phone) {
       width: 10rem;
     }
+  }
+  &-item p {
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 1.8rem;
   }
 
   .sponsors-banner img {

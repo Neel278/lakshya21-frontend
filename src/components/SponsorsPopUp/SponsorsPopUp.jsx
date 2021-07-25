@@ -14,16 +14,26 @@ function SponsorsPopUp(props) {
       border: 'none',
     },
   }));
+
   const classes = useStyles();
   return (
     <div className="sponsors-wrapper">
       <div className="sponsored-by__logo-box">
         <div className="sponsored-by__logo-item">
+          <p>
+            <i>{props.sponsorshipText}</i>
+          </p>
+
           <img
             src={props.source}
             alt={props.sponsorAlt}
             className="sponsored-by__logo"
             onMouseOver={props.imgHover}
+            style={{
+              backgroundColor: `${props.imgBg}`,
+              padding: `${props.imgPadding}`,
+              borderRadius: `${props.imgBorderRadius}`,
+            }}
           />
         </div>
       </div>

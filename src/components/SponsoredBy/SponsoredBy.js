@@ -6,17 +6,18 @@ import img2 from './../../Images/logo-bi.webp';
 import img3 from './../../Images/logo-forbes.webp';
 import img4 from './../../Images/logo-techcrunch.webp';
 import bannerImg from './../../Images/sample.png';
+const driveURL = 'https://drive.google.com/uc?id=';
 
 const images = [
   {
-    name: 'bbc',
-    source: bannerImg,
-    src: img1,
-  },
-  {
     name: 'bi',
     source: 'https://source.unsplash.com/VAoSKP_ocN0',
-    src: img2,
+    src: driveURL + '1GzUHWsJqY8pacZz-8MrdBP4qPbqALaF0',
+  },
+  {
+    name: 'bbc',
+    source: bannerImg,
+    src: driveURL + '12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ',
   },
   {
     name: 'forbes',
@@ -56,6 +57,7 @@ function SponsoredBy() {
           }}
           SponsorsBanner={images[0].source}
           bgColor="black"
+          sponsorshipText="Powered By"
         />
         <SponsorsPopUp
           source={images[1].src}
@@ -69,8 +71,12 @@ function SponsoredBy() {
           bgColor="black"
           open={OpenImgTwo}
           SponsorsBanner={images[1].source}
+          sponsorshipText="In Association "
+          imgBg="#F0F4F8"
+          imgPadding="0.5rem"
+          imgBorderRadius="0.3rem"
         />
-        <SponsorsPopUp
+        {/* <SponsorsPopUp
           source={images[2].src}
           sponsorAlt={images[2].name}
           close={() => {
@@ -82,8 +88,8 @@ function SponsoredBy() {
           bgColor="black"
           open={OpenImgThree}
           SponsorsBanner={images[2].source}
-        />
-        <SponsorsPopUp
+        /> */}
+        {/* <SponsorsPopUp
           source={images[3].src}
           sponsorAlt={images[3].name}
           close={() => {
@@ -95,7 +101,7 @@ function SponsoredBy() {
           bgColor="black"
           open={OpenImgFour}
           SponsorsBanner={images[3].source}
-        />
+        /> */}
       </div>
     </div>
   );
