@@ -42,24 +42,12 @@ function Footer() {
             <Link
               to={{
                 pathname:
-                  'https://drive.google.com/file/d/1k5Ja13jS1v_Ed3EegLoi6OcMiUmCLQUW/view?usp=drivesdk',
+                  'https://drive.google.com/file/d/1rFlXAsK3_AW9Nx3ZhzRvedOtzJ1f5-3h/view?usp=drivesdk',
               }}
               target="_blank"
               className="footer__privacy"
             >
               Events Detailer
-            </Link>
-          </div>
-          <br />
-          <div className="footer__privacy-box">
-            <Link
-              to={{
-                pathname: '#',
-              }}
-              target="_blank"
-              className="footer__privacy"
-            >
-              Event Detailer
             </Link>
           </div>
         </div>
