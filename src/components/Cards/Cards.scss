@@ -118,15 +118,26 @@
   &__head {
     text-align: center;
     min-width: 18rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid rgba(1, 255, 255, 0.63);
-    margin-bottom: 2.5rem;
+    // border-bottom: 3px solid #486581;
     @include respond(phone) {
       // margin-right: 4rem;
       font-size: 1.8rem;
       margin-top: 2rem;
-      margin-bottom: 1rem;
     }
+  }
+
+  &__headUnderline {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #486581;
+    margin-bottom: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
   }
 
   &__mail {

@@ -47,7 +47,7 @@ function GlimpsePage() {
                 currentIndex={currentImage}
                 views={photos.map((x) => ({
                   ...x,
-                  srcset: x.srcSet,
+                  srcset: x.src,
                   caption: x.title,
                 }))}
               />
