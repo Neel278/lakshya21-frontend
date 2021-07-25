@@ -8,7 +8,7 @@
   left: 50%;
   transform: translate(-50%, -90%);
   display: none;
-  margin-top: 8rem;
+  // margin-bottom: 6rem;
 
   @include respond(phone) {
     transform: translate(-50%, -85%);
