@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Modal from '@material-ui/core/Modal';
 import { makeStyles } from '@material-ui/core/styles';
 import Zoom from '@material-ui/core/Zoom';
@@ -44,7 +44,11 @@ function SponsorsPopUp(props) {
         className={classes.modal}
       >
         <Zoom in={props.open}>
-          <img src={props.SponsorsBanner} className="sponsors-banner" />
+          <img
+            src={props.SponsorsBanner}
+            className="sponsors-banner"
+            alt={props.sponsorAlt}
+          />
         </Zoom>
       </Modal>
     </div>
