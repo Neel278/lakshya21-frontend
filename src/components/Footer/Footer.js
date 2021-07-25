@@ -50,6 +50,18 @@ function Footer() {
               Events Detailer
             </Link>
           </div>
+          <br />
+          <div className="footer__privacy-box">
+            <Link
+              to={{
+                pathname: '#',
+              }}
+              target="_blank"
+              className="footer__privacy"
+            >
+              Event Detailer
+            </Link>
+          </div>
         </div>
         <div className="footer__links">
           <div className="footer__links--title">LINKS</div>

@@ -120,6 +120,7 @@ const Data = [
     name: 'Swati Panchal',
     roles: 'UI/UX Designer',
     url: 'https://picsum.photos/500',
+    email: 'swatipanchal008@gmail.com',
     team: 'developers',
     email: 'swatipanchal008@gmail.com',
     linkedin: 'https://www.linkedin.com/in/swatipanchal23/',
@@ -212,7 +213,6 @@ const Data = [
     image: 'https://picsum.photos/500',
     team: 'developers',
   },
-
   {
     name: 'khushvi purohit',
     email: 'khushvipurohit59@gmail.com',
