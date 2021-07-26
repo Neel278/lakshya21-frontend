@@ -15,33 +15,50 @@
     flex-direction: column;
     align-items: center;
 
-    & > span {
-      height: 0.3rem;
-      width: 6rem;
-      background-color: white;
-      margin-bottom: 8rem;
+    // & > span {
+    //   height: 0.3rem;
+    //   width: 6rem;
+    //   background-color: white;
+    //   margin-bottom: 8rem;
+    // }
+
+    & > h1 {
+      margin-top: 2rem;
+      font-family: Roboto;
+      font-size: 3.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 4.2rem;
+      letter-spacing: 0em;
+      border-bottom: 2.5px solid #486581;
+      margin-bottom: 10.9rem;
+      padding: 1rem;
+
+      @include respond(phone) {
+        margin-bottom: 6.9rem;
+      }
     }
   }
 
-  .underline-sponsors {
-    border-bottom: 2.5px solid #486581;
-    padding: 1rem;
-    margin-bottom: 10.9rem;
-  }
+  // .underline-sponsors {
+  //   border-bottom: 2.5px solid #486581;
+  //   padding: 1rem;
+  //   margin-bottom: 10.9rem;
+  // }
 
-  .underline-sponsors h1 {
-    margin-top: 2rem;
-    font-family: Roboto;
-    font-size: 3.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 4.2rem;
-    letter-spacing: 0em;
-    @include respond(phone) {
-      font-size: 2.4rem;
-      margin-bottom: 5rem;
-    }
-  }
+  // .underline-sponsors h1 {
+  //   margin-top: 2rem;
+  //   font-family: Roboto;
+  //   font-size: 3.6rem;
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   line-height: 4.2rem;
+  //   letter-spacing: 0em;
+  //   @include respond(phone) {
+  //     font-size: 2.4rem;
+  //     margin-bottom: 5rem;
+  //   }
+  // }
 }
 
 .otherSponsore {

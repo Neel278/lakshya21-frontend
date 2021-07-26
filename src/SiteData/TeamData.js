@@ -122,7 +122,6 @@ const Data = [
     url: 'https://picsum.photos/500',
     email: 'swatipanchal008@gmail.com',
     team: 'developers',
-    email: 'swatipanchal008@gmail.com',
     linkedin: 'https://www.linkedin.com/in/swatipanchal23/',
     insta: 'https://instagram.com/uiuxeclectic?utm_medium=copy_link',
   },

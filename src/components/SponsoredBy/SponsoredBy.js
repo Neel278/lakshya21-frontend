@@ -1,41 +1,31 @@
 import React, { useState } from 'react';
 import './SponsoredBy.scss';
 import SponsorsPopUp from '../SponsorsPopUp/SponsorsPopUp';
-import img1 from './../../Images/logo-bbc.webp';
-import img2 from './../../Images/logo-bi.webp';
-import img3 from './../../Images/logo-forbes.webp';
-import img4 from './../../Images/logo-techcrunch.webp';
+// import img1 from './../../Images/logo-bbc.webp';
+// import img2 from './../../Images/logo-bi.webp';
+// import img3 from './../../Images/logo-forbes.webp';
+// import img4 from './../../Images/logo-techcrunch.webp';
 import bannerImg from './../../Images/sample.png';
 const driveURL = 'https://drive.google.com/uc?id=';
 
 const images = [
   {
-    name: 'bi',
-    source: 'https://source.unsplash.com/VAoSKP_ocN0',
+    name: 'allevents',
+    source: bannerImg,
     src: driveURL + '1GzUHWsJqY8pacZz-8MrdBP4qPbqALaF0',
   },
   {
-    name: 'bbc',
+    name: 'visaeur',
     source: bannerImg,
     src: driveURL + '12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ',
-  },
-  {
-    name: 'forbes',
-    source: 'https://source.unsplash.com/EzYq1HOl5_8',
-    src: img3,
-  },
-  {
-    name: 'techcrunch',
-    source: 'https://picsum.photos/500',
-    src: img4,
   },
 ];
 
 function SponsoredBy() {
   const [openOne, setOpenOne] = useState(false);
   const [OpenImgTwo, setOpenImgTwo] = useState(false);
-  const [OpenImgThree, setOpenImgThree] = useState(false);
-  const [OpenImgFour, setOpenImgFour] = useState(false);
+  // const [OpenImgThree, setOpenImgThree] = useState(false);
+  // const [OpenImgFour, setOpenImgFour] = useState(false);
 
   return (
     <div className="sponsored-by">

@@ -1,12 +1,12 @@
 import React from 'react';
 import './Sponsore.scss';
 
-import SponsoreCard from '../../components/Cards/SponsorCard';
+// import SponsoreCard from '../../components/Cards/SponsorCard';
 import GradientBox from '../../components/GradientBox/GradientBox';
 
-import bbc from './../../Images/logo-bbc.webp';
-import bi from './../../Images/logo-bi.webp';
-import forbes from './../../Images/logo-forbes.webp';
+// import bbc from './../../Images/logo-bbc.webp';
+// import bi from './../../Images/logo-bi.webp';
+// import forbes from './../../Images/logo-forbes.webp';
 
 function Sponsore() {
   return (
@@ -19,9 +19,9 @@ function Sponsore() {
       </div>
       <div className="sponsore">
         <div className="sponsore__heading">
-          <div className="underline-sponsors">
-            <h1>Meet Our Sponsors</h1>
-          </div>
+          {/* <div className="underline-sponsors"> */}
+          <h1>Meet Our Sponsors</h1>
+          {/* </div> */}
           {/* <span></span> */}
         </div>
         {/* <div className="sponsore__heading">

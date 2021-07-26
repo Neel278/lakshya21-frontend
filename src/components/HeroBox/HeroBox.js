@@ -10,13 +10,15 @@ function HeroBox() {
       <h2 className="hero-box__sub-title">10-08-2021 To 14-08-2021</h2>
       <h3 className="hero-box__power">
         <i>Powered By </i>
-        <a
-          href="https://allevents.in/"
+        <Link
+          to={{
+            pathname: 'https://allevents.in/',
+          }}
           target="_blank"
           className="hero-box__link"
         >
           allevents.in
-        </a>
+        </Link>
       </h3>
 
       <div className="hero-box__button-box">
