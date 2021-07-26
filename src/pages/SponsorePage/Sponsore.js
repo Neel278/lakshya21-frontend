@@ -19,9 +19,9 @@ function Sponsore() {
       </div>
       <div className="sponsore">
         <div className="sponsore__heading">
-          <div className="underline-sponsors">
+          {/* <div className="underline-sponsors"> */}
             <h1>Meet Our Sponsors</h1>
-          </div>
+          {/* </div> */}
           {/* <span></span> */}
         </div>
         {/* <div className="sponsore__heading">
