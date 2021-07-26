@@ -52,7 +52,7 @@
     flex-direction: column;
 
     @include respond(tab-port) {
-      margin-top: 1rem;
+      margin-top: 4rem;
       margin-bottom: -1rem;
     }
   }
@@ -149,6 +149,7 @@
 
       @media (max-width: 350px) {
         display: block;
+        margin-bottom: 5rem;
       }
     }
 

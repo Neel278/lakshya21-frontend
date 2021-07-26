@@ -7,7 +7,7 @@
   display: flex;
   align-items: flex-end;
   position: relative;
-  
+
   &__container {
     padding-bottom: 5rem;
     position: relative;
@@ -19,7 +19,11 @@
   }
 
   @include respond(phone) {
-    height: 75vh;
+    height: 90vh;
+  }
+
+  @include respond(smallPhone) {
+    height: 100vh;
   }
 
   &__gradient {
