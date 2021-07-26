@@ -20,7 +20,7 @@ function Sponsore() {
       <div className="sponsore">
         <div className="sponsore__heading">
           {/* <div className="underline-sponsors"> */}
-            <h1>Meet Our Sponsors</h1>
+          <h1>Meet Our Sponsors</h1>
           {/* </div> */}
           {/* <span></span> */}
         </div>
@@ -49,66 +49,148 @@ function Sponsore() {
           {/* <h1>Other Sponsors</h1> */}
 
           <div className="otherSponsore__logo">
-            <a href="/">
-              <img
-                src="https://drive.google.com/uc?id=117afzo2nzab8iuFAma5bAF0KpsZ9-c_K"
-                alt=""
-                className="otherSponsore__img"
-              />
-            </a>
-            <a href="https://www.allevents.in/">
-              <img
-                src="https://drive.google.com/uc?id=1GzUHWsJqY8pacZz-8MrdBP4qPbqALaF0"
-                alt=""
-                className="otherSponsore__img"
-              />
-            </a>
+            <div>
+              <p>
+                <i>Workshop Partner</i>
+              </p>
+              <a
+                href="https://www.iantindia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1o8PdGetNnzBgvCA_cV3je9AEVr-ljFr8"
+                  alt="IANT"
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
+            <div>
+              <p>
+                <i>Official Photography Partner</i>
+              </p>
+
+              <a
+                href="https://instituteforphotographyexcellence.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1uapkZXznMlybCL1VeANvinj8uOkt9eZ7"
+                  alt=""
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
 
             {/* <img src={bbc} alt="" className="otherSponsore__img" /> */}
           </div>
 
           <div className="otherSponsore__logo">
-            <a href="/">
-              <img
-                src="https://drive.google.com/uc?id=1pC5p4g3fUe-oPOLwqhgnU8ODX7pWkU8y"
-                alt=""
-                className="otherSponsore__img"
-              />
-            </a>
-            <a href="/">
-              <img
-                src="https://drive.google.com/uc?id=1RGjtB68qbIGYsalUHKm_Oqo9FndiQ_Qz"
-                alt=""
-                className="otherSponsore__img"
-                style={{
-                  backgroundColor: '#F0F4F8',
-                  padding: '1rem',
-                  borderRadius: '0.5rem',
-                }}
-              />
-            </a>
+            <div>
+              <p>
+                <i>Online Media Partner</i>
+              </p>
+
+              <a
+                href="https://www.knowafest.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=117afzo2nzab8iuFAma5bAF0KpsZ9-c_K"
+                  alt="KNOWAFEST"
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
+            <div>
+              <p>
+                <i>Powered By</i>
+              </p>
+
+              <a
+                href="https://allevents.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1GzUHWsJqY8pacZz-8MrdBP4qPbqALaF0"
+                  alt="allevents"
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
+
+            <div>
+              <p>
+                <i>Special Partner</i>
+              </p>
+
+              <a
+                href="https://www.khodiyarcadcenter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1RGjtB68qbIGYsalUHKm_Oqo9FndiQ_Qz"
+                  alt=""
+                  className="otherSponsore__img"
+                  style={{
+                    backgroundColor: '#F0F4F8',
+                    padding: '1rem',
+                    borderRadius: '0.5rem',
+                  }}
+                  style={{
+                    backgroundColor: '#F0F4F8',
+                    padding: '1rem',
+                    borderRadius: '0.5rem',
+                  }}
+                />
+              </a>
+            </div>
           </div>
 
           <div className="otherSponsore__logo">
-            <a href="/">
-              <img
-                src="https://drive.google.com/uc?id=1uapkZXznMlybCL1VeANvinj8uOkt9eZ7"
-                alt=""
-                className="otherSponsore__img"
-              />
-            </a>
-            <a href="/">
-              <img
-                src="https://drive.google.com/uc?id=12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ"
-                alt=""
-                className="otherSponsore__img"
-                style={{
-                  backgroundColor: '#F0F4F8',
-                  padding: '1rem',
-                  borderRadius: '0.5rem',
-                }}
-              />
-            </a>
+            <div>
+              <p>
+                <i>In Association With</i>
+              </p>
+
+              <a
+                href="http://visaeuro.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ"
+                  alt=""
+                  className="otherSponsore__img"
+                  style={{
+                    backgroundColor: '#F0F4F8',
+                    padding: '1rem',
+                    borderRadius: '0.5rem',
+                  }}
+                />
+              </a>
+            </div>
+            <div>
+              <p>
+                <i>Special Partner</i>
+              </p>
+
+              <a
+                href="https://therenaissance.co.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1pC5p4g3fUe-oPOLwqhgnU8ODX7pWkU8y"
+                  alt=""
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
 
             {/* <img src={bbc} alt="" className="otherSponsore__img" /> */}
           </div>

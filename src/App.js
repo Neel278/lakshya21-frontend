@@ -24,71 +24,71 @@ import GlimpsePage from './pages/GlimpsePage/GlimpsePage';
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(setLoading(false), 300);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(setLoading(false), 300);
+  // }, []);
 
   // function App() {
   return (
     <>
-      {loading === false ? (
-        <Router>
-          <NavBar />
-          <Switch>
-            {/* about */}
-            <Route path="/about" exact>
-              <About />
-            </Route>
+      {/* {loading === false ? ( */}
+      <Router>
+        <NavBar />
+        <Switch>
+          {/* about */}
+          <Route path="/about" exact>
+            <About />
+          </Route>
 
-            <Route path="/glimpse" exact>
-              <GlimpsePage />
-            </Route>
+          <Route path="/glimpse" exact>
+            <GlimpsePage />
+          </Route>
 
-            {/* contact */}
-            <Route path="/contact" exact>
-              <ContactPage></ContactPage>
-            </Route>
+          {/* contact */}
+          <Route path="/contact" exact>
+            <ContactPage></ContactPage>
+          </Route>
 
-            <Route path="/sponsor" exact>
-              <div>
-                <Sponsor />
-              </div>
-            </Route>
+          <Route path="/sponsor" exact>
+            <div>
+              <Sponsor />
+            </div>
+          </Route>
 
-            <Route path="/team" exact>
-              <OurTeam />
-            </Route>
+          <Route path="/team" exact>
+            <OurTeam />
+          </Route>
 
-            {/* Events Page */}
-            <Route path="/events" exact>
-              <EventsPage />
-            </Route>
+          {/* Events Page */}
+          <Route path="/events" exact>
+            <EventsPage />
+          </Route>
 
-            <Route path="/departments/:department" exact>
-              <Events />
-            </Route>
+          <Route path="/departments/:department" exact>
+            <Events />
+          </Route>
 
-            <Route path="/sections/:section" exact>
-              <Sections />
-            </Route>
+          <Route path="/sections/:section" exact>
+            <Sections />
+          </Route>
 
-            <Route path="/events/:event" exact>
-              <EventMainPage />
-            </Route>
+          <Route path="/events/:event" exact>
+            <EventMainPage />
+          </Route>
 
-            <Route path="/liveDesk" exact>
-              <LiveDesk />
-            </Route>
-            {/* Homepage */}
-            <Route path="/">
-              <HomePage></HomePage>
-            </Route>
-          </Switch>
-          <Footer />
-        </Router>
-      ) : (
+          <Route path="/liveDesk" exact>
+            <LiveDesk />
+          </Route>
+          {/* Homepage */}
+          <Route path="/">
+            <HomePage></HomePage>
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+      {/* ) : (
         <Loading />
-      )}
+      )} */}
     </>
   );
 }

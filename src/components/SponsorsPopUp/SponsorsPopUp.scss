@@ -1,8 +1,14 @@
 @import '../../sassStyle/base/_base.scss';
+@import './../../sassStyle/abstracts/_variables.scss';
 
 .sponsored-by__logo {
   max-width: 20rem;
   max-height: 20rem;
+
+  @include respond(tab-port) {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
 
   &-item {
     flex-basis: 10rem;
@@ -23,9 +29,14 @@
   }
 
   .sponsors-banner img {
-    width: 600px;
-    height: 600px;
+    max-width: 300px;
+    max-height: 300px;
     object-fit: contain;
+
+    @include respond(phone) {
+      max-width: 15rem;
+      max-height: 15rem;
+    }
   }
 
   .modal-sponsors {
