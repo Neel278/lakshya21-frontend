@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cards.scss';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -8,7 +8,8 @@ function Cards({ name, image, role, insta, linkedin, email }) {
   return (
     <div className="card-wrapper">
       <div className="card">
-        <img src={image} alt={name} />
+        <img src={image} />
+
         <div className="card-text">
           <h6>{name}</h6>
           <p>{role}</p>

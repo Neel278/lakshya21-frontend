@@ -51,61 +51,6 @@ function Sponsore() {
           <div className="otherSponsore__logo">
             <div>
               <p>
-                <i>Workshop Partner</i>
-              </p>
-              <a
-                href="https://www.iantindia.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://drive.google.com/uc?id=1o8PdGetNnzBgvCA_cV3je9AEVr-ljFr8"
-                  alt="IANT"
-                  className="otherSponsore__img"
-                />
-              </a>
-            </div>
-            <div>
-              <p>
-                <i>Official Photography Partner</i>
-              </p>
-
-              <a
-                href="https://instituteforphotographyexcellence.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://drive.google.com/uc?id=1uapkZXznMlybCL1VeANvinj8uOkt9eZ7"
-                  alt=""
-                  className="otherSponsore__img"
-                />
-              </a>
-            </div>
-
-            {/* <img src={bbc} alt="" className="otherSponsore__img" /> */}
-          </div>
-
-          <div className="otherSponsore__logo">
-            <div>
-              <p>
-                <i>Online Media Partner</i>
-              </p>
-
-              <a
-                href="https://www.knowafest.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://drive.google.com/uc?id=117afzo2nzab8iuFAma5bAF0KpsZ9-c_K"
-                  alt="KNOWAFEST"
-                  className="otherSponsore__img"
-                />
-              </a>
-            </div>
-            <div>
-              <p>
                 <i>Powered By</i>
               </p>
 
@@ -121,7 +66,33 @@ function Sponsore() {
                 />
               </a>
             </div>
+            <div>
+              <p>
+                <i>In Association With</i>
+              </p>
 
+              <a
+                href="http://visaeuro.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ"
+                  alt=""
+                  className="otherSponsore__img"
+                  style={{
+                    backgroundColor: '#F0F4F8',
+                    padding: '1rem',
+                    borderRadius: '0.5rem',
+                  }}
+                />
+              </a>
+            </div>
+
+            {/* <img src={bbc} alt="" className="otherSponsore__img" /> */}
+          </div>
+
+          <div className="otherSponsore__logo">
             <div>
               <p>
                 <i>Special Partner</i>
@@ -149,31 +120,6 @@ function Sponsore() {
                 />
               </a>
             </div>
-          </div>
-
-          <div className="otherSponsore__logo">
-            <div>
-              <p>
-                <i>In Association With</i>
-              </p>
-
-              <a
-                href="http://visaeuro.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://drive.google.com/uc?id=12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ"
-                  alt=""
-                  className="otherSponsore__img"
-                  style={{
-                    backgroundColor: '#F0F4F8',
-                    padding: '1rem',
-                    borderRadius: '0.5rem',
-                  }}
-                />
-              </a>
-            </div>
             <div>
               <p>
                 <i>Special Partner</i>
@@ -186,6 +132,60 @@ function Sponsore() {
               >
                 <img
                   src="https://drive.google.com/uc?id=1pC5p4g3fUe-oPOLwqhgnU8ODX7pWkU8y"
+                  alt=""
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
+            <div>
+              <p>
+                <i>Online Media Partner</i>
+              </p>
+
+              <a
+                href="https://www.knowafest.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=117afzo2nzab8iuFAma5bAF0KpsZ9-c_K"
+                  alt="KNOWAFEST"
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="otherSponsore__logo">
+            <div>
+              <p>
+                <i>Workshop Partner</i>
+              </p>
+              <a
+                href="https://www.iantindia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1o8PdGetNnzBgvCA_cV3je9AEVr-ljFr8"
+                  alt="IANT"
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
+
+            <div>
+              <p>
+                <i>Official Photography Partner</i>
+              </p>
+
+              <a
+                href="https://instituteforphotographyexcellence.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1uapkZXznMlybCL1VeANvinj8uOkt9eZ7"
                   alt=""
                   className="otherSponsore__img"
                 />

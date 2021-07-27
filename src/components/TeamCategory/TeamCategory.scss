@@ -1,44 +1,5 @@
 @import '../../sassStyle/base/_base.scss';
 
-// .team-category {
-//   @include respond(desktop) {
-//     font-family: $mainFont;
-//     color: white;
-//     display: flex;
-//     // margin-top: 3rem;
-//     font-size: 2rem;
-//     font-weight: 300;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-around;
-//     flex-direction: column;
-//     width: 100vw;
-//     // height: 5rem;
-//   }
-//   @include respond(big-desktop) {
-//     font-family: $mainFont;
-//     color: white;
-//     display: flex;
-//     // margin-top: 3rem;
-//     font-size: 2rem;
-//     font-weight: 300;
-//     justify-content: space-between;
-//     width: 100vw;
-//     // height: 5rem;
-//   }
-
-//   @include respond(phone) {
-//     font-family: $mainFont;
-//     color: white;
-//     display: flex;
-//     // margin-top: 3rem;
-//     font-size: 2rem;
-//     font-weight: 300;
-//     width: 35%;
-//     // height: 5rem;
-//   }
-// }
-
 .tabs-wrapper {
   // width: 100%;
   // width: 10vw;
@@ -48,23 +9,6 @@
   margin-bottom: 5rem;
   margin-top: 5rem;
 }
-
-// .team-category div {
-//   margin-right: 5rem;
-//   margin-left: 5rem;
-// }
-
-// .team-category div:hover {
-//   border-bottom: 2px solid #e2980a;
-// }
-
-// .team-category div {
-//   padding-top: 1rem;
-// }
-
-// .team-category div:active {
-//   font-weight: 700;
-// }
 
 .carousel-wrapper {
   width: 80%;
@@ -77,9 +21,6 @@
   align-items: center;
   // justify-content: space-around;
   flex-direction: column;
-
-  &__container {
-  }
 }
 
 .cards-wrapper {

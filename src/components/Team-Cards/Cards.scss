@@ -1,6 +1,8 @@
 @import '../../sassStyle/base/_base.scss';
 @import '../../sassStyle/abstracts/_mixins.scss';
 
+$avatar-offset: 52 + 16;
+
 .card {
   background: linear-gradient(
     152.97deg,
@@ -84,17 +86,20 @@
     width: 16rem;
     height: 16rem;
     border-radius: 50%;
+    background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
+    animation: shine-lines 2s infinite linear;
 
-    @include respond(desktop) {
-      width: 16rem;
-      height: 16rem;
-      border-radius: 50%;
-    }
     @include respond(big-desktop) {
       width: 16rem;
       height: 16rem;
       border-radius: 50%;
     }
+    @include respond(desktop) {
+      width: 16rem;
+      height: 16rem;
+      border-radius: 50%;
+    }
+
     @include respond(phone) {
       width: 15rem;
       height: 15rem;
@@ -143,6 +148,16 @@
 
     @include respond(midPhone) {
       margin-bottom: 0;
+    }
+  }
+  @keyframes shine-avatar {
+    0% {
+      background-position: -100px + $avatar-offset;
+    }
+
+    40%,
+    100% {
+      background-position: 140px + $avatar-offset;
     }
   }
 }
