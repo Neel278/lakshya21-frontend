@@ -63,7 +63,7 @@
 
 .otherSponsore {
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
 
   @include respond(tab-land) {
     width: 70%;
@@ -79,7 +79,7 @@
     margin-top: 2rem;
     margin-bottom: 6.8rem;
     text-align: center;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
 
@@ -129,6 +129,9 @@
     @include respond(phone) {
       margin-bottom: 0;
     }
+    @include respond(smallLaptop) {
+      margin-bottom: 7rem;
+    }
   }
   &__logo div {
     display: flex;
@@ -162,9 +165,14 @@
       max-height: 10rem;
     }
 
+    @include respond(smallLaptop) {
+      max-width: 14rem;
+      max-height: 7rem;
+    }
+
     @include respond(phone) {
-      max-width: 10rem;
-      max-height: 6rem;
+      max-width: 15rem;
+      max-height: 8rem;
       margin: 2rem;
     }
   }

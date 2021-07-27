@@ -101,7 +101,7 @@ const Data = [
   {
     name: 'Jainam Shah',
     roles: 'Sponsorship Head ',
-    url: 'https://picsum.photos/500',
+    url: driveURL + '1iEDlGh1b5F9nZoe7-Xy5csU0vuEkbAnQ',
     team: 'heads',
     email: 'jainamshahldce@gmail.com',
     linkedin: 'https://www.linkedin.com/in/jainam-shah-6a6887193',
@@ -109,7 +109,7 @@ const Data = [
   },
   {
     name: 'Om Raval',
-    roles: 'Front-end Developer',
+    roles: 'Front-End Developer',
     url: 'https://picsum.photos/500',
     team: 'developers',
     email: 'r.auckwell18@gmail.com',
@@ -119,7 +119,7 @@ const Data = [
   {
     name: 'Swati Panchal',
     roles: 'UI/UX Designer',
-    url: 'https://picsum.photos/500',
+    url: driveURL + '1WllmLPi4MLGsAxE7Gyk9TRF1WcuZ84he',
     email: 'swatipanchal008@gmail.com',
     team: 'developers',
     linkedin: 'https://www.linkedin.com/in/swatipanchal23/',
@@ -192,7 +192,7 @@ const Data = [
     roles: 'Graphic Designer',
     email: ' deep.makadiya25@gmail.com',
     linkedin: 'https://www.linkedin.com/in/deep-makadiya-1908b6190',
-    image: 'https://picsum.photos/500',
+    url: driveURL + '1svW2Wz3bFmXT17OFewd83EWJyA56ipMQ',
     team: 'developers',
   },
   {
@@ -200,7 +200,7 @@ const Data = [
     roles: 'Graphic Designer',
     email: ' ashwipatel1410@gmail.com',
     insta: 'https://www.instagram.com/_ashwi._/',
-    image: 'https://picsum.photos/500',
+    url: driveURL + '1dHDZOyySrpxuR4C1bb3SJFefh2ScZzhw',
     team: 'developers',
   },
   {
@@ -209,11 +209,11 @@ const Data = [
     linkedin: 'https://www.linkedin.com/in/jay-joshi-',
     insta:
       'https://www.instagram.com/invites/contact/?i=1omkbuexj80qy&utm_content=3haavx0',
-    image: 'https://picsum.photos/500',
+    url: driveURL + '1ksQUtdo1CuudUydBWwq6SiowvTfaPoAP',
     team: 'developers',
   },
   {
-    name: 'khushvi purohit',
+    name: 'Khushvi purohit',
     email: 'khushvipurohit59@gmail.com',
     url: driveURL + '1KhIByMioX5AI_zGBxWfNhrqpeOrgH5Rk',
     linkedin: 'https://www.linkedin.com/in/khushvi-purohit-7117b220b',
@@ -269,7 +269,7 @@ const Data = [
   {
     name: 'Arpit Ojha',
     email: 'aptrockz@gmail.com',
-    url: 'https://picsum.photos/500',
+    url: driveURL + '11443PfjnOSILX3PQ92WQLv1XS_XThZuC',
     insta: 'https://www.instagram.com/_aptrockz_?r=nametag',
     roles: 'Core Team',
     team: 'core-team',
@@ -287,7 +287,7 @@ const Data = [
   {
     name: 'Meet Parikh',
     email: 'meet.parikh7777@gmail.com',
-    url: 'https://picsum.photos/500',
+    url: driveURL + '1TmN1Oy3Yf4NeH6CkqY-5OHCeEexjB0Hq',
     linkedin: 'https://www.linkedin.com/in/meet-parikh-a178751aa',
     roles: 'Core Team',
     team: 'core-team',
@@ -295,7 +295,7 @@ const Data = [
   {
     name: 'Vipul Kamothi',
     email: 'vipulkamothi2001@gmail.com',
-    url: 'https://picsum.photos/500',
+    url: driveURL + '1-7kiDmUwVo9j8wIuxz0mE2zMHFqeRQ96',
     linkedin: 'https://www.linkedin.com/in/vipul-kamothi-367b84217',
     insta: 'https://www.instagram.com/v_i_p_u_kamothi/',
     roles: 'Core Team',
@@ -304,7 +304,7 @@ const Data = [
   {
     name: 'Misha Shah',
     email: 'mishashah2718@gmail.com',
-    url: 'https://picsum.photos/500',
+    url: driveURL + '13YXrcE0SmPpNLABAUXZa5TTRKRg6v2FE',
     linkedin: 'https://www.linkedin.com/in/misha-shah-b51abb203',
     insta: 'https://www.instagram.com/mishashah27?r=nametag',
     roles: 'Core Team',
@@ -313,7 +313,7 @@ const Data = [
   {
     name: 'Jinay Mehta',
     email: 'jinaymehta17@gmail.com',
-    url: 'https://picsum.photos/500',
+    url: driveURL + '138hkHd0l522Xvs-NSwkGAJZrEnh7ay87',
     linkedin: 'https://www.linkedin.com/in/jinay-mehta-55a6a01ab',
     insta: 'https://www.instagram.com/jinay_mehta179',
     roles: 'Core Team',

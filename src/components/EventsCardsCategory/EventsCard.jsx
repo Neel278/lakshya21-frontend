@@ -14,7 +14,7 @@ function EventsCard({ id, category, img, description }) {
     <div>
       <Link to={'/departments/' + category}>
         <div className="event-card">
-          <img className="card-img" src={driveURL + img} alt={category}></img>
+          <img className="card-img" src={driveURL + img} alt=""></img>
           <div className="card-content">
             <h2>{category}</h2>
             <br />

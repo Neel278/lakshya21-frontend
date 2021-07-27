@@ -13,7 +13,7 @@ const EventHeads = [
     name: 'Jainam Shah',
     email: 'jainamshahldce@gmail.com',
     mobile: '9725516456',
-    img: 'https://picsum.photos/500',
+    img: driveURL + '1iEDlGh1b5F9nZoe7-Xy5csU0vuEkbAnQ',
   },
   {
     position: 'Campaigning Head',

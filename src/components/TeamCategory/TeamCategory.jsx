@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Tabs, Tab } from '@material-ui/core';
 import Carousel from 'react-elastic-carousel';
-import { makeStyles } from '@material-ui/core/styles';
 import Cards from '../../components/Team-Cards/Cards';
+import Loader from 'react-loader-spinner';
 import './TeamCategory.scss';
 import TabPanel from '../Tab-Panel/TabPanel';
 import useStyles from './styles';
@@ -15,10 +15,34 @@ const breakPoints = [
   { width: 1200, itemsToShow: 3, itemsToScroll: 3 },
 ];
 
+const tabData = [
+  {
+    category: 'convener',
+    index: 0,
+  },
+  {
+    category: 'heads',
+    index: 1,
+  },
+  {
+    category: 'core-team',
+    index: 2,
+  },
+  {
+    category: 'developers',
+    index: 3,
+  },
+];
+
 function TeamCategory() {
   const [value, setValue] = useState(0);
   const [menuItem, setMenuItem] = useState(Data);
   const classes = useStyles();
+  const [isLoading, setIsLoading] = useState(true);
+
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 3000);
 
   const handleTabs = (e, val) => {
     setValue(val);
@@ -42,83 +66,33 @@ function TeamCategory() {
           <Tab label={<span className={classes.tabLabel}>Core-Team</span>} />
           <Tab label={<span className={classes.tabLabel}>Developers</span>} />
         </Tabs>
+
         <div className="cards-wrapper">
-          <TabPanel value={value} index={0} className="convener">
-            <div>
-              <Carousel breakPoints={breakPoints}>
-                {menuItem
-                  .filter((item) => item.team === 'convener')
-                  .map((item, index) => (
-                    <Cards
-                      key={index}
-                      name={item.name}
-                      role={item.roles}
-                      image={item.url}
-                      email={item.email}
-                      linkedin={item.linkedin}
-                      insta={item.insta}
-                    />
-                  ))}
-              </Carousel>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={1} className="heads">
-            <div>
-              <Carousel breakPoints={breakPoints}>
-                {menuItem
-                  .filter((item) => item.team === 'heads')
-                  .map((item, index) => (
-                    <Cards
-                      key={index}
-                      name={item.name}
-                      role={item.roles}
-                      image={item.url}
-                      email={item.email}
-                      linkedin={item.linkedin}
-                      insta={item.insta}
-                    />
-                  ))}
-              </Carousel>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={2} className="core-team">
-            <div>
-              <Carousel breakPoints={breakPoints}>
-                {menuItem
-                  .filter((item) => item.team === 'core-team')
-                  .map((item, index) => (
-                    <Cards
-                      key={index}
-                      name={item.name}
-                      role={item.roles}
-                      image={item.url}
-                      email={item.email}
-                      linkedin={item.linkedin}
-                      insta={item.insta}
-                    />
-                  ))}
-              </Carousel>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={3} className="developers">
-            <div>
-              <Carousel breakPoints={breakPoints}>
-                {menuItem
-                  .filter((item) => item.team === 'developers')
-                  .map((item, index) => (
-                    <Cards
-                      key={index}
-                      name={item.name}
-                      role={item.roles}
-                      image={item.url}
-                      email={item.email}
-                      linkedin={item.linkedin}
-                      insta={item.insta}
-                    />
-                  ))}
-              </Carousel>
-            </div>
-          </TabPanel>
+          {tabData.map((data) => (
+            <TabPanel
+              value={value}
+              index={data.index}
+              className={data.category}
+            >
+              <div>
+                <Carousel breakPoints={breakPoints}>
+                  {menuItem
+                    .filter((item) => item.team === `${data.category}`)
+                    .map((item, index) => (
+                      <Cards
+                        key={index}
+                        name={item.name}
+                        role={item.roles}
+                        image={item.url}
+                        email={item.email}
+                        linkedin={item.linkedin}
+                        insta={item.insta}
+                      />
+                    ))}
+                </Carousel>
+              </div>
+            </TabPanel>
+          ))}
         </div>
       </div>
     </div>

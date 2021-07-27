@@ -55,4 +55,10 @@
       @content;
     }
   }
+
+  @if $breakpoint == smallLaptop {
+    @media (max-width: 1366px) {
+      @content;
+    }
+  }
 }
