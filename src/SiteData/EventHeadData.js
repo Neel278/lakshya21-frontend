@@ -19,7 +19,7 @@ const EventHeads = [
     position: 'Campaigning Head',
     name: 'Jainil Vora',
     email: 'jainilvora1234@gmail.com',
-    mobile: '9016777043',
+    mobile: '9106777043',
     img: driveURL + '1BoPHxCevFV7gvRJNMryI3Y84FNpqyYzV',
   },
 ];
