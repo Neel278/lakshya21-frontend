@@ -19,35 +19,10 @@ function Sponsore() {
       </div>
       <div className="sponsore">
         <div className="sponsore__heading">
-          {/* <div className="underline-sponsors"> */}
           <h1>Meet Our Sponsors</h1>
-          {/* </div> */}
-          {/* <span></span> */}
         </div>
-        {/* <div className="sponsore__heading">
-          <h1>To be added soon...</h1>
-        </div> */}
-        {/* <SponsoreCard
-          img={bbc}
-          headline="sample headline"
-          text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto est similique quod praesentium fugit nulla eius, aperiam placeat modi minus adipisci, expedita totam assumenda ad, facere voluptatibus provident earum perspiciatis?"
-        />
-
-        <SponsoreCard
-          img={bi}
-          headline="sample headline"
-          text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto est similique quod praesentium fugit nulla eius, aperiam placeat modi minus adipisci, expedita totam assumenda ad, facere voluptatibus provident earum perspiciatis?"
-        />
-
-        <SponsoreCard
-          img={forbes}
-          headline="sample headline"
-          text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto est similique quod praesentium fugit nulla eius, aperiam placeat modi minus adipisci, expedita totam assumenda ad, facere voluptatibus provident earum perspiciatis?"
-        /> */}
 
         <div className="otherSponsore">
-          {/* <h1>Other Sponsors</h1> */}
-
           <div className="otherSponsore__logo">
             <div>
               <p>
@@ -88,8 +63,61 @@ function Sponsore() {
                 />
               </a>
             </div>
+          </div>
 
-            {/* <img src={bbc} alt="" className="otherSponsore__img" /> */}
+          <div className="otherSponsore__logo">
+            <div>
+              <p>
+                <i>Workshop Partner</i>
+              </p>
+              <a
+                href="https://www.iantindia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1o8PdGetNnzBgvCA_cV3je9AEVr-ljFr8"
+                  alt="IANT"
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
+
+            <div>
+              <p>
+                <i>Official Photography Partner</i>
+              </p>
+
+              <a
+                href="https://instituteforphotographyexcellence.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1uapkZXznMlybCL1VeANvinj8uOkt9eZ7"
+                  alt=""
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
+
+            <div>
+              <p>
+                <i>GD/PI Event Partner</i>
+              </p>
+
+              <a
+                href="https://www.endeavorcareers.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=1GisTR2u5f-SijPMPGBg4EiwQT660TIEh"
+                  alt=""
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
           </div>
 
           <div className="otherSponsore__logo">
@@ -155,44 +183,24 @@ function Sponsore() {
               </a>
             </div>
           </div>
-
           <div className="otherSponsore__logo">
             <div>
               <p>
-                <i>Workshop Partner</i>
+                <i>Food Partner</i>
               </p>
+
               <a
-                href="https://www.iantindia.com/"
+                href="https://business.google.com/website/bombay-street-cafe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://drive.google.com/uc?id=1o8PdGetNnzBgvCA_cV3je9AEVr-ljFr8"
-                  alt="IANT"
+                  src="https://drive.google.com/uc?id=1JYXVeWS_2M87b-5PllC6xajYjDzEG6C6"
+                  alt="KNOWAFEST"
                   className="otherSponsore__img"
                 />
               </a>
             </div>
-
-            <div>
-              <p>
-                <i>Official Photography Partner</i>
-              </p>
-
-              <a
-                href="https://instituteforphotographyexcellence.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://drive.google.com/uc?id=1uapkZXznMlybCL1VeANvinj8uOkt9eZ7"
-                  alt=""
-                  className="otherSponsore__img"
-                />
-              </a>
-            </div>
-
-            {/* <img src={bbc} alt="" className="otherSponsore__img" /> */}
           </div>
         </div>
       </div>

@@ -40,9 +40,7 @@ function TeamCategory() {
   const classes = useStyles();
   const [isLoading, setIsLoading] = useState(true);
 
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 3000);
+  
 
   const handleTabs = (e, val) => {
     setValue(val);
