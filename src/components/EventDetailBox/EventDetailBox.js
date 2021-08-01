@@ -115,7 +115,7 @@ const EventDetailBox = ({ price, platform, participants }) => {
           </svg>
         </div>
         <p class="event-detail__tag">
-          E-certificates to all the participants and exciting prices
+          E-certificates to all the participants and exciting prizes
         </p>
       </div>
     </div>
