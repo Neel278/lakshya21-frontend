@@ -9,7 +9,7 @@ const EventContactBox = () => {
       <div className="event-contact">
         <div className="event-contact__left">
           <p className="event-contact__name">Jainil Vora</p>
-          <p className="event-contact__number">9016777043</p>
+          <p className="event-contact__number">9106777043</p>
         </div>
         <div className="event-contact__right">
           <p className="event-contact__mail">jainilvora1234@gmail.com</p>
