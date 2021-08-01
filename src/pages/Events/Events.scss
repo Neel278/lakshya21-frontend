@@ -36,13 +36,14 @@
 
     & > h1 {
       margin-top: 2rem;
-      font-family: Poppins;
+      font-family: 'Gilroy';
       font-size: 3.4rem;
       font-style: normal;
-      font-weight: 400;
-      line-height: 4.2rem;
+      font-weight: 700;
+      line-height: 6rem;
+      border-bottom: 3px solid #486581;
+
       letter-spacing: 0em;
-      border-bottom: 1px solid $color-gold;
       margin-bottom: 3rem;
 
       @include respond(phone) {
