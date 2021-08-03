@@ -13,10 +13,11 @@ function About() {
       <div className="gradient gradient--2">
         <GradientBox></GradientBox>
       </div>
+      <div className="about__headingWrapper">
+        <h1 className="about__heading">About Us</h1>
+      </div>
       <div className="about__container">
         <div className="about__left">
-          <h1 className="about__heading">About Us</h1>
-
           <p className="about__text--1">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lakshya
             is an only National level Edu-Technical festival of L.D. College of
