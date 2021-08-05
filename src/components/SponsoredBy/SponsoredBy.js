@@ -8,24 +8,34 @@ import SponsorsPopUp from '../SponsorsPopUp/SponsorsPopUp';
 import bannerImg from './../../Images/sample.png';
 const driveURL = 'https://drive.google.com/uc?id=';
 
-const images = [
-  {
-    name: 'allevents',
-    source: bannerImg,
-    src: driveURL + '1GzUHWsJqY8pacZz-8MrdBP4qPbqALaF0',
-  },
-  {
-    name: 'visaeur',
-    source: bannerImg,
-    src: driveURL + '12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ',
-  },
-];
-
 function SponsoredBy() {
+  const images = [
+    {
+      name: 'allevents',
+      source: bannerImg,
+      src: driveURL + '1GzUHWsJqY8pacZz-8MrdBP4qPbqALaF0',
+    },
+    {
+      name: 'visaeuro',
+      source: bannerImg,
+      src: driveURL + '12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ',
+    },
+    {
+      name: 'career lines',
+      source: bannerImg,
+      src: driveURL + '1kdyBeDv5cnpijGTKKFfLqeRUQFwtWaSk',
+    },
+    {
+      name: 'I.C.E GATE Academy',
+      source: bannerImg,
+      src: driveURL + '13pHmGKPaOXO-zCsl6IxTVly3gbxSEQMo',
+    },
+  ];
+
   const [openOne, setOpenOne] = useState(false);
   const [OpenImgTwo, setOpenImgTwo] = useState(false);
-  // const [OpenImgThree, setOpenImgThree] = useState(false);
-  // const [OpenImgFour, setOpenImgFour] = useState(false);
+  const [OpenImgThree, setOpenImgThree] = useState(false);
+  const [OpenImgFour, setOpenImgFour] = useState(false);
 
   return (
     <div className="sponsored-by">
@@ -40,6 +50,9 @@ function SponsoredBy() {
           sponsorAlt={images[0].name}
           imgHover={() => {
             setOpenOne(true);
+          }}
+          clicked={() => {
+            setOpenImgTwo(true);
           }}
           open={openOne}
           close={() => {
@@ -58,6 +71,9 @@ function SponsoredBy() {
           imgHover={() => {
             setOpenImgTwo(true);
           }}
+          clicked={() => {
+            setOpenImgTwo(true);
+          }}
           bgColor="black"
           open={OpenImgTwo}
           SponsorsBanner={images[1].source}
@@ -66,7 +82,7 @@ function SponsoredBy() {
           imgPadding="0.5rem"
           imgBorderRadius="0.3rem"
         />
-        {/* <SponsorsPopUp
+        <SponsorsPopUp
           source={images[2].src}
           sponsorAlt={images[2].name}
           close={() => {
@@ -77,9 +93,10 @@ function SponsoredBy() {
           }}
           bgColor="black"
           open={OpenImgThree}
+          sponsorshipText="Education Partner "
           SponsorsBanner={images[2].source}
-        /> */}
-        {/* <SponsorsPopUp
+        />
+        <SponsorsPopUp
           source={images[3].src}
           sponsorAlt={images[3].name}
           close={() => {
@@ -90,8 +107,9 @@ function SponsoredBy() {
           }}
           bgColor="black"
           open={OpenImgFour}
+          sponsorshipText="Knowledge Partner "
           SponsorsBanner={images[3].source}
-        /> */}
+        />
       </div>
     </div>
   );

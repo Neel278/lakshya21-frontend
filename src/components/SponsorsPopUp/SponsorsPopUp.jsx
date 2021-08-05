@@ -12,6 +12,9 @@ function SponsorsPopUp(props) {
       alignItems: 'center',
       justifyContent: 'center',
       border: 'none',
+      // maxWidth: '80%',
+      // marginRight: 'auto',
+      // marginLeft: 'auto',
     },
   }));
 
@@ -29,6 +32,7 @@ function SponsorsPopUp(props) {
             alt={props.sponsorAlt}
             className="sponsored-by__logo"
             onMouseOver={props.imgHover}
+            onClick={props.clicked}
             style={{
               backgroundColor: `${props.imgBg}`,
               padding: `${props.imgPadding}`,
