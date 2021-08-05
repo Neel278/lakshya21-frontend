@@ -10,6 +10,11 @@
     max-height: 15rem;
   }
 
+  @include respond(phone) {
+    max-width: 12rem;
+    max-height: 12rem;
+  }
+
   &-item {
     flex-basis: 10rem;
     display: flex;
@@ -32,10 +37,9 @@
     }
   }
 
-  .sponsors-banner {
-    width: 10%;
-    height: 10%;
-
+  img.sponsors-wrapper {
+    width: 15rem;
+    height: 15rem;
     @include respond(phone) {
       max-width: 15rem;
       max-height: 15rem;

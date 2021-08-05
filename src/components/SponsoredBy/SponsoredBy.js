@@ -17,7 +17,7 @@ function SponsoredBy() {
     },
     {
       name: 'visaeuro',
-      source: bannerImg,
+      source: driveURL + '1ldHKPhnxQyyy_Lg5OHUTrcqQR4lTwtkj',
       src: driveURL + '12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ',
     },
     {
