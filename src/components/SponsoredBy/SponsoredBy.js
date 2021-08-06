@@ -12,23 +12,25 @@ function SponsoredBy() {
   const images = [
     {
       name: 'allevents',
-      source: bannerImg,
       src: driveURL + '1GzUHWsJqY8pacZz-8MrdBP4qPbqALaF0',
+      sponsoredLink: '#',
     },
     {
       name: 'visaeuro',
       source: driveURL + '1ldHKPhnxQyyy_Lg5OHUTrcqQR4lTwtkj',
       src: driveURL + '12EVtQK-hA2nHVGECGxMUFEOyKlBLjqxJ',
+      sponsoredLink: '#',
     },
     {
       name: 'career lines',
-      source: bannerImg,
       src: driveURL + '1kdyBeDv5cnpijGTKKFfLqeRUQFwtWaSk',
+      sponsoredLink: '#',
     },
     {
       name: 'I.C.E GATE Academy',
-      source: bannerImg,
+      source: driveURL + '1AxOqNWRIcIqTo__GnT4GAFwcWDAVYCBb',
       src: driveURL + '13pHmGKPaOXO-zCsl6IxTVly3gbxSEQMo',
+      sponsoredLink: 'https://forms.gle/mHaHATiT1Mw38AGF7',
     },
   ];
 
@@ -61,6 +63,7 @@ function SponsoredBy() {
           SponsorsBanner={images[0].source}
           bgColor="black"
           sponsorshipText="Powered By"
+          sponsoredLink={images[0].sponsoredLink}
         />
         <SponsorsPopUp
           source={images[1].src}
@@ -78,6 +81,7 @@ function SponsoredBy() {
           open={OpenImgTwo}
           SponsorsBanner={images[1].source}
           sponsorshipText="In Association "
+          sponsoredLink={images[1].sponsoredLink}
           imgBg="#F0F4F8"
           imgPadding="0.5rem"
           imgBorderRadius="0.3rem"
@@ -88,12 +92,16 @@ function SponsoredBy() {
           close={() => {
             setOpenImgThree(false);
           }}
+          clicked={() => {
+            setOpenImgTwo(true);
+          }}
           imgHover={() => {
             setOpenImgThree(true);
           }}
           bgColor="black"
           open={OpenImgThree}
           sponsorshipText="Education Partner "
+          sponsoredLink={images[2].sponsoredLink}
           SponsorsBanner={images[2].source}
         />
         <SponsorsPopUp
@@ -105,9 +113,13 @@ function SponsoredBy() {
           imgHover={() => {
             setOpenImgFour(true);
           }}
+          clicked={() => {
+            setOpenImgTwo(true);
+          }}
           bgColor="black"
           open={OpenImgFour}
           sponsorshipText="Knowledge Partner "
+          sponsoredLink={images[3].sponsoredLink}
           SponsorsBanner={images[3].source}
         />
       </div>

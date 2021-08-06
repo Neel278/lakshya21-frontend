@@ -13,18 +13,10 @@ function SponsorsPopUp(props) {
       alignItems: 'center',
       justifyContent: 'center',
       border: 'none',
-      // maxWidth: '80%',
-      // marginRight: 'auto',
-      // marginLeft: 'auto',
     },
   }));
 
   const classes = useStyles();
-
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(max-width: 1440px)',
-  });
-  const isBigScreen = useMediaQuery({ query: '(min-width: 1800px)' });
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 600px)' });
   return (
     <div className="sponsors-wrapper">
@@ -48,34 +40,44 @@ function SponsorsPopUp(props) {
           />
         </div>
       </div>
-      <Modal
-        open={props.open}
-        onClose={props.close}
-        aria-labelledby="simple-dialog-title"
-        className={classes.modal}
-      >
-        <Zoom in={props.open}>
-          {isTabletOrMobile ? (
-            <a href="#">
-              <img
-                src={props.SponsorsBanner}
-                className="sponsors-banner-popup"
-                alt={props.sponsorAlt}
-                style={{ width: '40rem', backgroundColor: 'white' }}
-              />
-            </a>
-          ) : (
-            <a href="#">
-              <img
-                src={props.SponsorsBanner}
-                className="sponsors-banner-popup"
-                alt={props.sponsorAlt}
-                style={{ width: '600px', backgroundColor: 'white' }}
-              />
-            </a>
-          )}
-        </Zoom>
-      </Modal>
+      {props.SponsorsBanner && (
+        <Modal
+          open={props.open}
+          onClose={props.close}
+          aria-labelledby="simple-dialog-title"
+          className={classes.modal}
+        >
+          <Zoom in={props.open}>
+            {isTabletOrMobile ? (
+              <div>
+                <a href="https://forms.gle/mHaHATiT1Mw38AGF7">
+                  <img
+                    src={props.SponsorsBanner}
+                    className="sponsors-banner-popup"
+                    alt={props.sponsorAlt}
+                    style={{ width: '40rem', backgroundColor: 'white' }}
+                  />
+                </a>
+              </div>
+            ) : (
+              <div>
+                <a href="https://forms.gle/mHaHATiT1Mw38AGF7">
+                  <img
+                    src={props.SponsorsBanner}
+                    className="sponsors-banner-popup"
+                    alt={props.sponsorAlt}
+                    style={{
+                      width: '600px',
+                      height: 'auto',
+                      backgroundColor: 'white',
+                    }}
+                  />
+                </a>
+              </div>
+            )}
+          </Zoom>
+        </Modal>
+      )}
     </div>
   );
 }
