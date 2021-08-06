@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from '../../axios/axios';
-
 import './EventMainPage.scss';
 import './allevents.js';
-// import eventimg from '../../Images/events-banners/arduino2.png';
-
-// import img from './../../Images/EventMain.webp';
-
 import EventDetailBox from './../../components/EventDetailBox/EventDetailBox';
 import EventContactBox from './../../components/EventContactBox/EventContactBox';
 import EventTextBox from '../../components/EventTextBox/EventTextBox';
