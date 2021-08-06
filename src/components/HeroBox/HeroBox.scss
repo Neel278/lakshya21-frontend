@@ -94,10 +94,11 @@
   }
 
   &__sub-title {
-    font-weight: lighter;
+    font-weight: 400;
     font-size: 3rem;
     text-align: center;
     margin-top: 4rem;
+    opacity: 0.7;
     @include respond(tab-port) {
       // margin-top: 2rem;
       margin-bottom: 2rem;
