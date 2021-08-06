@@ -46,6 +46,7 @@ function SponsorsPopUp(props) {
           onClose={props.close}
           aria-labelledby="simple-dialog-title"
           className={classes.modal}
+          disableAutoFocus={true}
         >
           <Zoom in={props.open}>
             {isTabletOrMobile ? (
@@ -68,7 +69,6 @@ function SponsorsPopUp(props) {
                     alt={props.sponsorAlt}
                     style={{
                       width: '600px',
-                      height: 'auto',
                       backgroundColor: 'white',
                     }}
                   />
