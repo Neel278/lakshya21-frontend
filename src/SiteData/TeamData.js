@@ -257,15 +257,15 @@ const Data = [
     team: 'core-team',
   },
 
-  {
-    name: 'Yug Patel',
-    email: 'yugp1209@gmail.com',
-    url: driveURL + '1PPbWE7A5EZmPNO4mk3jsGtjsIILo5T47',
-    linkedin: 'https://www.linkedin.com/in/yug-patel-9571151ba',
-    insta: 'https://www.instagram.com/yug_1209',
-    roles: 'Core Team',
-    team: 'core-team',
-  },
+  // {
+  //   name: 'Yug Patel',
+  //   email: 'yugp1209@gmail.com',
+  //   url: driveURL + '1PPbWE7A5EZmPNO4mk3jsGtjsIILo5T47',
+  //   linkedin: 'https://www.linkedin.com/in/yug-patel-9571151ba',
+  //   insta: 'https://www.instagram.com/yug_1209',
+  //   roles: 'Core Team',
+  //   team: 'core-team',
+  // },
   {
     name: 'Arpit Ojha',
     email: 'aptrockz@gmail.com',
