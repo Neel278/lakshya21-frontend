@@ -52,17 +52,8 @@ const EventMainPage = () => {
             <div className="event-main__hero-box">
               <h2 className="event-main__title">{event.name}</h2>
               <div className="event-main__btn-box">
-                {/* <button className="event-main__btn event-main__btn--proceed">
-                  Participate
-                </button> */}
-                <button
-                  // onclick="open_ae_ticket_modal('80008103395933','1784072',event);return false;"
-                  data-event-id="80008103395933"
-                  data-ticket-id={event.allevents_id}
-                  class="ae-ticket-book-button event-main__btn event-main__btn--proceed"
-                  onClick={window.ae_plugin_lib_button_init()}
-                >
-                  Participate
+                <button className="event-main__btn event-main__btn--proceed">
+                  Participation Closed
                 </button>
               </div>
             </div>
