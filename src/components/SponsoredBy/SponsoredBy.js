@@ -28,7 +28,7 @@ function SponsoredBy() {
     },
     {
       name: 'I.C.E GATE Academy',
-      source: driveURL + '1AxOqNWRIcIqTo__GnT4GAFwcWDAVYCBb',
+      source: driveURL + '1sD0MDol3xcbxVL0b0boqdx3I_36KRAfe',
       src: driveURL + '13pHmGKPaOXO-zCsl6IxTVly3gbxSEQMo',
       sponsoredLink: 'https://forms.gle/mHaHATiT1Mw38AGF7',
     },
