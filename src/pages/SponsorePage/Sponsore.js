@@ -82,7 +82,7 @@ function Sponsore() {
               </p>
 
               <a
-                href="https://icegateinstitute.com/"
+                href="https://icegateinstitute.com/gate-coaching-ahmedabad-html/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -171,7 +171,7 @@ function Sponsore() {
               >
                 <img
                   src="https://drive.google.com/uc?id=1RGjtB68qbIGYsalUHKm_Oqo9FndiQ_Qz"
-                  alt=""
+                  alt="Khodiyar CAD"
                   className="otherSponsore__img"
                   style={{
                     backgroundColor: '#F0F4F8',
@@ -193,8 +193,13 @@ function Sponsore() {
               >
                 <img
                   src="https://drive.google.com/uc?id=1pC5p4g3fUe-oPOLwqhgnU8ODX7pWkU8y"
-                  alt=""
+                  alt="renaissance"
                   className="otherSponsore__img"
+                  style={{
+                    backgroundColor: '#FAF9F9',
+                    borderRadius: '0.8rem',
+                    padding: '1rem',
+                  }}
                 />
               </a>
             </div>
