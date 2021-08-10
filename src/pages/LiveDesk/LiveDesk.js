@@ -6,55 +6,54 @@ const data = [
   {
     department: 'CODESTERS',
     email: 'comp.it.lakshya2021@gmail.com',
-    meet: '/',
+    meet: 'https://meet.google.com/vyt-smqi-aut',
   },
   {
     department: 'ELECTROBUZZ',
     email: 'ec.ic.ee.lakshya2021@gmail.com',
-    meet: '/',
+    meet: 'https://meet.google.com/ixr-mnrn-oca',
   },
   {
     department: 'CHEMSTROM',
     email: 'chemical.lakshya2021@gmail.com',
-    meet: '/',
+    meet: 'https://meet.google.com/bjj-puzs-gjx',
   },
   {
     department: 'CIVILUSION',
     email: 'civil.lakshya2021@gmail.com',
-    meet: '/',
+    meet: 'https://meet.google.com/tmy-absu-eyz',
   },
   {
     department: 'MECHNOVA',
     email: 'mechanical.lakshya2021@gmail.com',
-    meet: '/',
+    meet: 'https://meet.google.com/qvg-hhsw-nio',
   },
   {
     department: 'ROBO-SAPIENS',
     email: 'robotics.lakshya2021@gmail.com',
-    meet: '/',
   },
   {
     department: 'MINDSPARK',
     email: 'literary.lakshya2021@gmail.com',
-    meet: '/',
+    meet: 'https://meet.google.com/gem-jbtv-nph',
   },
   {
     department: 'CARNIVAL-O-FUN',
     email: 'fun.lakshya2021@gmail.com',
-    meet: '/',
+    meet: 'https://meet.google.com/cft-jepd-yyy',
   },
   {
     department: 'WORKSHOPS',
     email: 'workshop.lakshya2021@gmail.com',
-    meet: '/',
+    meet: 'https://meet.google.com/rho-pcin-jnu',
   },
 ];
 
 function LiveDesk() {
   return (
     <div className="live">
-      {/* Live Desk */}
-      {/*       <div className="live__heading">
+      Live Desk
+      <div className="live__heading">
         <h1>Live Desk</h1>
       </div>
       <table className="live__table">
@@ -64,24 +63,25 @@ function LiveDesk() {
         </thead>
 
         <tbody>
-          {data.map((item, index) => (
-            <tr>
-              <td data-label="Department">{item.department}</td>
-              <td data-label="G-Meet">
-                <a href={item.meet} className="live__table--join">
-                  Join Meet
-                </a>
-              </td>
-            </tr>
-          ))}
+          {data.map(
+            (item, index) =>
+              item.meet && (
+                <tr>
+                  <td data-label="Department">{item.department}</td>
+                  <td data-label="G-Meet">
+                    <a href={item.meet} className="live__table--join">
+                      Join Meet
+                    </a>
+                  </td>
+                </tr>
+              )
+          )}
         </tbody>
-      </table> */}
-
+      </table>
       {/* Info Desk */}
       <div className="live__heading">
         <h1>Info Desk</h1>
       </div>
-
       <table className="live__table">
         <thead>
           <th>Department</th>
@@ -104,7 +104,6 @@ function LiveDesk() {
           ))}
         </tbody>
       </table>
-
       {/* General desk part */}
       <div className="live__heading">
         <h1>General Desk</h1>
