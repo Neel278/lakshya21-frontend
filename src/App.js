@@ -2,12 +2,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import NavBar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-
-import Loading from './components/Loading-Animation/Loading';
-
 import ContactPage from './pages/ContactPage/ContactPage';
 import HomePage from './pages/HomePage/HomePage';
-
 // page to show all departments
 import EventsPage from './pages/EventsPage/EventsPage';
 // page to show all events in one department

@@ -273,6 +273,23 @@ function Sponsore() {
                 />
               </a>
             </div>
+            <div>
+              <p>
+                <i>Goodie Partner</i>
+              </p>
+
+              <a
+                href="https://pitara-enterprise.business.site/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://drive.google.com/uc?id=16jDh70Rpu_qLvfRN1zAFPqW3tEbWja6a"
+                  alt="Pitara Enterprise"
+                  className="otherSponsore__img"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
